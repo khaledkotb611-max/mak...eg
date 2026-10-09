@@ -1,0 +1,12 @@
+{
+  "name": "mak-plumbing-solutions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "start": "python3 manage.py runserver 0.0.0.0:8000",
+    "dev": "python3 manage.py runserver 0.0.0.0:8000",
+    "test:worker": "node --test tests/*.test.mjs"
+  }
+}

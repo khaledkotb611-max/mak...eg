@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="same-origin">
+    <title>متابعة الطلبات | MAK</title>
+    <link rel="stylesheet" href="/admin.css?v=20261008-catalog-v1">
+    <script src="/vendor/exceljs-4.4.0.min.js" defer></script>
+    <script src="/admin.js?v=20261008-sync-v2" defer></script>
+    <script src="/product-editor.js?v=20261008-sync-v2" defer></script>
+    <script src="/catalog-admin.js?v=20261008-sync-v2" defer></script>
+</head>
+<body>
+    <header class="admin-header">
+        <a href="/" class="brand">MAK <span>المصرية للتجارة والتوزيع</span></a>
+        <nav aria-label="روابط الإدارة"><a href="/">عرض الموقع</a><a id="signout" href="/signout-with-chatgpt?return_to=%2F">تسجيل الخروج</a></nav>
+    </header>
+    <main>
+        <section class="page-heading">
+            <div><p class="eyebrow">متابعة العملاء</p><h1>طلبات عرض السعر</h1><p>كل طلب وصل من الموقع، من أول التواصل لحد التنفيذ.</p></div>
+            <div class="heading-actions"><button id="enable-notifications" type="button" class="secondary">تفعيل إشعارات المتصفح</button><button id="refresh" type="button">تحديث الطلبات</button></div>
+        </section>
+        <p id="page-status" role="status" aria-live="polite">جاري التحقق من الدخول…</p>
+        <section id="session-login" class="login-panel" hidden><h2>دخول الإدارة</h2><p>انتهت جلسة الدخول. سجّل الدخول لمتابعة طلبات العملاء.</p><a href="/admin/login">تسجيل الدخول</a></section>
+        <form id="local-login" class="login-panel" hidden>
+            <h2>دخول الإدارة</h2><p>النسخة المحلية تحتاج مفتاح الإدارة. على الموقع المنشور، الدخول بحساب ChatGPT المصرّح له.</p>
+            <label for="admin-key">مفتاح الإدارة المحلي</label><input id="admin-key" type="password" autocomplete="current-password" required>
+            <button type="submit">دخول</button>
+        </form>
+        <div id="dashboard" hidden>
+            <section class="service-panel" aria-labelledby="service-heading"><h2 id="service-heading">متابعة التنبيهات والحفظ</h2><p id="service-status" role="status" aria-live="polite">جاري التحقق…</p><p id="queue-status" class="contact-hint"></p></section>
+            <section id="new-alert" class="new-alert" aria-live="polite" hidden><strong id="new-alert-text"></strong><button id="show-new" class="secondary" type="button">عرض الطلبات الجديدة</button></section>
+            <p class="contact-hint">إجمالي الطلبات بكل التواريخ</p>
+            <section class="metrics" aria-label="ملخص الطلبات بكل التواريخ">
+                <button type="button" data-filter="" aria-pressed="true"><span>كل الطلبات</span><strong id="total-count">0</strong></button>
+                <button type="button" data-filter="new" aria-pressed="false"><span><i class="dot blue"></i>جديد</span><strong id="new-count">0</strong></button>
+                <button type="button" data-filter="contacted" aria-pressed="false"><span><i class="dot amber"></i>تم التواصل</span><strong id="contacted-count">0</strong></button>
+                <button type="button" data-filter="fulfilled" aria-pressed="false"><span><i class="dot green"></i>تم التنفيذ</span><strong id="fulfilled-count">0</strong></button>
+            </section>
+            <section class="email-panel" aria-labelledby="email-heading"><div><h2 id="email-heading">تنبيهات الإيميل</h2><p id="email-status">جاري التحقق من إعدادات الإرسال…</p><small>قبول خدمة البريد للرسالة لا يؤكد وصولها لصندوق الوارد.</small><p id="test-email-status" class="contact-hint" role="status" aria-live="polite"></p></div><div class="resilience-actions"><button id="test-email" class="secondary" type="button" disabled>إرسال رسالة اختبار</button><button id="retry-email" class="secondary" type="button" disabled>إعادة محاولة التنبيهات المتعثّرة</button></div></section>
+            <section class="backup-panel" aria-labelledby="backup-heading"><div class="backup-heading"><div><h2 id="backup-heading">النسخ الاحتياطي للطلبات</h2><p>نسخة خاصة بعد الطلبات الجديدة وتعديلات المتابعة، مع الاحتفاظ بآخر ٣٠ نسخة.</p></div><button id="create-backup" class="secondary" type="button">حفظ نسخة الآن</button></div><p id="backup-health" class="contact-hint" role="status">جاري التحقق من آخر نسخة…</p><div class="backup-controls"><label for="backup-version">النسخة المحفوظة<select id="backup-version"><option value="">لا توجد نسخ بعد</option></select></label><button id="download-backup" type="button" class="secondary" disabled>تنزيل النسخة</button><button id="preview-restore" type="button" class="secondary" disabled>استرجاع الطلبات المفقودة</button></div><p id="backup-action-status" class="contact-hint" role="status" aria-live="polite"></p><div id="restore-preview" class="restore-preview" hidden><p id="restore-description"></p><p class="contact-hint">الطلبات الموجودة وتعديلات المتابعة الحالية تُحفظ كما هي. الاسترجاع لا يرسل إيميلات للطلبات القديمة.</p><div class="resilience-actions"><button id="confirm-restore" type="button">تأكيد الاسترجاع</button><button id="cancel-restore" type="button" class="secondary">إلغاء</button></div></div></section>
+            <section class="orders-panel" aria-labelledby="orders-heading">
+                <div class="export-bar"><div><h3>احتفظ بنسخة من الطلبات</h3><p>ملف Excel بالعربي، ويشمل كل الطلبات المطابقة للبحث والحالة والفترة المختارة، بكل صفحاتها.</p></div><button id="export-orders" type="button" class="secondary">تصدير الطلبات لـ Excel</button></div>
+                <p id="export-status" class="contact-hint" role="status" aria-live="polite"></p>
+                <div class="toolbar"><h2 id="orders-heading">الطلبات</h2><label class="search"><span>بحث في الطلبات</span><input id="search" type="search" placeholder="اسم العميل، الموبايل، أو رقم الطلب" maxlength="160"></label><label class="filter"><span>الحالة</span><select id="status-filter"><option value="">كل الحالات</option><option value="new">جديد</option><option value="contacted">تم التواصل</option><option value="fulfilled">تم التنفيذ</option></select></label></div>
+                <div class="date-filters"><label><span>الفترة</span><select id="date-period"><option value="">كل التواريخ</option><option value="today">النهارده</option><option value="week">آخر ٧ أيام</option><option value="month">آخر ٣٠ يوم</option><option value="custom">فترة تختارها</option></select></label><label><span>من يوم</span><input id="date-from" type="date"></label><label><span>لحد يوم</span><input id="date-to" type="date"></label><button id="clear-filters" type="button" class="secondary">مسح الفلاتر</button></div>
+                <p class="contact-hint">التواريخ بتوقيت القاهرة، وتشمل يوم البداية والنهاية بالكامل.</p>
+                <div class="list-caption"><span id="result-count"></span><span id="last-update"></span></div>
+                <div id="order-list" class="order-list" aria-live="polite"></div>
+                <div class="pagination"><button id="previous" class="secondary" type="button" disabled>السابق</button><span id="page-number"></span><button id="next" class="secondary" type="button" disabled>التالي</button></div>
+            </section>
+            <section class="orders-panel products-panel" aria-labelledby="products-heading">
+                <div class="toolbar"><h2 id="products-heading">إدارة المنتجات والأسعار</h2><label class="search"><span>بحث في المنتجات</span><input id="product-search" type="search" placeholder="اسم المنتج أو المقاس"></label><button id="add-product" type="button">إضافة منتج</button></div>
+                <p id="products-status" class="contact-hint" role="status" aria-live="polite">جاري تحميل المنتجات…</p><p id="products-count" class="contact-hint"></p>
+                <div id="products-list" class="product-admin-list"></div>
+            </section>
+        </div>
+        <dialog id="order-dialog" aria-labelledby="dialog-title">
+            <div class="dialog-heading"><div><p class="eyebrow">تفاصيل الطلب</p><h2 id="dialog-title"></h2></div><button id="close-dialog" type="button" class="secondary">إغلاق</button></div>
+            <p id="dialog-code" class="order-code"></p><div id="customer-details" class="customer-details"></div>
+            <div class="contact-actions"><a id="contact-whatsapp" class="whatsapp-action" target="_blank" rel="noopener noreferrer" hidden>تواصل على واتساب</a><button id="copy-order" type="button" class="secondary">نسخ ملخص الطلب</button></div>
+            <p id="contact-hint" class="contact-hint" hidden>زر واتساب يظهر لأرقام الموبايل المصرية أو الأرقام الدولية المكتوبة مع كود البلد.</p>
+            <p id="copy-status" class="contact-hint" role="status" aria-live="polite"></p>
+            <h3>طلب العميل</h3><p id="order-message" class="message"></p>
+            <div id="order-items" class="message" hidden></div>
+            <form id="update-order"><label for="order-status">حالة الطلب</label><select id="order-status"><option value="new">جديد</option><option value="contacted">تم التواصل</option><option value="fulfilled">تم التنفيذ</option></select><label for="order-notes">ملاحظات المتابعة</label><textarea id="order-notes" rows="4" maxlength="4000" placeholder="مثال: تم تأكيد الكمية، في انتظار تحديد موعد التسليم"></textarea><p id="dialog-status" role="status" aria-live="polite"></p><button id="save-order" type="submit">حفظ المتابعة</button></form>
+            <section class="order-history" aria-labelledby="history-heading"><h3 id="history-heading">سجل المتابعة</h3><p id="history-status" class="contact-hint" role="status"></p><ol id="history-list"></ol><button id="history-more" type="button" class="secondary" hidden>عرض تعديلات أقدم</button></section>
+        </dialog>
+        <dialog id="product-dialog" aria-labelledby="product-dialog-title">
+            <div class="dialog-heading"><h2 id="product-dialog-title">إضافة منتج</h2><button id="close-product" type="button" class="secondary">إغلاق</button></div>
+            <form id="product-form">
+                <label>كود المنتج<input id="product-id" dir="ltr" maxlength="120" pattern="[a-z0-9][a-z0-9-]{0,119}" required></label>
+                <div class="product-form-grid"><label>التصنيف<select id="product-category"><option value="pipes">مواسير</option><option value="fittings">وصلات</option><option value="poly">بولي بروبلين</option></select></label><label>السعر بالجنيه<input id="product-price" type="number" min="0" max="9999999999.99" step="0.01" required></label></div>
+                <label>رابط الصورة<input id="product-image" dir="ltr" maxlength="1000" placeholder="/images/ppr.jpg أو https://…"></label>
+                <div class="product-form-grid">
+                    <label>اسم المنتج بالعربي<input id="product-ar-name" maxlength="200" required></label><label>اسم المنتج بالإنجليزي<input id="product-en-name" maxlength="200" dir="ltr" required></label>
+                    <label>المقاس بالعربي<input id="product-ar-size" maxlength="120"></label><label>المقاس بالإنجليزي<input id="product-en-size" maxlength="120" dir="ltr"></label>
+                    <label>المواصفة بالعربي<input id="product-ar-spec" maxlength="250"></label><label>المواصفة بالإنجليزي<input id="product-en-spec" maxlength="250" dir="ltr"></label>
+                    <label>الوحدة بالعربي<input id="product-ar-unit" maxlength="80"></label><label>الوحدة بالإنجليزي<input id="product-en-unit" maxlength="80" dir="ltr"></label>
+                    <label>اللون أو التشطيب بالعربي<input id="product-ar-finish" maxlength="120"></label><label>اللون أو التشطيب بالإنجليزي<input id="product-en-finish" maxlength="120" dir="ltr"></label>
+                    <label>الوصف بالعربي<textarea id="product-ar-description" maxlength="3000" rows="3"></textarea></label><label>الوصف بالإنجليزي<textarea id="product-en-description" maxlength="3000" rows="3" dir="ltr"></textarea></label>
+                </div>
+                <label class="availability-toggle"><input id="product-active" type="checkbox" checked> المنتج مفعّل ومتاح لاستقبال الطلبات</label>
+                <p id="product-save-status" class="contact-hint" role="status" aria-live="polite"></p>
+                <button id="reload-product" type="button" class="secondary" hidden>تحميل التعديل الأحدث</button>
+                <div class="resilience-actions"><button id="save-product" type="submit">حفظ المنتج</button><button id="delete-product" type="button" class="secondary danger" hidden>حذف المنتج</button></div>
+            </form>
+        </dialog>
+    </main>
+</body>
+</html>

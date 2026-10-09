@@ -1,0 +1,38 @@
+name: mak-django
+services:
+  web:
+    build: .
+    env_file: .env.production
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - mak_data:/var/lib/mak
+    healthcheck:
+      test: ["CMD", "python", "/app/deploy/healthcheck.py"]
+      interval: 30s
+      timeout: 15s
+      start_period: 30s
+      retries: 3
+    stop_grace_period: 45s
+  outbox:
+    build: .
+    env_file: .env.production
+    restart: unless-stopped
+    command: ["python", "manage.py", "run_outbox"]
+    environment:
+      MAK_SKIP_MIGRATIONS: "true"
+    volumes:
+      - mak_data:/var/lib/mak
+    depends_on:
+      web:
+        condition: service_healthy
+    stop_grace_period: 120s
+    healthcheck:
+      test: ["CMD", "python", "manage.py", "check_outbox"]
+      interval: 30s
+      timeout: 15s
+      start_period: 30s
+      retries: 3
+volumes:
+  mak_data:

@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>دخول الإدارة | MAK</title><link rel="stylesheet" href="/admin.css"></head>
+<body>
+<header class="admin-header"><a href="/" class="brand">MAK <span>المصرية للتجارة والتوزيع</span></a><a href="/">عرض الموقع</a></header>
+<main><section class="page-heading"><div><p class="eyebrow">إدارة الطلبات</p><h1>دخول الإدارة</h1><p>سجّل الدخول بحساب الإدارة لمتابعة الطلبات والتنبيهات.</p></div></section>
+<form class="login-panel" method="post">
+{% csrf_token %}
+{% for error in form.non_field_errors %}<p role="alert">{{ error }}</p>{% endfor %}
+{% for field in form %}<label for="{{ field.id_for_label }}">{{ field.label }}</label>{{ field }}{% for error in field.errors %}<p role="alert">{{ error }}</p>{% endfor %}{% endfor %}
+<input type="hidden" name="next" value="{{ next }}">
+<button type="submit">دخول لوحة الطلبات</button>
+</form></main>
+</body></html>

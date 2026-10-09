@@ -1,0 +1,2412 @@
+{
+  "updatedAt": "2026-09-04",
+  "currency": "EGP",
+  "products": [
+    {
+      "id": "gold-pipe-1-1-2-sdr-17-2-85",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 537,
+      "ar": {
+        "name": "ماسورة MAK الجولد 1 1/2",
+        "category": "مواسير",
+        "size": "1 1/2",
+        "spec": "SDR 17 - سمك 2.85",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 1 1/2 ومواصفة SDR 17 - سمك 2.85. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 1 1/2",
+        "category": "Pipes",
+        "size": "1 1/2",
+        "spec": "SDR 17 - 2.85 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 1 1/2 with SDR 17 - 2.85 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-1-1-2-sdr-21-2-26",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 423,
+      "ar": {
+        "name": "ماسورة MAK الجولد 1 1/2",
+        "category": "مواسير",
+        "size": "1 1/2",
+        "spec": "SDR 21 - سمك 2.26",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 1 1/2 ومواصفة SDR 21 - سمك 2.26. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 1 1/2",
+        "category": "Pipes",
+        "size": "1 1/2",
+        "spec": "SDR 21 - 2.26 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 1 1/2 with SDR 21 - 2.26 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-1-1-2-sdr-26-1-86",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 394,
+      "ar": {
+        "name": "ماسورة MAK الجولد 1 1/2",
+        "category": "مواسير",
+        "size": "1 1/2",
+        "spec": "SDR 26 - سمك 1.86",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 1 1/2 ومواصفة SDR 26 - سمك 1.86. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 1 1/2",
+        "category": "Pipes",
+        "size": "1 1/2",
+        "spec": "SDR 26 - 1.86 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 1 1/2 with SDR 26 - 1.86 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-2-sdr-17-3-56",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 775,
+      "ar": {
+        "name": "ماسورة MAK الجولد 2",
+        "category": "مواسير",
+        "size": "2",
+        "spec": "SDR 17 - سمك 3.56",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 2 ومواصفة SDR 17 - سمك 3.56. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 2",
+        "category": "Pipes",
+        "size": "2",
+        "spec": "SDR 17 - 3.56 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 2 with SDR 17 - 3.56 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-2-sdr-21-2-88",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 682,
+      "ar": {
+        "name": "ماسورة MAK الجولد 2",
+        "category": "مواسير",
+        "size": "2",
+        "spec": "SDR 21 - سمك 2.88",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 2 ومواصفة SDR 21 - سمك 2.88. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 2",
+        "category": "Pipes",
+        "size": "2",
+        "spec": "SDR 21 - 2.88 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 2 with SDR 21 - 2.88 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-2-sdr-26-2-32",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 585,
+      "ar": {
+        "name": "ماسورة MAK الجولد 2",
+        "category": "مواسير",
+        "size": "2",
+        "spec": "SDR 26 - سمك 2.32",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 2 ومواصفة SDR 26 - سمك 2.32. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 2",
+        "category": "Pipes",
+        "size": "2",
+        "spec": "SDR 26 - 2.32 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 2 with SDR 26 - 2.32 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-3-sdr-21-4-25",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 1415,
+      "ar": {
+        "name": "ماسورة MAK الجولد 3",
+        "category": "مواسير",
+        "size": "3",
+        "spec": "SDR 21 - سمك 4.25",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 3 ومواصفة SDR 21 - سمك 4.25. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 3",
+        "category": "Pipes",
+        "size": "3",
+        "spec": "SDR 21 - 4.25 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 3 with SDR 21 - 4.25 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-3-sdr-26-3-43",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 1037,
+      "ar": {
+        "name": "ماسورة MAK الجولد 3",
+        "category": "مواسير",
+        "size": "3",
+        "spec": "SDR 26 - سمك 3.43",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 3 ومواصفة SDR 26 - سمك 3.43. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 3",
+        "category": "Pipes",
+        "size": "3",
+        "spec": "SDR 26 - 3.43 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 3 with SDR 26 - 3.43 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-3-sdr-32-5-2-75",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 912,
+      "ar": {
+        "name": "ماسورة MAK الجولد 3",
+        "category": "مواسير",
+        "size": "3",
+        "spec": "SDR 32.5 - سمك 2.75",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 3 ومواصفة SDR 32.5 - سمك 2.75. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 3",
+        "category": "Pipes",
+        "size": "3",
+        "spec": "SDR 32.5 - 2.75 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 3 with SDR 32.5 - 2.75 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-4-2-5",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 1104,
+      "ar": {
+        "name": "ماسورة MAK الجولد 4",
+        "category": "مواسير",
+        "size": "4",
+        "spec": "قياسي - سمك 2.5",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 4 ومواصفة قياسي - سمك 2.5. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 4",
+        "category": "Pipes",
+        "size": "4",
+        "spec": "Standard - 2.5 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 4 with Standard - 2.5 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-4-sdr-41-2-8",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 1241,
+      "ar": {
+        "name": "ماسورة MAK الجولد 4",
+        "category": "مواسير",
+        "size": "4",
+        "spec": "SDR 41 - سمك 2.8",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 4 ومواصفة SDR 41 - سمك 2.8. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 4",
+        "category": "Pipes",
+        "size": "4",
+        "spec": "SDR 41 - 2.8 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 4 with SDR 41 - 2.8 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-4-sdr-32-5-3-5",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 1524,
+      "ar": {
+        "name": "ماسورة MAK الجولد 4",
+        "category": "مواسير",
+        "size": "4",
+        "spec": "SDR 32.5 - سمك 3.5",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 4 ومواصفة SDR 32.5 - سمك 3.5. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 4",
+        "category": "Pipes",
+        "size": "4",
+        "spec": "SDR 32.5 - 3.5 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 4 with SDR 32.5 - 3.5 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-4-4",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 1674,
+      "ar": {
+        "name": "ماسورة MAK الجولد 4",
+        "category": "مواسير",
+        "size": "4",
+        "spec": "قياسي - سمك 4",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 4 ومواصفة قياسي - سمك 4. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 4",
+        "category": "Pipes",
+        "size": "4",
+        "spec": "Standard - 4 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 4 with Standard - 4 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-4-5",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 1973,
+      "ar": {
+        "name": "ماسورة MAK الجولد 4",
+        "category": "مواسير",
+        "size": "4",
+        "spec": "قياسي - سمك 5",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 4 ومواصفة قياسي - سمك 5. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 4",
+        "category": "Pipes",
+        "size": "4",
+        "spec": "Standard - 5 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 4 with Standard - 5 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-6-3",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 1945,
+      "ar": {
+        "name": "ماسورة MAK الجولد 6",
+        "category": "مواسير",
+        "size": "6",
+        "spec": "قياسي - سمك 3",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 6 ومواصفة قياسي - سمك 3. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 6",
+        "category": "Pipes",
+        "size": "6",
+        "spec": "Standard - 3 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 6 with Standard - 3 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-6-sdr-41-4-12",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 2500,
+      "ar": {
+        "name": "ماسورة MAK الجولد 6",
+        "category": "مواسير",
+        "size": "6",
+        "spec": "SDR 41 - سمك 4.12",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 6 ومواصفة SDR 41 - سمك 4.12. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 6",
+        "category": "Pipes",
+        "size": "6",
+        "spec": "SDR 41 - 4.12 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 6 with SDR 41 - 4.12 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "gold-pipe-6-5",
+      "category": "pipes",
+      "image": "/images/ppr.jpg",
+      "price": 3127,
+      "ar": {
+        "name": "ماسورة MAK الجولد 6",
+        "category": "مواسير",
+        "size": "6",
+        "spec": "قياسي - سمك 5",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK الجولد بمقاس 6 ومواصفة قياسي - سمك 5. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Gold Pipe 6",
+        "category": "Pipes",
+        "size": "6",
+        "spec": "Standard - 5 thickness",
+        "unit": "pipe",
+        "description": "MAK Gold pipe in size 6 with Standard - 5 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-1-1-2-sdr-17-2-85",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 431,
+      "ar": {
+        "name": "ماسورة MAK B 1 1/2",
+        "category": "مواسير",
+        "size": "1 1/2",
+        "spec": "SDR 17 - سمك 2.85",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 1 1/2 ومواصفة SDR 17 - سمك 2.85. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 1 1/2",
+        "category": "Pipes",
+        "size": "1 1/2",
+        "spec": "SDR 17 - 2.85 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 1 1/2 with SDR 17 - 2.85 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-1-1-2-sdr-21-2-26",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 353,
+      "ar": {
+        "name": "ماسورة MAK B 1 1/2",
+        "category": "مواسير",
+        "size": "1 1/2",
+        "spec": "SDR 21 - سمك 2.26",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 1 1/2 ومواصفة SDR 21 - سمك 2.26. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 1 1/2",
+        "category": "Pipes",
+        "size": "1 1/2",
+        "spec": "SDR 21 - 2.26 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 1 1/2 with SDR 21 - 2.26 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-1-1-2-sdr-26-1-86",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 251,
+      "ar": {
+        "name": "ماسورة MAK B 1 1/2",
+        "category": "مواسير",
+        "size": "1 1/2",
+        "spec": "SDR 26 - سمك 1.86",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 1 1/2 ومواصفة SDR 26 - سمك 1.86. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 1 1/2",
+        "category": "Pipes",
+        "size": "1 1/2",
+        "spec": "SDR 26 - 1.86 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 1 1/2 with SDR 26 - 1.86 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-2-sdr-17-3-56",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 536,
+      "ar": {
+        "name": "ماسورة MAK B 2",
+        "category": "مواسير",
+        "size": "2",
+        "spec": "SDR 17 - سمك 3.56",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 2 ومواصفة SDR 17 - سمك 3.56. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 2",
+        "category": "Pipes",
+        "size": "2",
+        "spec": "SDR 17 - 3.56 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 2 with SDR 17 - 3.56 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-2-sdr-21-2-88",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 477,
+      "ar": {
+        "name": "ماسورة MAK B 2",
+        "category": "مواسير",
+        "size": "2",
+        "spec": "SDR 21 - سمك 2.88",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 2 ومواصفة SDR 21 - سمك 2.88. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 2",
+        "category": "Pipes",
+        "size": "2",
+        "spec": "SDR 21 - 2.88 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 2 with SDR 21 - 2.88 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-2-sdr-26-2-32",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 407,
+      "ar": {
+        "name": "ماسورة MAK B 2",
+        "category": "مواسير",
+        "size": "2",
+        "spec": "SDR 26 - سمك 2.32",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 2 ومواصفة SDR 26 - سمك 2.32. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 2",
+        "category": "Pipes",
+        "size": "2",
+        "spec": "SDR 26 - 2.32 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 2 with SDR 26 - 2.32 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-3-sdr-21-4-25",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 780,
+      "ar": {
+        "name": "ماسورة MAK B 3",
+        "category": "مواسير",
+        "size": "3",
+        "spec": "SDR 21 - سمك 4.25",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 3 ومواصفة SDR 21 - سمك 4.25. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 3",
+        "category": "Pipes",
+        "size": "3",
+        "spec": "SDR 21 - 4.25 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 3 with SDR 21 - 4.25 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-3-sdr-26-3-43",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 748,
+      "ar": {
+        "name": "ماسورة MAK B 3",
+        "category": "مواسير",
+        "size": "3",
+        "spec": "SDR 26 - سمك 3.43",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 3 ومواصفة SDR 26 - سمك 3.43. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 3",
+        "category": "Pipes",
+        "size": "3",
+        "spec": "SDR 26 - 3.43 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 3 with SDR 26 - 3.43 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-3-sdr-32-5-2-75",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 602,
+      "ar": {
+        "name": "ماسورة MAK B 3",
+        "category": "مواسير",
+        "size": "3",
+        "spec": "SDR 32.5 - سمك 2.75",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 3 ومواصفة SDR 32.5 - سمك 2.75. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 3",
+        "category": "Pipes",
+        "size": "3",
+        "spec": "SDR 32.5 - 2.75 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 3 with SDR 32.5 - 2.75 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-4-sdr-64-1-78",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 705,
+      "ar": {
+        "name": "ماسورة MAK B 4",
+        "category": "مواسير",
+        "size": "4",
+        "spec": "SDR 64 - سمك 1.78",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 4 ومواصفة SDR 64 - سمك 1.78. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 4",
+        "category": "Pipes",
+        "size": "4",
+        "spec": "SDR 64 - 1.78 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 4 with SDR 64 - 1.78 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-4-sdr-41-2-8",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 850,
+      "ar": {
+        "name": "ماسورة MAK B 4",
+        "category": "مواسير",
+        "size": "4",
+        "spec": "SDR 41 - سمك 2.8",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 4 ومواصفة SDR 41 - سمك 2.8. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 4",
+        "category": "Pipes",
+        "size": "4",
+        "spec": "SDR 41 - 2.8 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 4 with SDR 41 - 2.8 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-4-sdr-32-5-3-5",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 1081,
+      "ar": {
+        "name": "ماسورة MAK B 4",
+        "category": "مواسير",
+        "size": "4",
+        "spec": "SDR 32.5 - سمك 3.5",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 4 ومواصفة SDR 32.5 - سمك 3.5. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 4",
+        "category": "Pipes",
+        "size": "4",
+        "spec": "SDR 32.5 - 3.5 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 4 with SDR 32.5 - 3.5 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-4-4",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 1192,
+      "ar": {
+        "name": "ماسورة MAK B 4",
+        "category": "مواسير",
+        "size": "4",
+        "spec": "قياسي - سمك 4",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 4 ومواصفة قياسي - سمك 4. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 4",
+        "category": "Pipes",
+        "size": "4",
+        "spec": "Standard - 4 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 4 with Standard - 4 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-4-5",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 1350,
+      "ar": {
+        "name": "ماسورة MAK B 4",
+        "category": "مواسير",
+        "size": "4",
+        "spec": "قياسي - سمك 5",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 4 ومواصفة قياسي - سمك 5. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 4",
+        "category": "Pipes",
+        "size": "4",
+        "spec": "Standard - 5 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 4 with Standard - 5 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-6-3",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 1327,
+      "ar": {
+        "name": "ماسورة MAK B 6",
+        "category": "مواسير",
+        "size": "6",
+        "spec": "قياسي - سمك 3",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 6 ومواصفة قياسي - سمك 3. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 6",
+        "category": "Pipes",
+        "size": "6",
+        "spec": "Standard - 3 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 6 with Standard - 3 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-6-sdr-41-4-12",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 1580,
+      "ar": {
+        "name": "ماسورة MAK B 6",
+        "category": "مواسير",
+        "size": "6",
+        "spec": "SDR 41 - سمك 4.12",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 6 ومواصفة SDR 41 - سمك 4.12. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 6",
+        "category": "Pipes",
+        "size": "6",
+        "spec": "SDR 41 - 4.12 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 6 with SDR 41 - 4.12 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "b-pipe-6-5",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 1904,
+      "ar": {
+        "name": "ماسورة MAK B 6",
+        "category": "مواسير",
+        "size": "6",
+        "spec": "قياسي - سمك 5",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK B بمقاس 6 ومواصفة قياسي - سمك 5. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK B Pipe 6",
+        "category": "Pipes",
+        "size": "6",
+        "spec": "Standard - 5 thickness",
+        "unit": "pipe",
+        "description": "MAK B pipe in size 6 with Standard - 5 thickness. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "grey-pipe-3-4-sch-80-sch80",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 228,
+      "ar": {
+        "name": "ماسورة MAK رمادي 3/4",
+        "category": "مواسير رمادي",
+        "size": "3/4",
+        "spec": "SCH 80",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK رمادي بمقاس 3/4 ومواصفة SCH 80. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Grey Pipe 3/4",
+        "category": "Grey Pipes",
+        "size": "3/4",
+        "spec": "SCH 80",
+        "unit": "pipe",
+        "description": "MAK Grey pipe in size 3/4 with SCH 80. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "grey-pipe-1-sch-80-sch80",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 327,
+      "ar": {
+        "name": "ماسورة MAK رمادي 1",
+        "category": "مواسير رمادي",
+        "size": "1",
+        "spec": "SCH 80",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK رمادي بمقاس 1 ومواصفة SCH 80. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Grey Pipe 1",
+        "category": "Grey Pipes",
+        "size": "1",
+        "spec": "SCH 80",
+        "unit": "pipe",
+        "description": "MAK Grey pipe in size 1 with SCH 80. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "grey-pipe-3-4-b-s-b-s",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 175,
+      "ar": {
+        "name": "ماسورة MAK رمادي 3/4",
+        "category": "مواسير رمادي",
+        "size": "3/4",
+        "spec": "B.S",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK رمادي بمقاس 3/4 ومواصفة B.S. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Grey Pipe 3/4",
+        "category": "Grey Pipes",
+        "size": "3/4",
+        "spec": "B.S",
+        "unit": "pipe",
+        "description": "MAK Grey pipe in size 3/4 with B.S. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "grey-pipe-1-b-s-b-s",
+      "category": "pipes",
+      "image": "/images/pvc.jpg",
+      "price": 279,
+      "ar": {
+        "name": "ماسورة MAK رمادي 1",
+        "category": "مواسير رمادي",
+        "size": "1",
+        "spec": "B.S",
+        "unit": "ماسورة",
+        "description": "ماسورة MAK رمادي بمقاس 1 ومواصفة B.S. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "MAK Grey Pipe 1",
+        "category": "Grey Pipes",
+        "size": "1",
+        "spec": "B.S",
+        "unit": "pipe",
+        "description": "MAK Grey pipe in size 1 with B.S. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "pvc-elbow-90-2",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-90.jpeg",
+      "price": 32.22,
+      "ar": {
+        "name": "كوع 90 PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 90 من قطع PVC بمقاس 2 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC 90 Elbow 2\"",
+        "category": "PVC Fittings",
+        "size": "2\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "90 Elbow PVC fitting in 2\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-elbow-90-3",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-90.jpeg",
+      "price": 72.16,
+      "ar": {
+        "name": "كوع 90 PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 90 من قطع PVC بمقاس 3 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC 90 Elbow 3\"",
+        "category": "PVC Fittings",
+        "size": "3\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "90 Elbow PVC fitting in 3\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-elbow-90-4",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-90.jpeg",
+      "price": 117.77,
+      "ar": {
+        "name": "كوع 90 PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 90 من قطع PVC بمقاس 4 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC 90 Elbow 4\"",
+        "category": "PVC Fittings",
+        "size": "4\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "90 Elbow PVC fitting in 4\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-elbow-90-6",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-90.jpeg",
+      "price": 285,
+      "ar": {
+        "name": "كوع 90 PVC 6",
+        "category": "قطع ووصلات PVC",
+        "size": "6 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 90 من قطع PVC بمقاس 6 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC 90 Elbow 6\"",
+        "category": "PVC Fittings",
+        "size": "6\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "90 Elbow PVC fitting in 6\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-elbow-90-1-5",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-90.jpeg",
+      "price": 19.7,
+      "ar": {
+        "name": "كوع 90 PVC 1.5",
+        "category": "قطع ووصلات PVC",
+        "size": "1.5 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 90 من قطع PVC بمقاس 1.5 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC 90 Elbow 1.5\"",
+        "category": "PVC Fittings",
+        "size": "1.5\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "90 Elbow PVC fitting in 1.5\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-elbow-45-2",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-45.jpeg",
+      "price": 29.76,
+      "ar": {
+        "name": "كوع 45 PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 45 من قطع PVC بمقاس 2 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC 45 Elbow 2\"",
+        "category": "PVC Fittings",
+        "size": "2\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "45 Elbow PVC fitting in 2\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-elbow-45-3",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-45.jpeg",
+      "price": 66.13,
+      "ar": {
+        "name": "كوع 45 PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 45 من قطع PVC بمقاس 3 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC 45 Elbow 3\"",
+        "category": "PVC Fittings",
+        "size": "3\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "45 Elbow PVC fitting in 3\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-elbow-45-4",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-45.jpeg",
+      "price": 93.63,
+      "ar": {
+        "name": "كوع 45 PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 45 من قطع PVC بمقاس 4 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC 45 Elbow 4\"",
+        "category": "PVC Fittings",
+        "size": "4\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "45 Elbow PVC fitting in 4\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-elbow-45-6",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-45.jpeg",
+      "price": 256.79,
+      "ar": {
+        "name": "كوع 45 PVC 6",
+        "category": "قطع ووصلات PVC",
+        "size": "6 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 45 من قطع PVC بمقاس 6 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC 45 Elbow 6\"",
+        "category": "PVC Fittings",
+        "size": "6\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "45 Elbow PVC fitting in 6\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-elbow-45-1-5",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-45.jpeg",
+      "price": 18.75,
+      "ar": {
+        "name": "كوع 45 PVC 1.5",
+        "category": "قطع ووصلات PVC",
+        "size": "1.5 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 45 من قطع PVC بمقاس 1.5 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC 45 Elbow 1.5\"",
+        "category": "PVC Fittings",
+        "size": "1.5\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "45 Elbow PVC fitting in 1.5\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-access-elbow-2",
+      "category": "fittings",
+      "image": "/images/pvc-access-elbow.jpeg",
+      "price": 41.75,
+      "ar": {
+        "name": "كوع باب PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع باب من قطع PVC بمقاس 2 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Access Elbow 2\"",
+        "category": "PVC Fittings",
+        "size": "2\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Access Elbow PVC fitting in 2\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-access-elbow-3",
+      "category": "fittings",
+      "image": "/images/pvc-access-elbow.jpeg",
+      "price": 100.38,
+      "ar": {
+        "name": "كوع باب PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع باب من قطع PVC بمقاس 3 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Access Elbow 3\"",
+        "category": "PVC Fittings",
+        "size": "3\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Access Elbow PVC fitting in 3\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-access-elbow-4",
+      "category": "fittings",
+      "image": "/images/pvc-access-elbow.jpeg",
+      "price": 153.42,
+      "ar": {
+        "name": "كوع باب PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع باب من قطع PVC بمقاس 4 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Access Elbow 4\"",
+        "category": "PVC Fittings",
+        "size": "4\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Access Elbow PVC fitting in 4\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-access-elbow-6",
+      "category": "fittings",
+      "image": "/images/pvc-access-elbow.jpeg",
+      "price": 322,
+      "ar": {
+        "name": "كوع باب PVC 6",
+        "category": "قطع ووصلات PVC",
+        "size": "6 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع باب من قطع PVC بمقاس 6 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Access Elbow 6\"",
+        "category": "PVC Fittings",
+        "size": "6\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Access Elbow PVC fitting in 6\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-coupling-2",
+      "category": "fittings",
+      "image": "/images/pvc-coupling.jpeg",
+      "price": 20.57,
+      "ar": {
+        "name": "جلبة عادية PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "جلبة عادية من قطع PVC بمقاس 2 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Coupling 2\"",
+        "category": "PVC Fittings",
+        "size": "2\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Coupling PVC fitting in 2\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-coupling-3",
+      "category": "fittings",
+      "image": "/images/pvc-coupling.jpeg",
+      "price": 49.5,
+      "ar": {
+        "name": "جلبة عادية PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "جلبة عادية من قطع PVC بمقاس 3 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Coupling 3\"",
+        "category": "PVC Fittings",
+        "size": "3\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Coupling PVC fitting in 3\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-coupling-4",
+      "category": "fittings",
+      "image": "/images/pvc-coupling.jpeg",
+      "price": 64.62,
+      "ar": {
+        "name": "جلبة عادية PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "جلبة عادية من قطع PVC بمقاس 4 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Coupling 4\"",
+        "category": "PVC Fittings",
+        "size": "4\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Coupling PVC fitting in 4\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-coupling-6",
+      "category": "fittings",
+      "image": "/images/pvc-coupling.jpeg",
+      "price": 161.95,
+      "ar": {
+        "name": "جلبة عادية PVC 6",
+        "category": "قطع ووصلات PVC",
+        "size": "6 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "جلبة عادية من قطع PVC بمقاس 6 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Coupling 6\"",
+        "category": "PVC Fittings",
+        "size": "6\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Coupling PVC fitting in 6\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-coupling-1-5",
+      "category": "fittings",
+      "image": "/images/pvc-coupling.jpeg",
+      "price": 13.67,
+      "ar": {
+        "name": "جلبة عادية PVC 1.5",
+        "category": "قطع ووصلات PVC",
+        "size": "1.5 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "جلبة عادية من قطع PVC بمقاس 1.5 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Coupling 1.5\"",
+        "category": "PVC Fittings",
+        "size": "1.5\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Coupling PVC fitting in 1.5\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-super-tee-2",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 45.39,
+      "ar": {
+        "name": "مشترك عادة سوبر PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك عادة سوبر من قطع PVC بمقاس 2 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Super Tee 2\"",
+        "category": "PVC Fittings",
+        "size": "2\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Super Tee PVC fitting in 2\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-super-tee-3",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 105.38,
+      "ar": {
+        "name": "مشترك عادة سوبر PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك عادة سوبر من قطع PVC بمقاس 3 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Super Tee 3\"",
+        "category": "PVC Fittings",
+        "size": "3\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Super Tee PVC fitting in 3\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-super-tee-4",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 172.12,
+      "ar": {
+        "name": "مشترك عادة سوبر PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك عادة سوبر من قطع PVC بمقاس 4 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Super Tee 4\"",
+        "category": "PVC Fittings",
+        "size": "4\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Super Tee PVC fitting in 4\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-super-tee-6",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 417.35,
+      "ar": {
+        "name": "مشترك عادة سوبر PVC 6",
+        "category": "قطع ووصلات PVC",
+        "size": "6 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك عادة سوبر من قطع PVC بمقاس 6 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Super Tee 6\"",
+        "category": "PVC Fittings",
+        "size": "6\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Super Tee PVC fitting in 6\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-super-tee-1-5",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 26.81,
+      "ar": {
+        "name": "مشترك عادة سوبر PVC 1.5",
+        "category": "قطع ووصلات PVC",
+        "size": "1.5 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك عادة سوبر من قطع PVC بمقاس 1.5 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Super Tee 1.5\"",
+        "category": "PVC Fittings",
+        "size": "1.5\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Super Tee PVC fitting in 1.5\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-wye-tee-2",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 61.15,
+      "ar": {
+        "name": "مشترك واي PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك واي من قطع PVC بمقاس 2 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Wye Tee 2\"",
+        "category": "PVC Fittings",
+        "size": "2\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Wye Tee PVC fitting in 2\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-wye-tee-3",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 130.82,
+      "ar": {
+        "name": "مشترك واي PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك واي من قطع PVC بمقاس 3 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Wye Tee 3\"",
+        "category": "PVC Fittings",
+        "size": "3\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Wye Tee PVC fitting in 3\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-wye-tee-4",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 221.16,
+      "ar": {
+        "name": "مشترك واي PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك واي من قطع PVC بمقاس 4 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Wye Tee 4\"",
+        "category": "PVC Fittings",
+        "size": "4\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Wye Tee PVC fitting in 4\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-wye-tee-6",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 585,
+      "ar": {
+        "name": "مشترك واي PVC 6",
+        "category": "قطع ووصلات PVC",
+        "size": "6 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك واي من قطع PVC بمقاس 6 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Wye Tee 6\"",
+        "category": "PVC Fittings",
+        "size": "6\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Wye Tee PVC fitting in 6\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-wye-tee-1-5",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 40.24,
+      "ar": {
+        "name": "مشترك واي PVC 1.5",
+        "category": "قطع ووصلات PVC",
+        "size": "1.5 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك واي من قطع PVC بمقاس 1.5 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Wye Tee 1.5\"",
+        "category": "PVC Fittings",
+        "size": "1.5\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Wye Tee PVC fitting in 1.5\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-vent-2",
+      "category": "fittings",
+      "image": "/images/pvc-vent.jpeg",
+      "price": 19.7,
+      "ar": {
+        "name": "هواية PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "هواية من قطع PVC بمقاس 2 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Vent 2\"",
+        "category": "PVC Fittings",
+        "size": "2\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Vent PVC fitting in 2\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-vent-3",
+      "category": "fittings",
+      "image": "/images/pvc-vent.jpeg",
+      "price": 34.35,
+      "ar": {
+        "name": "هواية PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "هواية من قطع PVC بمقاس 3 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Vent 3\"",
+        "category": "PVC Fittings",
+        "size": "3\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Vent PVC fitting in 3\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-vent-4",
+      "category": "fittings",
+      "image": "/images/pvc-vent.jpeg",
+      "price": 42.28,
+      "ar": {
+        "name": "هواية PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "هواية من قطع PVC بمقاس 4 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC Vent 4\"",
+        "category": "PVC Fittings",
+        "size": "4\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "Vent PVC fitting in 4\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-cap-2",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 27.75,
+      "ar": {
+        "name": "طبة سد PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "طبة سد من قطع PVC بمقاس 2 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC End Cap 2\"",
+        "category": "PVC Fittings",
+        "size": "2\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "End Cap PVC fitting in 2\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-cap-3",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 44.44,
+      "ar": {
+        "name": "طبة سد PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "طبة سد من قطع PVC بمقاس 3 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC End Cap 3\"",
+        "category": "PVC Fittings",
+        "size": "3\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "End Cap PVC fitting in 3\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "pvc-cap-4",
+      "category": "fittings",
+      "image": "/images/value.jpg",
+      "price": 71.53,
+      "ar": {
+        "name": "طبة سد PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "طبة سد من قطع PVC بمقاس 4 بوصة. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PVC End Cap 4\"",
+        "category": "PVC Fittings",
+        "size": "4\"",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "End Cap PVC fitting in 4\" size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "fitting-reducer-2-1-5",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 16.35,
+      "ar": {
+        "name": "نقاص 2 / 1.5",
+        "category": "وصلات مسلوب",
+        "size": "2 / 1.5",
+        "spec": "وصلة صرف",
+        "unit": "قطعة",
+        "description": "نقاص 2 / 1.5 من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Reducer 2 / 1.5",
+        "category": "Reducing Fittings",
+        "size": "2 / 1.5",
+        "spec": "Drainage fitting",
+        "unit": "piece",
+        "description": "Reducer 2 / 1.5 drainage fitting. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "fitting-reducer-3-2",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 40.42,
+      "ar": {
+        "name": "نقاص 3 / 2",
+        "category": "وصلات مسلوب",
+        "size": "3 / 2",
+        "spec": "وصلة صرف",
+        "unit": "قطعة",
+        "description": "نقاص 3 / 2 من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Reducer 3 / 2",
+        "category": "Reducing Fittings",
+        "size": "3 / 2",
+        "spec": "Drainage fitting",
+        "unit": "piece",
+        "description": "Reducer 3 / 2 drainage fitting. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "fitting-reducer-4-2",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 64.45,
+      "ar": {
+        "name": "نقاص 4 / 2",
+        "category": "وصلات مسلوب",
+        "size": "4 / 2",
+        "spec": "وصلة صرف",
+        "unit": "قطعة",
+        "description": "نقاص 4 / 2 من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Reducer 4 / 2",
+        "category": "Reducing Fittings",
+        "size": "4 / 2",
+        "spec": "Drainage fitting",
+        "unit": "piece",
+        "description": "Reducer 4 / 2 drainage fitting. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "fitting-reducer-4-3",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 68.25,
+      "ar": {
+        "name": "نقاص 4 / 3",
+        "category": "وصلات مسلوب",
+        "size": "4 / 3",
+        "spec": "وصلة صرف",
+        "unit": "قطعة",
+        "description": "نقاص 4 / 3 من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Reducer 4 / 3",
+        "category": "Reducing Fittings",
+        "size": "4 / 3",
+        "spec": "Drainage fitting",
+        "unit": "piece",
+        "description": "Reducer 4 / 3 drainage fitting. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "fitting-tee-3-2-standard",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 108.86,
+      "ar": {
+        "name": "مشترك 3 / 2 عادة",
+        "category": "وصلات مسلوب",
+        "size": "3 / 2",
+        "spec": "وصلة صرف",
+        "unit": "قطعة",
+        "description": "مشترك 3 / 2 عادة من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Standard Tee 3 / 2",
+        "category": "Reducing Fittings",
+        "size": "3 / 2",
+        "spec": "Drainage fitting",
+        "unit": "piece",
+        "description": "Standard Tee 3 / 2 drainage fitting. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "fitting-tee-4-2-access",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 198.41,
+      "ar": {
+        "name": "مشترك 4 / 2 باب",
+        "category": "وصلات مسلوب",
+        "size": "4 / 2",
+        "spec": "وصلة صرف",
+        "unit": "قطعة",
+        "description": "مشترك 4 / 2 باب من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Access Tee 4 / 2",
+        "category": "Reducing Fittings",
+        "size": "4 / 2",
+        "spec": "Drainage fitting",
+        "unit": "piece",
+        "description": "Access Tee 4 / 2 drainage fitting. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "fitting-wye-4-2",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 204.23,
+      "ar": {
+        "name": "واي 4 / 2",
+        "category": "وصلات مسلوب",
+        "size": "4 / 2",
+        "spec": "وصلة صرف",
+        "unit": "قطعة",
+        "description": "واي 4 / 2 من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Wye 4 / 2",
+        "category": "Reducing Fittings",
+        "size": "4 / 2",
+        "spec": "Drainage fitting",
+        "unit": "piece",
+        "description": "Wye 4 / 2 drainage fitting. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "fitting-floor-drain-3-2",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 135.86,
+      "ar": {
+        "name": "بيبة 3 * 2",
+        "category": "وصلات مسلوب",
+        "size": "3 * 2",
+        "spec": "وصلة صرف",
+        "unit": "قطعة",
+        "description": "بيبة 3 * 2 من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Floor Drain 3 * 2",
+        "category": "Reducing Fittings",
+        "size": "3 * 2",
+        "spec": "Drainage fitting",
+        "unit": "piece",
+        "description": "Floor Drain 3 * 2 drainage fitting. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn20-green-20-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 134.67,
+      "ar": {
+        "name": "ماسورة بولي PN20 أخضر 20 مم",
+        "category": "مواسير بولي",
+        "size": "20 مم",
+        "spec": "PN20",
+        "finish": "أخضر",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي أخضر بمقاس 20 مم ومواصفة PN20. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN20 Green Pipe 20 mm",
+        "category": "PPR Pipes",
+        "size": "20 mm",
+        "spec": "PN20",
+        "finish": "Green",
+        "unit": "pipe",
+        "description": "Green PPR pipe in 20 mm size and PN20 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn20-green-25-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 213.07,
+      "ar": {
+        "name": "ماسورة بولي PN20 أخضر 25 مم",
+        "category": "مواسير بولي",
+        "size": "25 مم",
+        "spec": "PN20",
+        "finish": "أخضر",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي أخضر بمقاس 25 مم ومواصفة PN20. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN20 Green Pipe 25 mm",
+        "category": "PPR Pipes",
+        "size": "25 mm",
+        "spec": "PN20",
+        "finish": "Green",
+        "unit": "pipe",
+        "description": "Green PPR pipe in 25 mm size and PN20 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn20-insulated-25-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 306.17,
+      "ar": {
+        "name": "ماسورة بولي PN20 معزول 25 مم",
+        "category": "مواسير بولي",
+        "size": "25 مم",
+        "spec": "PN20",
+        "finish": "معزول",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي معزول بمقاس 25 مم ومواصفة PN20. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN20 Insulated Pipe 25 mm",
+        "category": "PPR Pipes",
+        "size": "25 mm",
+        "spec": "PN20",
+        "finish": "Insulated",
+        "unit": "pipe",
+        "description": "Insulated PPR pipe in 25 mm size and PN20 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn20-green-32-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 307.3,
+      "ar": {
+        "name": "ماسورة بولي PN20 أخضر 32 مم",
+        "category": "مواسير بولي",
+        "size": "32 مم",
+        "spec": "PN20",
+        "finish": "أخضر",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي أخضر بمقاس 32 مم ومواصفة PN20. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN20 Green Pipe 32 mm",
+        "category": "PPR Pipes",
+        "size": "32 mm",
+        "spec": "PN20",
+        "finish": "Green",
+        "unit": "pipe",
+        "description": "Green PPR pipe in 32 mm size and PN20 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn20-insulated-32-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 452.17,
+      "ar": {
+        "name": "ماسورة بولي PN20 معزول 32 مم",
+        "category": "مواسير بولي",
+        "size": "32 مم",
+        "spec": "PN20",
+        "finish": "معزول",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي معزول بمقاس 32 مم ومواصفة PN20. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN20 Insulated Pipe 32 mm",
+        "category": "PPR Pipes",
+        "size": "32 mm",
+        "spec": "PN20",
+        "finish": "Insulated",
+        "unit": "pipe",
+        "description": "Insulated PPR pipe in 32 mm size and PN20 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn20-green-50-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 717.24,
+      "ar": {
+        "name": "ماسورة بولي PN20 أخضر 50 مم",
+        "category": "مواسير بولي",
+        "size": "50 مم",
+        "spec": "PN20",
+        "finish": "أخضر",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي أخضر بمقاس 50 مم ومواصفة PN20. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN20 Green Pipe 50 mm",
+        "category": "PPR Pipes",
+        "size": "50 mm",
+        "spec": "PN20",
+        "finish": "Green",
+        "unit": "pipe",
+        "description": "Green PPR pipe in 50 mm size and PN20 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn20-insulated-50-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 1118.22,
+      "ar": {
+        "name": "ماسورة بولي PN20 معزول 50 مم",
+        "category": "مواسير بولي",
+        "size": "50 مم",
+        "spec": "PN20",
+        "finish": "معزول",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي معزول بمقاس 50 مم ومواصفة PN20. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN20 Insulated Pipe 50 mm",
+        "category": "PPR Pipes",
+        "size": "50 mm",
+        "spec": "PN20",
+        "finish": "Insulated",
+        "unit": "pipe",
+        "description": "Insulated PPR pipe in 50 mm size and PN20 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn20-green-63-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 1124.21,
+      "ar": {
+        "name": "ماسورة بولي PN20 أخضر 63 مم",
+        "category": "مواسير بولي",
+        "size": "63 مم",
+        "spec": "PN20",
+        "finish": "أخضر",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي أخضر بمقاس 63 مم ومواصفة PN20. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN20 Green Pipe 63 mm",
+        "category": "PPR Pipes",
+        "size": "63 mm",
+        "spec": "PN20",
+        "finish": "Green",
+        "unit": "pipe",
+        "description": "Green PPR pipe in 63 mm size and PN20 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn20-insulated-63-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 1513.45,
+      "ar": {
+        "name": "ماسورة بولي PN20 معزول 63 مم",
+        "category": "مواسير بولي",
+        "size": "63 مم",
+        "spec": "PN20",
+        "finish": "معزول",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي معزول بمقاس 63 مم ومواصفة PN20. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN20 Insulated Pipe 63 mm",
+        "category": "PPR Pipes",
+        "size": "63 mm",
+        "spec": "PN20",
+        "finish": "Insulated",
+        "unit": "pipe",
+        "description": "Insulated PPR pipe in 63 mm size and PN20 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn16-green-32-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 272.2,
+      "ar": {
+        "name": "ماسورة بولي PN16 أخضر 32 مم",
+        "category": "مواسير بولي",
+        "size": "32 مم",
+        "spec": "PN16",
+        "finish": "أخضر",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي أخضر بمقاس 32 مم ومواصفة PN16. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN16 Green Pipe 32 mm",
+        "category": "PPR Pipes",
+        "size": "32 mm",
+        "spec": "PN16",
+        "finish": "Green",
+        "unit": "pipe",
+        "description": "Green PPR pipe in 32 mm size and PN16 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn16-insulated-32-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 398,
+      "ar": {
+        "name": "ماسورة بولي PN16 معزول 32 مم",
+        "category": "مواسير بولي",
+        "size": "32 مم",
+        "spec": "PN16",
+        "finish": "معزول",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي معزول بمقاس 32 مم ومواصفة PN16. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN16 Insulated Pipe 32 mm",
+        "category": "PPR Pipes",
+        "size": "32 mm",
+        "spec": "PN16",
+        "finish": "Insulated",
+        "unit": "pipe",
+        "description": "Insulated PPR pipe in 32 mm size and PN16 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn10-green-50-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 573.53,
+      "ar": {
+        "name": "ماسورة بولي PN10 أخضر 50 مم",
+        "category": "مواسير بولي",
+        "size": "50 مم",
+        "spec": "PN10",
+        "finish": "أخضر",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي أخضر بمقاس 50 مم ومواصفة PN10. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN10 Green Pipe 50 mm",
+        "category": "PPR Pipes",
+        "size": "50 mm",
+        "spec": "PN10",
+        "finish": "Green",
+        "unit": "pipe",
+        "description": "Green PPR pipe in 50 mm size and PN10 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-pn10-insulated-50-mm",
+      "category": "poly",
+      "image": "/images/ppr.jpg",
+      "price": 741.49,
+      "ar": {
+        "name": "ماسورة بولي PN10 معزول 50 مم",
+        "category": "مواسير بولي",
+        "size": "50 مم",
+        "spec": "PN10",
+        "finish": "معزول",
+        "unit": "ماسورة",
+        "description": "ماسورة بولي معزول بمقاس 50 مم ومواصفة PN10. السعر للماسورة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "PPR PN10 Insulated Pipe 50 mm",
+        "category": "PPR Pipes",
+        "size": "50 mm",
+        "spec": "PN10",
+        "finish": "Insulated",
+        "unit": "pipe",
+        "description": "Insulated PPR pipe in 50 mm size and PN10 rating. Price is per pipe according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-weld-coupling-green-25-mm",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 13.38,
+      "ar": {
+        "name": "جلبة لحام أخضر 25 مم",
+        "category": "قطع لحام بولي",
+        "size": "25 مم",
+        "spec": "لحام بولي",
+        "finish": "أخضر",
+        "unit": "قطعة",
+        "description": "جلبة لحام أخضر بمقاس 25 مم. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Green PPR Weld Coupling 25 mm",
+        "category": "PPR Welding Fittings",
+        "size": "25 mm",
+        "spec": "PPR weld fitting",
+        "finish": "Green",
+        "unit": "piece",
+        "description": "Green PPR Weld Coupling in 25 mm size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-weld-coupling-insulated-25-mm",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 15.02,
+      "ar": {
+        "name": "جلبة لحام معزول 25 مم",
+        "category": "قطع لحام بولي",
+        "size": "25 مم",
+        "spec": "لحام بولي",
+        "finish": "معزول",
+        "unit": "قطعة",
+        "description": "جلبة لحام معزول بمقاس 25 مم. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Insulated PPR Weld Coupling 25 mm",
+        "category": "PPR Welding Fittings",
+        "size": "25 mm",
+        "spec": "PPR weld fitting",
+        "finish": "Insulated",
+        "unit": "piece",
+        "description": "Insulated PPR Weld Coupling in 25 mm size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-reducing-coupling-green-25-32",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 24.92,
+      "ar": {
+        "name": "جلبة مسلوب أخضر 25*32",
+        "category": "قطع لحام بولي",
+        "size": "25*32",
+        "spec": "لحام بولي",
+        "finish": "أخضر",
+        "unit": "قطعة",
+        "description": "جلبة مسلوب أخضر بمقاس 25*32. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Green PPR Reducing Coupling 25*32",
+        "category": "PPR Welding Fittings",
+        "size": "25*32",
+        "spec": "PPR weld fitting",
+        "finish": "Green",
+        "unit": "piece",
+        "description": "Green PPR Reducing Coupling in 25*32 size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-reducing-coupling-insulated-25-32",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 28.65,
+      "ar": {
+        "name": "جلبة مسلوب معزول 25*32",
+        "category": "قطع لحام بولي",
+        "size": "25*32",
+        "spec": "لحام بولي",
+        "finish": "معزول",
+        "unit": "قطعة",
+        "description": "جلبة مسلوب معزول بمقاس 25*32. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Insulated PPR Reducing Coupling 25*32",
+        "category": "PPR Welding Fittings",
+        "size": "25*32",
+        "spec": "PPR weld fitting",
+        "finish": "Insulated",
+        "unit": "piece",
+        "description": "Insulated PPR Reducing Coupling in 25*32 size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-elbow-90-green-32-mm",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 31.85,
+      "ar": {
+        "name": "كوع 90 أخضر 32 مم",
+        "category": "قطع لحام بولي",
+        "size": "32 مم",
+        "spec": "لحام بولي",
+        "finish": "أخضر",
+        "unit": "قطعة",
+        "description": "كوع 90 أخضر بمقاس 32 مم. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Green PPR 90 Elbow 32 mm",
+        "category": "PPR Welding Fittings",
+        "size": "32 mm",
+        "spec": "PPR weld fitting",
+        "finish": "Green",
+        "unit": "piece",
+        "description": "Green PPR 90 Elbow in 32 mm size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-elbow-90-insulated-32-mm",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 39.82,
+      "ar": {
+        "name": "كوع 90 معزول 32 مم",
+        "category": "قطع لحام بولي",
+        "size": "32 مم",
+        "spec": "لحام بولي",
+        "finish": "معزول",
+        "unit": "قطعة",
+        "description": "كوع 90 معزول بمقاس 32 مم. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Insulated PPR 90 Elbow 32 mm",
+        "category": "PPR Welding Fittings",
+        "size": "32 mm",
+        "spec": "PPR weld fitting",
+        "finish": "Insulated",
+        "unit": "piece",
+        "description": "Insulated PPR 90 Elbow in 32 mm size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-weld-tee-green-32-mm",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 42.39,
+      "ar": {
+        "name": "تي لحام أخضر 32 مم",
+        "category": "قطع لحام بولي",
+        "size": "32 مم",
+        "spec": "لحام بولي",
+        "finish": "أخضر",
+        "unit": "قطعة",
+        "description": "تي لحام أخضر بمقاس 32 مم. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Green PPR Weld Tee 32 mm",
+        "category": "PPR Welding Fittings",
+        "size": "32 mm",
+        "spec": "PPR weld fitting",
+        "finish": "Green",
+        "unit": "piece",
+        "description": "Green PPR Weld Tee in 32 mm size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-weld-tee-insulated-32-mm",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 47.1,
+      "ar": {
+        "name": "تي لحام معزول 32 مم",
+        "category": "قطع لحام بولي",
+        "size": "32 مم",
+        "spec": "لحام بولي",
+        "finish": "معزول",
+        "unit": "قطعة",
+        "description": "تي لحام معزول بمقاس 32 مم. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Insulated PPR Weld Tee 32 mm",
+        "category": "PPR Welding Fittings",
+        "size": "32 mm",
+        "spec": "PPR weld fitting",
+        "finish": "Insulated",
+        "unit": "piece",
+        "description": "Insulated PPR Weld Tee in 32 mm size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-reducing-tee-green-63-32",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 176.11,
+      "ar": {
+        "name": "تي مسلوب أخضر 63*32",
+        "category": "قطع لحام بولي",
+        "size": "63*32",
+        "spec": "لحام بولي",
+        "finish": "أخضر",
+        "unit": "قطعة",
+        "description": "تي مسلوب أخضر بمقاس 63*32. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Green PPR Reducing Tee 63*32",
+        "category": "PPR Welding Fittings",
+        "size": "63*32",
+        "spec": "PPR weld fitting",
+        "finish": "Green",
+        "unit": "piece",
+        "description": "Green PPR Reducing Tee in 63*32 size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-reducing-tee-insulated-63-32",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 200.12,
+      "ar": {
+        "name": "تي مسلوب معزول 63*32",
+        "category": "قطع لحام بولي",
+        "size": "63*32",
+        "spec": "لحام بولي",
+        "finish": "معزول",
+        "unit": "قطعة",
+        "description": "تي مسلوب معزول بمقاس 63*32. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Insulated PPR Reducing Tee 63*32",
+        "category": "PPR Welding Fittings",
+        "size": "63*32",
+        "spec": "PPR weld fitting",
+        "finish": "Insulated",
+        "unit": "piece",
+        "description": "Insulated PPR Reducing Tee in 63*32 size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-concealed-valve-green-25-mm",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 590.53,
+      "ar": {
+        "name": "محبس دفن أخضر 25 مم",
+        "category": "قطع لحام بولي",
+        "size": "25 مم",
+        "spec": "لحام بولي",
+        "finish": "أخضر",
+        "unit": "قطعة",
+        "description": "محبس دفن أخضر بمقاس 25 مم. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Green PPR Concealed Valve 25 mm",
+        "category": "PPR Welding Fittings",
+        "size": "25 mm",
+        "spec": "PPR weld fitting",
+        "finish": "Green",
+        "unit": "piece",
+        "description": "Green PPR Concealed Valve in 25 mm size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-female-union-green-32-mm",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 180,
+      "ar": {
+        "name": "لاكور داخلي أخضر 32 مم",
+        "category": "قطع لحام بولي",
+        "size": "32 مم",
+        "spec": "لحام بولي",
+        "finish": "أخضر",
+        "unit": "قطعة",
+        "description": "لاكور داخلي أخضر بمقاس 32 مم. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Green PPR Female Union 32 mm",
+        "category": "PPR Welding Fittings",
+        "size": "32 mm",
+        "spec": "PPR weld fitting",
+        "finish": "Green",
+        "unit": "piece",
+        "description": "Green PPR Female Union in 32 mm size. Price is per piece according to the list."
+      }
+    },
+    {
+      "id": "ppr-fitting-female-union-insulated-32-mm",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 210,
+      "ar": {
+        "name": "لاكور داخلي معزول 32 مم",
+        "category": "قطع لحام بولي",
+        "size": "32 مم",
+        "spec": "لحام بولي",
+        "finish": "معزول",
+        "unit": "قطعة",
+        "description": "لاكور داخلي معزول بمقاس 32 مم. السعر للقطعة الواحدة حسب الليستة."
+      },
+      "en": {
+        "name": "Insulated PPR Female Union 32 mm",
+        "category": "PPR Welding Fittings",
+        "size": "32 mm",
+        "spec": "PPR weld fitting",
+        "finish": "Insulated",
+        "unit": "piece",
+        "description": "Insulated PPR Female Union in 32 mm size. Price is per piece according to the list."
+      }
+    }
+  ]
+}
