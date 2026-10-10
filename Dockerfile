@@ -10,7 +10,7 @@ COPY mak_backend ./mak_backend
 COPY manage.py ./
 COPY .openai/drizzle ./.openai/drizzle
 COPY data/catalog.json ./data/catalog.json
-COPY index.html products.html product.html pricing.html style.css script.js admin.html admin.css admin.js ./
+COPY index.html products.html product.html pricing.html style.css script.js admin.html admin.css admin.js catalog-admin.js catalog-frontend.js product-editor.js product-editor.css ./
 COPY images ./images
 COPY vendor ./vendor
 COPY deploy ./deploy

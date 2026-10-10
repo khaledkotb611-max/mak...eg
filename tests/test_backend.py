@@ -1,5 +1,6 @@
 import json
 import os
+import sqlite3
 import tempfile
 import unittest
 import uuid
@@ -28,6 +29,20 @@ class BackendTests(unittest.TestCase):
 
     def post(self, body=None, **headers):
         return self.client.post("/api/quotes", json.dumps(self.body if body is None else body), content_type="application/json", **headers)
+
+    def test_quote_relations_require_existing_quotes(self):
+        with closing(storage.connect()) as db:
+            self.assertEqual(db.execute("PRAGMA foreign_keys").fetchone()[0], 1)
+            with self.assertRaises(sqlite3.IntegrityError):
+                db.execute(
+                    "INSERT INTO quote_items VALUES (?, ?, ?, ?, ?, ?, ?)",
+                    ("missing-quote", "product", 1, 10, "Product", "Product", 0),
+                )
+            with self.assertRaises(sqlite3.IntegrityError):
+                db.execute(
+                    "INSERT INTO quote_admin (quote_id, updated_at) VALUES (?, ?)",
+                    ("missing-quote", "2026-10-10T00:00:00Z"),
+                )
 
     def test_private_files_blocked(self):
         for path in ("/data/quotes.jsonl", "/data/quotes.sqlite3", "/data/catalog.json", "/mak_backend/settings.py", "/.env", "/.openai/hosting.json", "/index.html.bak", "/BACKEND.md", "/db/schema.ts", "/unknown-route"):

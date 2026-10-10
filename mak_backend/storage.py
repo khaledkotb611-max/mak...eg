@@ -18,6 +18,7 @@ RETURNING attempts"""
 def connect():
     settings.DATA_DIR.mkdir(parents=True, exist_ok=True)
     db = sqlite3.connect(settings.QUOTES_DB_PATH, timeout=10)
+    db.execute("PRAGMA foreign_keys = ON")
     os.chmod(settings.QUOTES_DB_PATH, 0o600)
     db.row_factory = sqlite3.Row
     migrations = [("schema:" + path.name, path) for path in sorted((settings.BASE_DIR / ".openai/drizzle").glob("*.sql"))]
