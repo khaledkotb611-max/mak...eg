@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: 24
 
+      - name: Build JavaScript site
+        run: npm run build
+
       - name: Run JavaScript tests
         run: npm run test:worker
 
