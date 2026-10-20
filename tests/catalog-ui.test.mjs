@@ -7,7 +7,12 @@ import {D1} from './d1-helper.mjs';
 import {syncPlan} from '../scripts/sync-catalog.mjs';
 
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
-const settle=async()=>{for(let i=0;i<8;i++)await tick();};
+const settle=async(app)=>{
+    for(let i=0;i<8;i++){
+        await tick();
+        if(app)for(const [id,timer] of app.timers)if(timer.delay===0){app.timers.delete(id);await timer.callback();}
+    }
+};
 const seed=JSON.parse(readFileSync('data/catalog.json','utf8'));
 const adminHeaders={'oai-authenticated-user-id':'owner','oai-authenticated-user-email':'owner@example.com'};
 function dom() {
@@ -33,7 +38,7 @@ test('admin form CRUD reaches the real Worker database; public polling reflects 
     assert.equal(env.DB.sqlite.prepare('SELECT price FROM products WHERE id=?').get('ui-added-product').price,23.45);
     assert.ok(dashboard.element('products-list').innerHTML.includes('منتج من اللوحة'));
     frontend.document.hidden=true;frontend.listeners.get('visibilitychange')();assert.equal(frontend.timers.size,0);
-    frontend.document.hidden=false;frontend.listeners.get('visibilitychange')();await settle();
+    frontend.document.hidden=false;frontend.listeners.get('visibilitychange')();await settle(frontend);
     assert.ok(frontend.element('catalog-grid').innerHTML.includes('منتج من اللوحة'));
     dashboard.element('product-price').value='31.25';await dashboard.element('product-form').events.submit({preventDefault(){}});await settle();
     const poll=[...frontend.timers.values()].find(timer=>timer.delay===30000);assert.ok(poll);await poll.callback();await settle();
@@ -84,7 +89,7 @@ async function dashboardApp(env) {
 }
 async function poll(app,delay) {
     const entry=[...app.timers.entries()].find(([,timer])=>timer.delay===delay);assert.ok(entry,`Missing ${delay}ms poll`);
-    app.timers.delete(entry[0]);await entry[1].callback();await settle();
+    app.timers.delete(entry[0]);await entry[1].callback();await settle(app);
 }
 const fill=(app,id,name,price)=>{
     app.element('product-id').value=id;app.element('product-price').value=String(price);
@@ -92,7 +97,7 @@ const fill=(app,id,name,price)=>{
     app.element('product-ar-size').value='٤ بوصة';app.element('product-en-size').value='4 inch';
     app.element('product-ar-finish').value='أخضر';app.element('product-en-finish').value='Green';app.element('product-image').value='/images/ppr.jpg';
 };
-const submit=async app=>{await app.element('product-form').events.submit({preventDefault(){}});await settle();};
+const submit=async app=>{await app.element('product-form').events.submit({preventDefault(){}});await settle(app);};
 async function editPublic(app,id) {
     app.listeners.get('click')({target:{closest(selector){return selector==='[data-manage-product]'?{dataset:{manageProduct:id}}:null;}},preventDefault(){}});await settle();
     assert.equal(app.element('product-dialog').open,true);
