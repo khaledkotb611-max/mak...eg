@@ -15,7 +15,7 @@ function dom() {
     const classes={add(){},remove(){},toggle(){},contains(){return false;}};
     const element=id=>{if(!elements.has(id))elements.set(id,{id,value:'',checked:true,innerHTML:'',textContent:'',hidden:false,disabled:false,events:{},dataset:{},classList:classes,addEventListener(name,handler){this.events[name]=handler;},querySelectorAll(){return [];},reportValidity(){return true;},replaceChildren(){this.innerHTML='';},append(){},setAttribute(){},removeAttribute(){},close(){this.open=false;this.events.close?.();},showModal(){this.open=true;}});return elements.get(id);};
     const document={hidden:false,title:'',body:{classList:classes,append(node){appended.push(node);}},documentElement:{classList:classes,setAttribute(){},getAttribute(){return 'light';}},getElementById:element,querySelectorAll:()=>[],querySelector:()=>null,createElement:()=>element('new'),importNode:node=>element(node.id),addEventListener(name,callback){const previous=listeners.get(name);listeners.set(name,previous?(...args)=>{previous(...args);callback(...args);}:callback);}};
-    const context={document,window:{addEventListener(){},confirm:()=>true,matchMedia:()=>({matches:false}),location:{pathname:'/',search:''},focus(){}},DOMParser:class {parseFromString(html){assert.ok(html.includes('id="product-dialog"'));return {getElementById:id=>({id})};}},AbortController,AbortSignal,URLSearchParams,crypto,Intl,Date,setTimeout(callback,delay){timers.set(++timerId,{callback,delay});return timerId;},clearTimeout(id){timers.delete(id);},requestAnimationFrame:()=>1,localStorage:{getItem:()=>null,setItem(){}}};
+    const context={document,window:{addEventListener(){},confirm:()=>true,matchMedia:()=>({matches:false}),location:{hostname:'mak.example',href:'https://mak.example/',pathname:'/',search:''},focus(){}},DOMParser:class {parseFromString(html){assert.ok(html.includes('id="product-dialog"'));return {getElementById:id=>({id})};}},AbortController,AbortSignal,URL,URLSearchParams,crypto,Intl,Date,setTimeout(callback,delay){timers.set(++timerId,{callback,delay});return timerId;},clearTimeout(id){timers.delete(id);},requestAnimationFrame:()=>1,localStorage:{getItem:()=>null,setItem(){}}};
     return {context,element,elements,timers,listeners,document,appended};
 }
 
@@ -49,6 +49,15 @@ test('admin form CRUD reaches the real Worker database; public polling reflects 
     await dashboard.element('delete-product').events.click();await settle();assert.ok(!dashboard.element('products-list').innerHTML.includes('منتج من اللوحة'));
     assert.ok(env.DB.sqlite.prepare('SELECT deleted_at FROM products WHERE id=?').get('ui-added-product').deleted_at);
     assert.ok(requests.every(request=>!request.path.includes('catalog.json')));
+});
+
+test('GitHub Pages falls back to the static catalog and links to static product pages',async()=>{
+    const app=dom();app.context.window.location.hostname='khaledkotb611-max.github.io';app.context.window.location.href='https://khaledkotb611-max.github.io/makc-company/';
+    const requests=[];app.context.fetch=async(path)=>{requests.push(path);if(path==='/api/products')throw new TypeError('API unavailable');assert.equal(path,'https://khaledkotb611-max.github.io/makc-company/data/catalog.json');return {ok:true,json:async()=>seed};};
+    vm.createContext(app.context);vm.runInContext(readFileSync('script.js','utf8'),app.context);app.listeners.get('DOMContentLoaded')();await settle();
+    const product=seed.products[0];const grid=app.element('catalog-grid').innerHTML;
+    assert.ok(grid.includes(product.ar.name));assert.ok(grid.includes('product.html?id='+encodeURIComponent(product.id)));assert.equal(requests.length,2);
+    assert.equal(app.element('catalog-sync-status').textContent,'');
 });
 
 test('directional catalog synchronization reuses CRUD APIs, compares real content and makes deletion opt-in',()=>{

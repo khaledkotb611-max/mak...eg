@@ -351,7 +351,10 @@ const formatPrice = (value, language = currentLanguage) => {
     }).format(value);
 };
 
-const productHref = (product) => `/product/${encodeURIComponent(product.id)}`;
+const isGitHubPages = () => window.location.hostname?.endsWith(".github.io") === true;
+const productHref = (product) => isGitHubPages()
+    ? `product.html?id=${encodeURIComponent(product.id)}`
+    : `/product/${encodeURIComponent(product.id)}`;
 
 const productQuote = (product, language = currentLanguage) => {
     const local = product[language];
@@ -974,10 +977,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const timeout=setTimeout(()=>controller.abort(),15000);
         if(!catalogLoaded){catalogState='loading';renderCatalog();renderProductDetail();}
         try {
-            const response = await fetch("/api/products", { cache:'no-store',headers:catalogEtag?{'If-None-Match':catalogEtag}:{},signal:controller.signal });
-            if(response.status===304 && catalogLoaded){catalogManager?.onCatalog(products);catalogFailures=0;const status=document.getElementById('catalog-sync-status');if(status)status.textContent='';return;}
-            if (!response.ok) throw new Error("Catalog unavailable");
-            const catalog = await response.json();
+            let catalog;
+            let response;
+            try {
+                response = await fetch("/api/products", { cache:'no-store',headers:catalogEtag?{'If-None-Match':catalogEtag}:{},signal:controller.signal });
+                if(response.status===304 && catalogLoaded){catalogManager?.onCatalog(products);catalogFailures=0;const status=document.getElementById('catalog-sync-status');if(status)status.textContent='';return;}
+                if (!response.ok) throw new Error("Catalog unavailable");
+                catalog = await response.json();
+            } catch(error) {
+                if(!isGitHubPages())throw error;
+                const catalogUrl = new URL("data/catalog.json",window.location.href).href;
+                response = await fetch(catalogUrl, { cache:'no-store', signal:controller.signal });
+                if (!response.ok) throw new Error("Static catalog unavailable");
+                catalog = await response.json();
+            }
             if (!Array.isArray(catalog.products) || catalog.currency !== "EGP") throw new Error("Invalid catalog");
             const ids = new Set();
             catalog.products.forEach((product) => {
