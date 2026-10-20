@@ -7,7 +7,7 @@ import {D1} from './d1-helper.mjs';
 import {syncPlan} from '../scripts/sync-catalog.mjs';
 
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
-const settle=async()=>{for(let i=0;i<8;i++)await tick();};
+const settle=async()=>{for(let i=0;i<50;i++)await tick();};
 const seed=JSON.parse(readFileSync('data/catalog.json','utf8'));
 const adminHeaders={'oai-authenticated-user-id':'owner','oai-authenticated-user-email':'owner@example.com'};
 function dom() {
