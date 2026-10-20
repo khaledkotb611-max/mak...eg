@@ -2,6 +2,12 @@
 
 This deployment runs the existing catalog and order dashboard on Django. The current Sites deployment still runs its Worker/D1/R2 backend and ChatGPT administrator sign-in. These are separate databases; moving live orders requires an explicit export/import and DNS cutover after the destination server is selected.
 
+## Public catalog on GitHub Pages
+
+After enabling Pages with **Settings → Pages → Build and deployment → GitHub Actions**, the `Deploy GitHub Pages` workflow publishes a read-only catalog at `https://<owner>.github.io/<repository>/` whenever `main` is updated, or when manually run from the Actions tab. It includes the products and EGP prices from `data/catalog.json`.
+
+GitHub Pages does not run this project's API or database. Product administration and server-backed quote submission therefore require the Worker or Django deployment described here; the Pages site is for browsing the static catalog.
+
 ## Prepare the server
 
 Use a Linux server with Docker Compose, Nginx, an owned domain pointing to it, and a valid TLS certificate. Copy `.env.production.example` to a private `.env.production`, then set:

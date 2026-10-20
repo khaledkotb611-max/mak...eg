@@ -80,6 +80,44 @@ await Promise.all([
     ...imageAssets.map(optimizeImage)
 ]);
 
+const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
+if (repositoryName) {
+    const pages = join(dist, "pages");
+    const pagesBase = `/${repositoryName}`;
+    const pagesFiles = [
+        "index.html",
+        "products.html",
+        "product.html",
+        "pricing.html",
+        "style.css",
+        "script.js",
+        ...imageAssets.map(({ name }) => `images/${name}`)
+    ];
+    await mkdir(join(pages, "data"), { recursive: true });
+    await Promise.all(pagesFiles.map(async (filePath) => {
+        const source = await readFile(join(dist, filePath), "utf8");
+        const pageSource = source
+            .replace(/(["'`])\/(?!\/)([^"'`]*)\1/g, (_, quote, path) => `${quote}${pagesBase}/${path}${quote}`)
+            .replaceAll(`${pagesBase}/products"`, `${pagesBase}/products.html"`)
+            .replaceAll(`${pagesBase}/products'`, `${pagesBase}/products.html'`)
+            .replaceAll(`${pagesBase}/products\``, `${pagesBase}/products.html\``)
+            .replace(/<a id="catalog-admin-link"[^>]*>.*?<\/a>/gs, "")
+            .replace(/<link\b[^>]*href="[^"]*product-editor\.css[^"]*"[^>]*>/g, "")
+            .replace(/<script\b[^>]*src="[^"]*(?:product-editor|catalog-frontend)\.js[^"]*"[^>]*><\/script>/g, "");
+        const target = join(pages, filePath);
+        await mkdir(dirname(target), { recursive: true });
+        await writeFile(target, pageSource);
+    }));
+
+    const pagesCatalog = structuredClone(catalogSeed);
+    pagesCatalog.products = pagesCatalog.products.map((product) => ({
+        ...product,
+        image: product.image?.startsWith("/") ? `${pagesBase}${product.image}` : product.image
+    }));
+    await writeFile(join(pages, "data/catalog.json"), `${JSON.stringify(pagesCatalog, null, 2)}\n`);
+    await writeFile(join(pages, ".nojekyll"), "");
+}
+
 const assetFiles = [
     "index.html",
     "admin.html", "admin.css", "admin.js", "catalog-admin.js", "product-editor.js", "catalog-frontend.js", "product-editor.css",
