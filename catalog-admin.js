@@ -13,7 +13,7 @@ function renderAdminProducts() {
 
 async function loadAdminProducts({force=false}={}) {
     if(!authenticated || document.hidden)return;
-    if(productLoading){if(force)productRefreshPending=true;return productLoading;}
+    if(productLoading){productRefreshPending=true;return productLoading;}
     productLoading=(async()=>{
         try {
             const response=await fetch('/api/products?includeInactive=1',{headers:{...(token?{Authorization:`Bearer ${token}`}:{}) ,...(productEtag?{'If-None-Match':productEtag}:{})},cache:'no-store',signal:AbortSignal.timeout(15000)});

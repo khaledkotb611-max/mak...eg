@@ -971,7 +971,8 @@ document.addEventListener("DOMContentLoaded", () => {
     refreshLanguage();
 
     const loadCatalog = async () => {
-        if(document.hidden || catalogController)return;
+        if(document.hidden)return;
+        if(catalogController){catalogRefreshPending=true;return;}
         clearTimeout(catalogTimer);
         const controller=new AbortController();catalogController=controller;
         const timeout=setTimeout(()=>controller.abort(),15000);
