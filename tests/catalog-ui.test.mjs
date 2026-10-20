@@ -27,7 +27,7 @@ function dom() {
 test('admin form CRUD reaches the real Worker database; public polling reflects changes, stops while hidden and recovers from failure',async()=>{
     const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com'};
     const requests=[];let offline=false;
-    const frontend=dom();frontend.context.fetch=async(path,options={})=>{requests.push({path,...options});if(offline)throw new TypeError('Network offline');return worker.fetch(new Request('https://mak.example'+path,options),env);};
+    const frontend=dom();frontend.context.fetch=async(path,options={})=>{requests.push({path,...options});if(offline)throw new TypeError('Network offline');const response=await worker.fetch(new Request('https://mak.example'+path,options),env);requests.at(-1).status=response.status;if(path==='/api/products' && response.status===200)requests.at(-1).productNames=(await response.clone().json()).products.map(product=>product.ar.name);return response;};
     vm.createContext(frontend.context);vm.runInContext(readFileSync('script.js','utf8'),frontend.context);frontend.listeners.get('DOMContentLoaded')();await settle();
     assert.ok(frontend.element('catalog-grid').innerHTML.includes(seed.products[0].ar.name));
     const dashboard=dom();dashboard.context.fetch=(path,options={})=>worker.fetch(new Request('https://mak.example'+path,{...options,headers:{...options.headers,...adminHeaders}}),env);
@@ -39,7 +39,7 @@ test('admin form CRUD reaches the real Worker database; public polling reflects 
     assert.ok(dashboard.element('products-list').innerHTML.includes('منتج من اللوحة'));
     frontend.document.hidden=true;frontend.listeners.get('visibilitychange')();assert.equal(frontend.timers.size,0);
     frontend.document.hidden=false;frontend.listeners.get('visibilitychange')();await settle(frontend);
-    assert.ok(frontend.element('catalog-grid').innerHTML.includes('منتج من اللوحة'));
+    assert.ok(frontend.element('catalog-grid').innerHTML.includes('منتج من اللوحة'),JSON.stringify(requests.map(({path,status,productNames})=>({path,status,hasProduct:productNames?.includes('منتج من اللوحة')}))));
     dashboard.element('product-price').value='31.25';await dashboard.element('product-form').events.submit({preventDefault(){}});await settle();
     const poll=[...frontend.timers.values()].find(timer=>timer.delay===30000);assert.ok(poll);await poll.callback();await settle();
     assert.ok(frontend.element('catalog-grid').innerHTML.includes('٣١٫٢٥'));assert.equal(env.DB.sqlite.prepare('SELECT price FROM products WHERE id=?').get('ui-added-product').price,31.25);
