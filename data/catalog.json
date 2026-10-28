@@ -2363,7 +2363,7 @@
     {
       "id": "ppr-fitting-female-union-green-32-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 180,
       "ar": {
         "name": "لاكور بسن داخلي",
@@ -2387,7 +2387,7 @@
     {
       "id": "ppr-fitting-female-union-insulated-32-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 210,
       "ar": {
         "name": "لاكور بسن داخلي",
@@ -4355,7 +4355,7 @@
     {
       "id": "poly-list-union-female-25-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 120,
       "ar": {
         "name": "لاكور بسن داخلي",
@@ -4379,7 +4379,7 @@
     {
       "id": "poly-list-union-female-25-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 142,
       "ar": {
         "name": "لاكور بسن داخلي",
