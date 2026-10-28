@@ -1,5 +1,7 @@
 document.documentElement.classList.add("js");
 
+document.querySelectorAll(".stats [data-counter]").forEach((counter) => counter.removeAttribute("data-counter"));
+
 const WHATSAPP_NUMBER = "201282708833";
 const ORDER_EMAIL = "khaledkotb611@icloud.com";
 const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -69,7 +71,9 @@ const uiText = {
         heroCardTitle: "ابعت المقاس والعدد واحصل على رد سريع",
         heroCardItems: ["مواسير جولد و B ورمادي", "قطع ووصلات صرف", "بولي أخضر ومعزول"],
         heroCardAction: "جهز طلبي",
-        stats: ["سنة خبرة", "عميل ومشروع", "صنف ومقاس", "تواصل سريع"],
+        statsTitles: ["مواسير", "قطع ووصلات", "بولي PPR", "تأكيد الطلب"],
+        stats: ["PVC وB ومقاسات متنوعة", "أكواع وجلب ومحابس", "أخضر ومعزول", "السعر والمخزون قبل الشراء"],
+        statsAriaLabel: "فئات المنتجات والخدمة",
         servicesKicker: "المنتجات",
         servicesTitle: "كل احتياجات السباكة في مكان واحد",
         servicesText: "مواسير، قطع، وصلات، محابس، وبولي بروبلين للمشروعات السكنية والتجارية.",
@@ -84,11 +88,23 @@ const uiText = {
         productsPageKicker: "المنتجات",
         productsPageTitle: "كل منتجات MAK",
         productsPageText: "كل صنف ظاهر لوحده بالصورة والمقاس والمواصفة والسعر، ومعاه صفحة تفاصيل مستقلة.",
+        productsHeroTitle: "منتجات MAK قدامك بالصورة والسعر",
+        productsHeroText: "اختار من المواسير، القطع والوصلات، أو البولي. كل صنف له صورة ومقاس وسعر واضح.",
+        productsFeatures: [
+            ["مواسير", "مواسير جولد وB ورمادي", "مقاسات ومواصفات وأسعار واضحة لكل ماسورة.", "عرض المواسير"],
+            ["قطع ووصلات", "أكواع وجلب ومشتركات", "اختار القطعة بالمقاس والصورة قبل ما تطلب.", "عرض القطع"],
+            ["بولي", "PPR أخضر ومعزول", "مواسير وقطع لحام بولي بمقاسات وأسعار واضحة.", "عرض البولي"]
+        ],
         confirmPrice: "تأكيد السعر على واتساب",
         searchLabel: "بحث",
-        searchPlaceholder: "اكتب: 4 أو كوع أو PN20",
+        searchPlaceholder: "اكتب اسم المنتج أو المقاس مثل 25 أو كوع",
+        sortLabel: "ترتيب النتائج",
+        sortOptions: { featured: "الترتيب الافتراضي", name: "الاسم من أ إلى ي", low: "السعر من الأقل", high: "السعر من الأعلى" },
+        clearFilters: "مسح الفلاتر",
+        showMore: "عرض المزيد من المنتجات",
+        tabsAriaLabel: "تصفية المنتجات حسب النوع",
         tabs: { all: "الكل", pipes: "مواسير", fittings: "قطع ووصلات", poly: "بولي" },
-        catalogCount: (count) => `ظاهر ${count} صنف من قائمة الأسعار`,
+        catalogCount: (count, total) => `معروض ${count} من ${total} صنف`,
         noResults: "مفيش نتائج مطابقة للبحث",
         details: "تفاصيل",
         order: "اطلب الصنف",
@@ -218,7 +234,9 @@ const uiText = {
         heroCardTitle: "Send the size and quantity for a fast reply",
         heroCardItems: ["Gold, B, and grey pipes", "PVC drainage fittings", "Green and insulated PPR"],
         heroCardAction: "Prepare my order",
-        stats: ["Years of experience", "Clients and projects", "Items and sizes", "Quick contact"],
+        statsTitles: ["Pipes", "Fittings", "PPR", "Order check"],
+        stats: ["PVC, B, and various sizes", "Elbows, couplings, and valves", "Green and insulated", "Confirm price and availability"],
+        statsAriaLabel: "Product categories and service",
         servicesKicker: "Products",
         servicesTitle: "Everything your plumbing order needs in one place",
         servicesText: "Pipes, fittings, valves, and polypropylene products for residential and commercial projects.",
@@ -233,11 +251,23 @@ const uiText = {
         productsPageKicker: "Products",
         productsPageTitle: "All MAK Products",
         productsPageText: "Every item appears on its own with image, size, specification, price, and an independent detail page.",
+        productsHeroTitle: "MAK products, with clear photos and prices",
+        productsHeroText: "Browse pipes, fittings, or PPR. Each item has a clear photo, size, and price.",
+        productsFeatures: [
+            ["Pipes", "Gold, B, and grey pipes", "Clear sizes, specifications, and prices for every pipe.", "View pipes"],
+            ["Fittings", "Elbows, couplings, and tees", "Choose a fitting by size and photo before ordering.", "View fittings"],
+            ["PPR", "Green and insulated PPR", "PPR pipes and fittings with clear sizes and prices.", "View PPR"]
+        ],
         confirmPrice: "Confirm price on WhatsApp",
         searchLabel: "Search",
-        searchPlaceholder: "Try: 4, elbow, or PN20",
+        searchPlaceholder: "Enter a product name or size, such as 25 or elbow",
+        sortLabel: "Sort results",
+        sortOptions: { featured: "Recommended order", name: "Name A to Z", low: "Price: low to high", high: "Price: high to low" },
+        clearFilters: "Clear filters",
+        showMore: "Show more products",
+        tabsAriaLabel: "Filter products by type",
         tabs: { all: "All", pipes: "Pipes", fittings: "Fittings", poly: "PPR" },
-        catalogCount: (count) => `Showing ${count} items from the price list`,
+        catalogCount: (count, total) => `Showing ${count} of ${total} items`,
         noResults: "No matching items found",
         details: "Details",
         order: "Order item",
@@ -450,6 +480,16 @@ const setListText = (selector, values, childSelector = null) => {
     });
 };
 
+const setTextWithin = (root, selector, value) => {
+    const element = root.querySelector(selector);
+    if (element) element.textContent = value;
+};
+
+const setAttributeWithin = (root, selector, attribute, value) => {
+    const element = root.querySelector(selector);
+    if (element) element.setAttribute(attribute, value);
+};
+
 const applyStaticLanguage = (language) => {
     const ui = uiText[language];
     document.documentElement.lang = language;
@@ -488,11 +528,14 @@ const applyStaticLanguage = (language) => {
         item.querySelector("span").textContent = pair[1];
     });
 
+    setAttribute(".stats", "aria-label", ui.statsAriaLabel);
+    setListText(".stats .stat strong", ui.statsTitles);
+    setListText(".stats .stat span", ui.stats);
+
     setText(".hero-card-label", ui.heroCardLabel);
     setText(".hero-card strong", ui.heroCardTitle);
     setListText(".hero-card li", ui.heroCardItems);
     setText(".hero-card a", ui.heroCardAction);
-    setListText(".stats .stat span", ui.stats);
     setText(".services .section-kicker", ui.servicesKicker);
     setText(".services .section-heading h2", ui.servicesTitle);
     setText(".services .section-heading > p:not(.section-kicker)", ui.servicesText);
@@ -524,6 +567,26 @@ const applyStaticLanguage = (language) => {
     setText(".catalog-head .button", ui.confirmPrice);
     setText(".catalog-search span", ui.searchLabel);
     setAttribute("#catalog-search", "placeholder", ui.searchPlaceholder);
+    setText(".catalog-sort span", ui.sortLabel);
+    setText('.catalog-sort option[value="featured"]', ui.sortOptions.featured);
+    setText('.catalog-sort option[value="name"]', ui.sortOptions.name);
+    setText('.catalog-sort option[value="low"]', ui.sortOptions.low);
+    setText('.catalog-sort option[value="high"]', ui.sortOptions.high);
+    setText(".catalog-reset", ui.clearFilters);
+    setAttribute(".catalog-tabs", "aria-label", ui.tabsAriaLabel);
+    setText(".products-showcase-copy .section-kicker", ui.productsPageKicker);
+    setText("#products-showcase-title", ui.productsHeroTitle);
+    setText(".products-showcase-copy > p:not(.section-kicker)", ui.productsHeroText);
+    document.querySelectorAll(".products-feature-card").forEach((card, index) => {
+        const feature = ui.productsFeatures[index];
+        if (!feature) return;
+        const [category, title, description, action] = feature;
+        setTextWithin(card, ".products-feature-card > div > span", category);
+        setTextWithin(card, "h2", title);
+        setTextWithin(card, "p", description);
+        setTextWithin(card, "a", action);
+        setAttributeWithin(card, "img", "alt", title);
+    });
     setText('[data-catalog-tab="all"]', ui.tabs.all);
     setText('[data-catalog-tab="pipes"]', ui.tabs.pipes);
     setText('[data-catalog-tab="fittings"]', ui.tabs.fittings);
@@ -644,14 +707,17 @@ const renderProductCard = (product, language = currentLanguage) => {
             <dt>${escapeHtml(ui.finish)}</dt>
             <dd>${escapeHtml(local.finish)}</dd>
         </div>` : "";
-    const mediaImage = product.image
-        ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(local.name)}" loading="lazy">`
+    const hasImage = Boolean(product.image);
+    const mediaImage = hasImage
+        ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(local.name)}" loading="lazy" decoding="async">`
         : "";
-    const mediaClass = product.image ? "product-item-media" : "product-item-media product-item-media-empty";
+    const mediaClass = hasImage ? "product-item-media has-product-image" : "product-item-media";
+    const placeholder = `<div class="product-image-placeholder" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M8 14h32v24H8zM13 14V8h22v6m-11 6v12m-6-6h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="26" r="3" fill="currentColor"/></svg><span>${currentLanguage === "ar" ? "صورة المنتج" : "Product photo"}</span></div>`;
 
     return `
-        <article class="catalog-card product-item-card" data-category="${escapeHtml(product.category)}" data-search="${escapeHtml(product.search)}">
+        <article class="catalog-card product-item-card" data-category="${escapeHtml(product.category)}" data-search="${escapeHtml(product.search)}" data-price="${escapeHtml(product.price)}" data-sort-name="${escapeHtml(local.name)}">
             <a class="${mediaClass}" href="${escapeHtml(productHref(product))}" aria-label="${escapeHtml(ui.details)} ${escapeHtml(local.name)}">
+                ${placeholder}
                 ${mediaImage}
                 <span>${escapeHtml(local.category)}</span>
             </a>
@@ -690,13 +756,31 @@ const renderCatalog = () => {
         return;
     }
 
-    if (catalogState !== "ready") {
-        const ui = uiText[currentLanguage];
-        catalogGrid.innerHTML = `<p role="status">${escapeHtml(catalogState === "loading" ? ui.catalogLoading : ui.catalogFailed)}</p>${catalogState === "error" ? `<button class="button button-outline" type="button" data-retry-catalog>${escapeHtml(ui.retry)}</button>` : ""}`;
-        return;
-    }
-    catalogGrid.innerHTML = products.map((product) => renderProductCard(product)).join("");
+    if (catalogState === "ready") return;
+    const ui = uiText[currentLanguage];
+    catalogGrid.setAttribute("aria-busy", String(catalogState === "loading"));
+    catalogGrid.innerHTML = `<p role="status">${escapeHtml(catalogState === "loading" ? ui.catalogLoading : ui.catalogFailed)}</p>${catalogState === "error" ? `<button class="button button-outline" type="button" data-retry-catalog>${escapeHtml(ui.retry)}</button>` : ""}`;
 };
+
+document.addEventListener("error", (event) => {
+    const image = event.target;
+    if (image instanceof HTMLImageElement && image.matches(".product-item-media.has-product-image > img")) {
+        image.parentElement.classList.add("image-unavailable");
+        image.remove();
+    }
+}, true);
+
+const normalizeCatalogSearch = (value) => String(value ?? "")
+    .normalize("NFKD")
+    .replace(/[\u064B-\u065F\u0670\u0640]/g, "")
+    .replace(/[أإآ]/g, "ا")
+    .replace(/ى/g, "ي")
+    .replace(/ة/g, "ه")
+    .replace(/[٠-٩]/g, (digit) => String(digit.charCodeAt(0) - 0x0660))
+    .replace(/[۰-۹]/g, (digit) => String(digit.charCodeAt(0) - 0x06f0))
+    .toLocaleLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
 
 const getProductFromUrl = () => {
     const pathMatch = window.location.pathname.match(/\/product\/([^/]+)/);
@@ -817,6 +901,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const projectDialogClose = projectDialog?.querySelector(".dialog-close");
     const faqItems = document.querySelectorAll(".faq-list details");
     const toTopButton = document.querySelector(".to-top");
+    const floatingWhatsapp = document.querySelector(".floating-whatsapp");
     const animatedItems = document.querySelectorAll("[data-animate]");
     const counters = document.querySelectorAll("[data-counter]");
     const contactForm = document.querySelector(".contact-form");
@@ -828,7 +913,36 @@ document.addEventListener("DOMContentLoaded", () => {
     const languageToggles = document.querySelectorAll(".language-toggle");
     const catalogTabs = document.querySelectorAll("[data-catalog-tab]");
     const catalogSearch = document.getElementById("catalog-search");
+    const catalogToolbar = catalogSearch?.closest(".catalog-toolbar");
+    let catalogSort = document.getElementById("catalog-sort");
+    let catalogReset = document.querySelector(".catalog-reset");
     const catalogCount = document.getElementById("catalog-count");
+    const catalogGrid = document.getElementById("catalog-grid");
+    const catalogPageSize = 24;
+    let visibleCatalogLimit = catalogPageSize;
+    let activeSortOrder = "featured";
+
+    if (catalogToolbar && !catalogSort) {
+        const sortLabel = document.createElement("label");
+        sortLabel.className = "catalog-sort";
+        sortLabel.htmlFor = "catalog-sort";
+        sortLabel.innerHTML = '<span></span><select id="catalog-sort" aria-controls="catalog-grid"><option value="featured"></option><option value="name"></option><option value="low"></option><option value="high"></option></select>';
+        const searchLabel = catalogToolbar.querySelector(".catalog-search");
+        searchLabel?.insertAdjacentElement("afterend", sortLabel);
+        catalogSort = sortLabel.querySelector("select");
+    }
+
+    const catalogTabGroup = catalogToolbar?.querySelector(".catalog-tabs");
+    if (catalogTabGroup) {
+        catalogTabGroup.setAttribute("role", "group");
+        if (!catalogReset) {
+            catalogReset = document.createElement("button");
+            catalogReset.className = "catalog-reset";
+            catalogReset.type = "button";
+            catalogReset.setAttribute("aria-controls", "catalog-grid");
+            catalogTabGroup.append(catalogReset);
+        }
+    }
     const yearNode = document.getElementById("year");
     let activeCatalogTab = "all";
     let currentOrderCode = "";
@@ -868,26 +982,37 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const filterCatalog = () => {
-        const query = String(catalogSearch?.value || "").trim().toLowerCase();
-        const cards = document.querySelectorAll(".product-item-card");
+        if (!catalogGrid || catalogState !== "ready") return;
+        const query = normalizeCatalogSearch(catalogSearch?.value || "");
         const ui = uiText[currentLanguage];
-        let visibleCount = 0;
-
-        cards.forEach((card) => {
-            const categoryMatches = activeCatalogTab === "all" || card.dataset.category === activeCatalogTab;
-            const haystack = String(`${card.textContent} ${card.dataset.search || ""}`).toLowerCase();
-            const searchMatches = !query || haystack.includes(query);
-            const isVisible = categoryMatches && searchMatches;
-
-            card.classList.toggle("is-hidden", !isVisible);
-
-            if (isVisible) {
-                visibleCount += 1;
-            }
+        const matches = products.filter((product) => {
+            const categoryMatches = activeCatalogTab === "all" || product.category === activeCatalogTab;
+            const haystack = normalizeCatalogSearch([product.search, ...Object.values(product.ar || {}), ...Object.values(product.en || {})].join(" "));
+            return categoryMatches && (!query || haystack.includes(query));
         });
 
+        const collator = new Intl.Collator(currentLanguage, { numeric: true, sensitivity: "base" });
+        const ordered = [...matches];
+        if (activeSortOrder === "name") ordered.sort((a, b) => collator.compare(a[currentLanguage].name, b[currentLanguage].name));
+        if (activeSortOrder === "low") ordered.sort((a, b) => a.price - b.price || collator.compare(a[currentLanguage].name, b[currentLanguage].name));
+        if (activeSortOrder === "high") ordered.sort((a, b) => b.price - a.price || collator.compare(a[currentLanguage].name, b[currentLanguage].name));
+
+        const visible = ordered.slice(0, visibleCatalogLimit);
+        const cards = visible.map((product) => renderProductCard(product)).join("");
+        const showMore = ordered.length > visible.length
+            ? `<div class="catalog-more-wrap"><button class="button button-outline catalog-load-more" type="button" data-catalog-more aria-controls="catalog-grid">${escapeHtml(ui.showMore)}</button></div>`
+            : "";
+        const emptyState = `<div class="catalog-empty-state" role="status"><span aria-hidden="true">⌕</span><strong>${escapeHtml(ui.noResults)}</strong><p>${escapeHtml(currentLanguage === "ar" ? "جرّب اسمًا أو مقاسًا مختلفًا، أو امسح الفلاتر." : "Try another name or size, or clear the filters.")}</p></div>`;
+
+        catalogGrid.setAttribute("aria-busy", "false");
+        catalogGrid.innerHTML = visible.length ? `${cards}${showMore}` : emptyState;
+        catalogTabs.forEach((tab) => {
+            const isActive = (tab.dataset.catalogTab || "all") === activeCatalogTab;
+            tab.classList.toggle("is-active", isActive);
+            tab.setAttribute("aria-pressed", String(isActive));
+        });
         if (catalogCount) {
-            catalogCount.textContent = catalogState === "ready" ? (visibleCount ? ui.catalogCount(visibleCount) : ui.noResults) : "";
+            catalogCount.textContent = matches.length ? ui.catalogCount(visible.length, matches.length) : ui.noResults;
         }
     };
 
@@ -1085,14 +1210,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     catalogTabs.forEach((tab) => {
+        tab.setAttribute("aria-pressed", String(tab.classList.contains("is-active")));
         tab.addEventListener("click", () => {
             activeCatalogTab = tab.dataset.catalogTab || "all";
-            catalogTabs.forEach((item) => item.classList.toggle("is-active", item === tab));
+            visibleCatalogLimit = catalogPageSize;
             filterCatalog();
         });
     });
 
-    catalogSearch?.addEventListener("input", filterCatalog);
+    catalogSearch?.addEventListener("input", () => {
+        visibleCatalogLimit = catalogPageSize;
+        filterCatalog();
+    });
+    catalogSort?.addEventListener("change", () => {
+        activeSortOrder = catalogSort.value || "featured";
+        visibleCatalogLimit = catalogPageSize;
+        filterCatalog();
+    });
+    catalogReset?.addEventListener("click", () => {
+        if (catalogSearch) catalogSearch.value = "";
+        if (catalogSort) catalogSort.value = activeSortOrder = "featured";
+        activeCatalogTab = "all";
+        visibleCatalogLimit = catalogPageSize;
+        filterCatalog();
+        catalogSearch?.focus();
+    });
+    catalogGrid?.addEventListener("click", (event) => {
+        if (!event.target.closest("[data-catalog-more]")) return;
+        visibleCatalogLimit += catalogPageSize;
+        filterCatalog();
+        catalogGrid.querySelector("[data-catalog-more]")?.focus({ preventScroll: true });
+    });
 
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") {
@@ -1114,6 +1262,7 @@ document.addEventListener("DOMContentLoaded", () => {
             progressBar?.style.setProperty("transform", `scaleX(${Math.min(Math.max(progress, 0), 1)})`);
             header?.classList.toggle("is-scrolled", scrolled);
             toTopButton?.classList.toggle("is-visible", window.scrollY > 420);
+            floatingWhatsapp?.classList.toggle("is-visible", window.scrollY > 320);
         });
     };
 

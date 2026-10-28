@@ -109,6 +109,16 @@ await Promise.all([
     ...imageAssets.map(optimizeImage)
 ]);
 
+const cacheRevision = "20261028-full-refresh-v1";
+for (const pageName of ["index.html", "products.html", "product.html", "pricing.html"]) {
+    const pagePath = join(dist, pageName);
+    const pageHtml = await readFile(pagePath, "utf8");
+    const cacheBustedHtml = pageHtml
+        .replace(/(style\.css)\?v=[^"'`]+/g, `$1?v=${cacheRevision}`)
+        .replace(/(script\.js)\?v=[^"'`]+/g, `$1?v=${cacheRevision}`);
+    await writeFile(pagePath, cacheBustedHtml);
+}
+
 const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
 if (repositoryName) {
     const pages = join(dist, "pages");
