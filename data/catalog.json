@@ -2097,54 +2097,6 @@
       }
     },
     {
-      "id": "ppr-fitting-weld-coupling-green-25-mm",
-      "category": "poly",
-      "image": "",
-      "price": 13.38,
-      "ar": {
-        "name": "جلبة لحام أخضر 25 مم",
-        "category": "قطع لحام بولي",
-        "size": "25 مم",
-        "spec": "لحام بولي",
-        "finish": "أخضر",
-        "unit": "قطعة",
-        "description": "جلبة لحام أخضر بمقاس 25 مم. السعر للقطعة الواحدة حسب الليستة."
-      },
-      "en": {
-        "name": "Green PPR Weld Coupling 25 mm",
-        "category": "PPR Welding Fittings",
-        "size": "25 mm",
-        "spec": "PPR weld fitting",
-        "finish": "Green",
-        "unit": "piece",
-        "description": "Green PPR Weld Coupling in 25 mm size. Price is per piece according to the list."
-      }
-    },
-    {
-      "id": "ppr-fitting-weld-coupling-insulated-25-mm",
-      "category": "poly",
-      "image": "",
-      "price": 15.02,
-      "ar": {
-        "name": "جلبة لحام معزول 25 مم",
-        "category": "قطع لحام بولي",
-        "size": "25 مم",
-        "spec": "لحام بولي",
-        "finish": "معزول",
-        "unit": "قطعة",
-        "description": "جلبة لحام معزول بمقاس 25 مم. السعر للقطعة الواحدة حسب الليستة."
-      },
-      "en": {
-        "name": "Insulated PPR Weld Coupling 25 mm",
-        "category": "PPR Welding Fittings",
-        "size": "25 mm",
-        "spec": "PPR weld fitting",
-        "finish": "Insulated",
-        "unit": "piece",
-        "description": "Insulated PPR Weld Coupling in 25 mm size. Price is per piece according to the list."
-      }
-    },
-    {
       "id": "ppr-fitting-reducing-coupling-green-25-32",
       "category": "poly",
       "image": "/images/poly-reducing-coupling.jpg",
@@ -2195,7 +2147,7 @@
     {
       "id": "ppr-fitting-elbow-90-green-32-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-elbow-open-weld.jpg",
       "price": 31.85,
       "ar": {
         "name": "كوع 90 أخضر 32 مم",
@@ -3107,7 +3059,7 @@
     {
       "id": "poly-list-union-female-thread-20-20-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 79.96,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
@@ -3131,7 +3083,7 @@
     {
       "id": "poly-list-union-female-thread-25-20-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 111.79,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
@@ -3155,7 +3107,7 @@
     {
       "id": "poly-list-union-female-thread-25-20-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 124.21,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
@@ -3179,7 +3131,7 @@
     {
       "id": "poly-list-union-female-thread-25-25-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 119.88,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
@@ -3203,7 +3155,7 @@
     {
       "id": "poly-list-union-female-thread-25-25-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 133.2,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
@@ -3227,7 +3179,7 @@
     {
       "id": "poly-list-union-female-thread-32-25-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 165.67,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
@@ -3251,7 +3203,7 @@
     {
       "id": "poly-list-union-female-thread-32-25-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 184.07,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
@@ -3275,7 +3227,7 @@
     {
       "id": "poly-list-union-female-thread-32-32-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 234.59,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
@@ -3299,7 +3251,7 @@
     {
       "id": "poly-list-union-female-thread-32-32-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 260.65,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
@@ -3323,7 +3275,7 @@
     {
       "id": "poly-list-union-female-thread-50-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 471.85,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
@@ -3347,7 +3299,7 @@
     {
       "id": "poly-list-union-female-thread-63-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-lacor-female-thread.jpg",
       "price": 741.72,
       "ar": {
         "name": "جلبة بولي بسن داخلي",
