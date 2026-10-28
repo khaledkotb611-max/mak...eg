@@ -112,7 +112,7 @@ await Promise.all([
     ...imageAssets.map(optimizeImage)
 ]);
 
-const cacheRevision = "20261028-category-images-v1";
+const cacheRevision = "20261029-checkout-v1";
 for (const pageName of ["index.html", "products.html", "product.html", "pricing.html"]) {
     const pagePath = join(dist, pageName);
     const pageHtml = await readFile(pagePath, "utf8");

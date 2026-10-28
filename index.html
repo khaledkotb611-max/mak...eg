@@ -17,7 +17,7 @@
             content="مواسير وقطع صحية وأسعار منظمة وطلب سريع للمشروعات والتجار في مصر.">
         <link rel="preload" href="images/hero.jpg" as="image">
         <link rel="icon" type="image/jpeg" href="images/hero.jpg">
-        <link href="/style.css?v=20261028-photo-fill-v1" rel="stylesheet">
+        <link href="/style.css?v=20261029-checkout-v1" rel="stylesheet">
         <title>MAK Plumbing Solutions | ماك للسباكة والتوزيع</title>
         <script type="application/ld+json">
             {
@@ -490,85 +490,107 @@
                     </div>
                 </div>
 
-                <form class="contact-form" data-animate="fade-left">
-                    <fieldset class="quote-presets">
-                        <legend>طلب سريع</legend>
-                        <button type="button"
-                            data-quote="أحتاج عرض سعر لمواسير PVC / B. المقاس: العدد:">مواسير
-                            PVC</button>
-                        <button type="button"
-                            data-quote="أحتاج عرض سعر لمواسير أو قطع PPR. المقاس: العدد:">بولي
-                            PPR</button>
-                        <button type="button"
-                            data-quote="أحتاج عرض سعر لقطع ووصلات ومحابس. الصنف: المقاس: العدد:">قطع
-                            ومحابس</button>
-                    </fieldset>
-                    <label>
-                        <span>الاسم</span>
-                        <input type="text" name="name" placeholder="اسمك"
-                            autocomplete="name" maxlength="120" required>
-                    </label>
-                    <label>
-                        <span>البريد الإلكتروني</span>
-                        <input type="email" name="email"
-                            placeholder="example@email.com"
-                            autocomplete="email" maxlength="160">
-                    </label>
-                    <label>
-                        <span>رقم الموبايل</span>
-                        <input type="tel" name="phone"
-                            placeholder="01000000000" autocomplete="tel"
-                            maxlength="40">
-                    </label>
-                    <label>
-                        <span>نوع الطلب</span>
-                        <select name="projectType">
-                            <option value="طلب منزل">طلب منزل</option>
-                            <option value="طلب مقاولات">طلب مقاولات</option>
-                            <option value="طلب محل">طلب محل</option>
-                            <option value="صيانة">صيانة</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>تفاصيل الطلب</span>
-                        <textarea name="message"
-                            placeholder="اكتب الصنف، المقاس، العدد، ومكان التسليم"
-                            maxlength="2000" required></textarea>
-                    </label>
-                    <fieldset class="order-channel-picker">
-                        <legend data-channel-title>اختار وسيلة إرسال
-                            الطلب</legend>
-                        <label class="order-channel-option">
-                            <input type="radio" name="deliveryChannel"
-                                value="whatsapp" checked required>
-                            <span data-channel-whatsapp>واتساب</span>
-                        </label>
-                        <label class="order-channel-option">
-                            <input type="radio" name="deliveryChannel"
-                                value="email" required>
-                            <span data-channel-email>إيميل</span>
-                        </label>
-                    </fieldset>
-                    <button class="button button-primary" type="submit">حفظ وفتح
-                        واتساب</button>
-                    <p class="order-channel-hint" data-channel-hint>الطلب بيتحفظ
-                        الأول، وبعدها تفتح الرسالة وتضغط إرسال.</p>
-                    <div class="order-delivery-actions" hidden>
-                        <a class="button button-outline" href="#"
-                            data-order-send target="_blank"
-                            rel="noopener noreferrer">فتح واتساب</a>
-                    </div>
-                    <div class="order-receipt">
-                        <div class="order-receipt-head">
-                            <span data-order-panel-title>ملخص الطلب</span>
-                            <strong data-order-code></strong>
+                <form class="contact-form checkout-form" data-animate="fade-left" aria-labelledby="checkout-title">
+                    <header class="checkout-header">
+                        <div>
+                            <p class="checkout-kicker">طلبك مع MAK</p>
+                            <h3 id="checkout-title" data-checkout-title>إتمام الطلب</h3>
+                            <p class="checkout-intro">أدخل بيانات التواصل وتفاصيل الصنف. سنراجع التوفر والسعر معك قبل تثبيت الطلب.</p>
                         </div>
-                        <pre data-order-summary></pre>
-                        <button class="button button-outline order-copy"
-                            type="button" data-copy-order>نسخ الطلب</button>
-                    </div>
-                    <div id="selected-product" class="selected-product" hidden><strong id="selected-product-name"></strong><label><span id="selected-quantity-label">الكمية</span><input id="selected-quantity" type="number" value="1" min="1" max="9999" step="1"></label><button id="clear-selected-product" type="button" class="button button-outline">إلغاء اختيار المنتج</button><small>السعر النهائي يُحفظ من قائمة الأسعار الحالية عند تسجيل الطلب.</small></div>
-                    <p class="form-status" role="status" aria-live="polite"></p>
+                        <span class="checkout-trust"><span aria-hidden="true">✓</span><span data-checkout-trust>حفظ آمن للطلب</span></span>
+                    </header>
+
+                    <ol class="checkout-progress" data-checkout-progress aria-label="خطوات إتمام الطلب">
+                        <li data-checkout-step="contact"><span class="checkout-progress-number">1</span><span data-checkout-step-label="contact">بيانات التواصل</span></li>
+                        <li data-checkout-step="details"><span class="checkout-progress-number">2</span><span data-checkout-step-label="details">تفاصيل الطلب</span></li>
+                        <li data-checkout-step="send"><span class="checkout-progress-number">3</span><span data-checkout-step-label="send">مراجعة وإرسال</span></li>
+                    </ol>
+
+                    <section class="checkout-section" data-checkout-section="contact">
+                        <div class="checkout-section-heading">
+                            <span class="checkout-section-number">01</span>
+                            <div><h4 data-checkout-section-title="contact">بيانات التواصل</h4><p id="checkout-contact-help" data-checkout-section-help="contact">اختر رقم موبايل أو بريدًا إلكترونيًا واحدًا على الأقل للرد عليك.</p></div>
+                        </div>
+                        <div class="checkout-fields">
+                            <label>
+                                <span>الاسم</span>
+                                <input type="text" name="name" placeholder="اسمك" autocomplete="name" maxlength="120" required>
+                            </label>
+                            <label>
+                                <span>رقم الموبايل</span>
+                                <input type="tel" name="phone" placeholder="01000000000" autocomplete="tel" maxlength="40" aria-describedby="checkout-contact-help">
+                            </label>
+                            <label>
+                                <span>البريد الإلكتروني</span>
+                                <input type="email" name="email" placeholder="example@email.com" autocomplete="email" maxlength="160" aria-describedby="checkout-contact-help">
+                            </label>
+                            <label>
+                                <span>نوع الطلب</span>
+                                <select name="projectType">
+                                    <option value="طلب منزل">طلب منزل</option>
+                                    <option value="طلب مقاولات">طلب مقاولات</option>
+                                    <option value="طلب محل">طلب محل</option>
+                                    <option value="صيانة">صيانة</option>
+                                </select>
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="checkout-section" data-checkout-section="details">
+                        <div class="checkout-section-heading">
+                            <span class="checkout-section-number">02</span>
+                            <div><h4 data-checkout-section-title="details">تفاصيل الطلب</h4><p data-checkout-section-help="details">حدد الفئة واكتب المقاس والكمية ومكان التسليم.</p></div>
+                        </div>
+                        <fieldset class="quote-presets">
+                            <legend>اختار فئة الطلب</legend>
+                            <button type="button" data-quote="أحتاج عرض سعر لمواسير PVC / B. المقاس: العدد:">مواسير PVC</button>
+                            <button type="button" data-quote="أحتاج عرض سعر لمواسير أو قطع PPR. المقاس: العدد:">بولي PPR</button>
+                            <button type="button" data-quote="أحتاج عرض سعر لقطع ووصلات ومحابس. الصنف: المقاس: العدد:">قطع ومحابس</button>
+                        </fieldset>
+                        <label class="checkout-order-notes">
+                            <span>تفاصيل الطلب</span>
+                            <textarea name="message" placeholder="اكتب الصنف، المقاس، العدد، ومكان التسليم" maxlength="2000" required></textarea>
+                        </label>
+                        <div id="selected-product" class="selected-product" hidden>
+                            <div class="selected-product-copy"><strong id="selected-product-name"></strong><span class="selected-product-unit"><span data-selected-unit-price-label>سعر القطعة</span><strong data-selected-unit-price></strong></span></div>
+                            <label><span id="selected-quantity-label">الكمية</span><input id="selected-quantity" type="number" value="1" min="1" max="9999" step="1"></label>
+                            <div class="selected-product-total"><span data-selected-total-label>الإجمالي التقديري</span><strong data-selected-total></strong></div>
+                            <button id="clear-selected-product" type="button" class="button button-outline">إلغاء اختيار المنتج</button>
+                            <small data-selected-product-hint>السعر النهائي يُحفظ من قائمة الأسعار الحالية عند تسجيل الطلب.</small>
+                        </div>
+                    </section>
+
+                    <section class="checkout-section checkout-send-section" data-checkout-section="send">
+                        <div class="checkout-section-heading">
+                            <span class="checkout-section-number">03</span>
+                            <div><h4 data-checkout-section-title="send">راجع طلبك وأرسله</h4><p data-checkout-section-help="send">راجع الرسالة. سنحفظ الطلب أولًا ثم نفتح وسيلة الإرسال التي اخترتها.</p></div>
+                        </div>
+                        <div class="order-receipt">
+                            <div class="order-receipt-head">
+                                <span data-order-panel-title>ملخص الطلب</span>
+                                <strong data-order-code></strong>
+                            </div>
+                            <pre data-order-summary></pre>
+                            <button class="button button-outline order-copy" type="button" data-copy-order>نسخ تفاصيل الطلب</button>
+                        </div>
+                        <fieldset class="order-channel-picker">
+                            <legend data-channel-title>اختار وسيلة إرسال الطلب</legend>
+                            <label class="order-channel-option">
+                                <input type="radio" name="deliveryChannel" value="whatsapp" checked required>
+                                <span class="order-channel-copy"><strong data-channel-whatsapp>واتساب</strong><small data-channel-whatsapp-help>رسالة جاهزة للمراجعة قبل الإرسال</small></span>
+                            </label>
+                            <label class="order-channel-option">
+                                <input type="radio" name="deliveryChannel" value="email" required>
+                                <span class="order-channel-copy"><strong data-channel-email>إيميل</strong><small data-channel-email-help>مسودة تفتح في تطبيق البريد</small></span>
+                            </label>
+                        </fieldset>
+                        <button class="button button-primary checkout-submit" type="submit" aria-describedby="order-channel-hint checkout-form-status">حفظ وفتح واتساب</button>
+                        <p class="order-channel-hint" id="order-channel-hint" data-channel-hint>الطلب بيتحفظ الأول، وبعدها تفتح الرسالة وتضغط إرسال.</p>
+                        <div class="order-delivery-actions" hidden>
+                            <a class="button button-outline" href="#" data-order-send target="_blank" rel="noopener noreferrer">فتح واتساب</a>
+                        </div>
+                        <p class="form-status" id="checkout-form-status" role="status" aria-live="polite"></p>
+                    </section>
                 </form>
             </section>
 
@@ -664,6 +686,6 @@
 
         <script src="/product-editor.js?v=20261008-sync-v2"></script>
         <script src="/catalog-frontend.js?v=20261008-sync-v2"></script>
-        <script src="/script.js?v=20261008-sync-v2"></script>
+        <script src="/script.js?v=20261029-checkout-v1"></script>
     </body>
 </html>

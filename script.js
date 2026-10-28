@@ -162,17 +162,27 @@ const uiText = {
         contactKicker: "تواصل معنا",
         contactTitle: "جاهز تبعت طلبك؟",
         contactText: "اكتب الصنف والمقاس والعدد، أو ابعت صورة المنتج، وهنرد عليك بتأكيد السعر والتوفر.",
+        checkoutKicker: "طلبك مع MAK",
+        checkoutTitle: "إتمام الطلب",
+        checkoutIntro: "أدخل بيانات التواصل وتفاصيل الصنف. سنراجع التوفر والسعر معك قبل تثبيت الطلب.",
+        checkoutTrust: "حفظ آمن للطلب",
+        checkoutProgressLabel: "خطوات إتمام الطلب",
+        checkoutStepLabels: ["بيانات التواصل", "تفاصيل الطلب", "مراجعة وإرسال"],
+        checkoutSectionTitles: ["بيانات التواصل", "تفاصيل الطلب", "راجع طلبك وأرسله"],
+        checkoutSectionHelp: ["اختر رقم موبايل أو بريدًا إلكترونيًا واحدًا على الأقل للرد عليك.", "حدد الفئة واكتب المقاس والكمية ومكان التسليم.", "راجع الرسالة. سنحفظ الطلب أولًا ثم نفتح وسيلة الإرسال التي اخترتها."],
         address: ["إيتاي البارود، البحيرة، مصر", "السبت إلى الخميس | 9 صباحا - 4 مساء"],
         callNow: "اتصل الآن",
-        quickRequest: "طلب سريع",
+        quickRequest: "اختار فئة الطلب",
         presets: ["مواسير PVC", "بولي PPR", "قطع ومحابس"],
-        labels: ["الاسم", "البريد الإلكتروني", "رقم الموبايل", "نوع الطلب", "تفاصيل الطلب"],
-        placeholders: ["اسمك", "example@email.com", "01000000000", "اكتب الصنف، المقاس، العدد، ومكان التسليم"],
+        labels: ["الاسم", "رقم الموبايل (اختياري)", "البريد الإلكتروني (اختياري)", "نوع الطلب", "تفاصيل الطلب"],
+        placeholders: ["اسمك", "01000000000", "example@email.com", "اكتب الصنف، المقاس، العدد، ومكان التسليم"],
         selectOptions: ["طلب منزل", "طلب مقاولات", "طلب محل", "صيانة"],
         submit: "حفظ وفتح واتساب",
         submitEmail: "حفظ وفتح الإيميل",
         channelTitle: "اختار وسيلة إرسال الطلب",
         channelHint: "الطلب بيتحفظ الأول، وبعدها تفتح الرسالة وتضغط إرسال.",
+        whatsappHelp: "رسالة جاهزة للمراجعة قبل الإرسال",
+        emailHelp: "مسودة تفتح في تطبيق البريد",
         whatsappDraft: "تم تجهيز رسالة واتساب. اضغط إرسال داخل واتساب.",
         emailDraft: "تم تجهيز رسالة الإيميل في تطبيق البريد. اضغط إرسال داخل التطبيق.",
         openSelected: "اضغط زر فتح وسيلة الإرسال لإكمال إرسال الرسالة.",
@@ -188,8 +198,11 @@ const uiText = {
         openWhatsapp: "فتح واتساب",
         openEmail: "فتح الإيميل",
         orderPanelTitle: "ملخص الطلب",
-        orderSummaryEmpty: "طلب جديد جاهز للاستقبال. اكتب التفاصيل وسيظهر الملخص هنا.",
-        copyOrder: "نسخ الطلب",
+        orderSummaryEmpty: "اكتب بيانات الطلب وسيظهر الملخص هنا للمراجعة قبل الإرسال.",
+        copyOrder: "نسخ تفاصيل الطلب",
+        selectedUnitPrice: "سعر القطعة",
+        selectedTotal: "الإجمالي التقديري",
+        selectedProductHint: "السعر النهائي يُحفظ من قائمة الأسعار الحالية عند تسجيل الطلب.",
         copiedOrder: "تم نسخ الطلب",
         orderReadyStatus: "تم تجهيز الطلب",
         footerText: "مواسير وقطع صحية للمشروعات والمحلات والمنازل في مصر.",
@@ -325,17 +338,27 @@ const uiText = {
         contactKicker: "Contact Us",
         contactTitle: "Ready to send your order?",
         contactText: "Write the item, size, and quantity, or send a product photo, and we will confirm price and availability.",
+        checkoutKicker: "Your order with MAK",
+        checkoutTitle: "Complete your order",
+        checkoutIntro: "Add your contact details and item requirements. We will confirm availability and pricing with you before finalizing.",
+        checkoutTrust: "Your request is saved securely",
+        checkoutProgressLabel: "Order completion steps",
+        checkoutStepLabels: ["Contact details", "Order details", "Review and send"],
+        checkoutSectionTitles: ["Contact details", "Order details", "Review and send"],
+        checkoutSectionHelp: ["Add at least one contact method so we can reply.", "Choose a category and include size, quantity, and delivery location.", "Review your message. We will save the request, then open your chosen sending method."],
         address: ["Itay El Baroud, Beheira, Egypt", "Saturday to Thursday | 9 AM - 4 PM"],
         callNow: "Call now",
-        quickRequest: "Quick request",
+        quickRequest: "Choose an order category",
         presets: ["PVC Pipes", "PPR", "Fittings and valves"],
-        labels: ["Name", "Email", "Mobile number", "Order type", "Order details"],
-        placeholders: ["Your name", "example@email.com", "01000000000", "Write the item, size, quantity, and delivery location"],
+        labels: ["Name", "Mobile number (optional)", "Email (optional)", "Order type", "Order details"],
+        placeholders: ["Your name", "01000000000", "example@email.com", "Write the item, size, quantity, and delivery location"],
         selectOptions: ["Home order", "Contractor order", "Store order", "Maintenance"],
         submit: "Save and open WhatsApp",
         submitEmail: "Save and open email",
         channelTitle: "Choose how to send your request",
         channelHint: "Your request is saved first. Then review the message and press Send.",
+        whatsappHelp: "A ready message to review before sending",
+        emailHelp: "A draft opens in your mail app",
         whatsappDraft: "Your WhatsApp message is ready. Press Send in WhatsApp.",
         emailDraft: "Your email draft is ready in your mail app. Press Send there.",
         openSelected: "Use the Open button to finish sending the message.",
@@ -351,8 +374,11 @@ const uiText = {
         openWhatsapp: "Open WhatsApp",
         openEmail: "Open email",
         orderPanelTitle: "Order summary",
-        orderSummaryEmpty: "New order ready to receive. Add details and the summary will appear here.",
-        copyOrder: "Copy order",
+        orderSummaryEmpty: "Add your details to review the order summary before sending.",
+        copyOrder: "Copy order details",
+        selectedUnitPrice: "Unit price",
+        selectedTotal: "Estimated total",
+        selectedProductHint: "The current list price is saved with your request.",
         copiedOrder: "Order copied",
         orderReadyStatus: "Order prepared",
         footerText: "Plumbing pipes and fittings for projects, stores, and homes in Egypt.",
@@ -652,9 +678,17 @@ const applyStaticLanguage = (language) => {
     setListText(".contact-details address span", ui.address);
     setText(".contact-actions .button-primary", ui.whatsappDirect);
     setText(".contact-actions .button-outline", ui.callNow);
+    setText(".checkout-kicker", ui.checkoutKicker);
+    setText("[data-checkout-title]", ui.checkoutTitle);
+    setText(".checkout-intro", ui.checkoutIntro);
+    setText("[data-checkout-trust]", ui.checkoutTrust);
+    setAttribute("[data-checkout-progress]", "aria-label", ui.checkoutProgressLabel);
+    document.querySelectorAll("[data-checkout-step-label]").forEach((element, index) => { element.textContent = ui.checkoutStepLabels[index]; });
+    document.querySelectorAll("[data-checkout-section-title]").forEach((element, index) => { element.textContent = ui.checkoutSectionTitles[index]; });
+    document.querySelectorAll("[data-checkout-section-help]").forEach((element, index) => { element.textContent = ui.checkoutSectionHelp[index]; });
     setText(".quote-presets legend", ui.quickRequest);
     setListText(".quote-presets button", ui.presets);
-    setListText(".contact-form label span", ui.labels);
+    setListText(".checkout-fields > label > span, .checkout-order-notes > span", ui.labels);
 
     const formInputs = document.querySelectorAll(".contact-form input, .contact-form textarea");
     [ui.placeholders[0], ui.placeholders[1], ui.placeholders[2], ui.placeholders[3]].forEach((placeholder, index) => {
@@ -670,9 +704,14 @@ const applyStaticLanguage = (language) => {
     setText("[data-channel-title]", ui.channelTitle);
     setText("[data-channel-whatsapp]", ui.whatsapp);
     setText("[data-channel-email]", ui.email);
+    setText("[data-channel-whatsapp-help]", ui.whatsappHelp);
+    setText("[data-channel-email-help]", ui.emailHelp);
     setText("[data-channel-hint]", ui.channelHint);
     setText("[data-order-panel-title]", ui.orderPanelTitle);
     setText("[data-copy-order]", ui.copyOrder);
+    setText("[data-selected-unit-price-label]", ui.selectedUnitPrice);
+    setText("[data-selected-total-label]", ui.selectedTotal);
+    setText("[data-selected-product-hint]", ui.selectedProductHint);
     setText(".site-footer .footer-container > div:first-child p", ui.footerText);
     setText(".site-footer .footer-container > div:nth-child(2) h3", ui.quickLinks);
     setText(".site-footer .footer-container > div:nth-child(3) h3", ui.contactInfo);
@@ -961,7 +1000,17 @@ document.addEventListener("DOMContentLoaded", () => {
     let catalogManager=null;
     let catalogFailures = 0;
 
-    const selectedItems = () => selectedProductId ? [{productId:selectedProductId,quantity:Number(document.getElementById('selected-quantity')?.value || 1)}] : [];
+    const setCheckoutStatus = (message,state='') => {
+        if(!formStatus)return;
+        formStatus.textContent=message;
+        if(state)formStatus.setAttribute?.('data-state',state);
+        else formStatus.removeAttribute?.('data-state');
+    };
+    const selectedItems = () => {
+        if(!selectedProductId)return [];
+        const quantity=document.getElementById('selected-quantity');
+        return [{productId:selectedProductId,quantity:quantity?Number(quantity.value):1}];
+    };
     const storedPrices = (items,language=currentLanguage) => items.length ? '\n\n'+(language==='ar'?'أسعار المنتجات المحفوظة وقت إنشاء الطلب:':'Product prices saved when this order was created:')+'\n'+items.map(item=>`${language==='ar'?item.name:item.nameEn} — ${item.quantity} × ${formatPrice(item.unitPrice,language)} ${uiText[language].egp} = ${formatPrice(item.total,language)} ${uiText[language].egp}`).join('\n') : '';
     const syncSelectedProduct = () => {
         const panel=document.getElementById('selected-product');
@@ -969,11 +1018,41 @@ document.addEventListener("DOMContentLoaded", () => {
         panel.hidden=!selectedProductId;
         const product=products.find(p=>p.id===selectedProductId);
         const label=document.getElementById('selected-product-name');
-        if(label)label.textContent=product?`${product[currentLanguage].name} — ${formatPrice(product.price)} ${uiText[currentLanguage].egp}`:currentLanguage==='ar'?'المنتج لم يعد متاحًا. اختر منتجًا آخر.':'This product is no longer available. Choose another product.';
+        if(label)label.textContent=product?product[currentLanguage].name:currentLanguage==='ar'?'المنتج لم يعد متاحًا. اختر منتجًا آخر.':'This product is no longer available. Choose another product.';
+        const unitPrice=document.querySelector('[data-selected-unit-price]');
+        if(unitPrice)unitPrice.textContent=product?`${formatPrice(product.price)} ${uiText[currentLanguage].egp}`:'—';
+        const quantity=Number(document.getElementById('selected-quantity')?.value);
+        const total=document.querySelector('[data-selected-total]');
+        if(total)total.textContent=product&&Number.isInteger(quantity)&&quantity>0?`${formatPrice(product.price*quantity)} ${uiText[currentLanguage].egp}`:'—';
         const quantityLabel=document.getElementById('selected-quantity-label');
         if(quantityLabel)quantityLabel.textContent=currentLanguage==='ar'?'الكمية':'Quantity';
         const clear=document.getElementById('clear-selected-product');
         if(clear)clear.textContent=currentLanguage==='ar'?'إلغاء اختيار المنتج':'Clear product selection';
+    };
+
+    const refreshCheckoutProgress = () => {
+        const steps=document.querySelectorAll('[data-checkout-step]');
+        if(!steps.length)return;
+        const name=contactForm?.querySelector('[name="name"]');
+        const phone=contactForm?.querySelector('[name="phone"]');
+        const email=contactForm?.querySelector('[name="email"]');
+        const message=contactForm?.querySelector('[name="message"]');
+        const nameReady=Boolean(name?.value.trim())&&name.checkValidity();
+        const hasContact=[phone,email].some(field=>Boolean(field?.value.trim())&&field.checkValidity());
+        const contactFieldsValid=[phone,email].every(field=>!field?.value.trim()||field.checkValidity());
+        const contactReady=nameReady&&hasContact&&contactFieldsValid;
+        const quantity=Number(document.getElementById('selected-quantity')?.value);
+        const productReady=!selectedProductId||(products.some(product=>product.id===selectedProductId)&&Number.isInteger(quantity)&&quantity>=1&&quantity<=9999);
+        const detailsReady=Boolean(message?.value.trim())&&productReady;
+        const activeStep=!contactReady?0:!detailsReady?1:currentOrderCode?3:2;
+        steps.forEach((step,index)=>{
+            const complete=index===0?contactReady:index===1?contactReady&&detailsReady:Boolean(currentOrderCode);
+            step.classList.toggle('is-complete',complete);
+            step.classList.toggle('is-current',index===activeStep&&activeStep<3);
+            if(index===activeStep&&activeStep<3)step.setAttribute('aria-current','step');
+            else step.removeAttribute('aria-current');
+        });
+        document.querySelector('[data-checkout-progress]')?.classList.toggle('is-finished',Boolean(currentOrderCode));
     };
 
     const updateThemeControl = () => {
@@ -1073,7 +1152,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (messageField && quoteText) {
             currentOrderCode = "";
-            if (formStatus) formStatus.textContent = "";
+            setCheckoutStatus("");
+            if (deliveryActions) deliveryActions.hidden = true;
             messageField.value = quoteText;
             try {
                 messageField.focus({ preventScroll: true });
@@ -1089,6 +1169,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         refreshOrderDeliveryLinks();
+        refreshCheckoutProgress();
     };
 
     const refreshLanguage = () => {
@@ -1100,6 +1181,7 @@ document.addEventListener("DOMContentLoaded", () => {
         filterCatalog();
         refreshOrderDeliveryLinks();
         syncSelectedProduct();
+        refreshCheckoutProgress();
         closeMenu();
     };
 
@@ -1174,6 +1256,7 @@ document.addEventListener("DOMContentLoaded", () => {
         renderProductDetail();
         filterCatalog();
         syncSelectedProduct();
+        refreshCheckoutProgress();
     };
 
     catalogManager=window.MakCatalogManager?.start({
@@ -1191,8 +1274,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if(document.hidden)catalogController?.abort();else void loadCatalog();
     });
     window.addEventListener('online',()=>{if(!document.hidden)void loadCatalog();});
-    document.getElementById('selected-quantity')?.addEventListener('input',()=>{currentOrderCode='';confirmedItems=[];if(deliveryActions)deliveryActions.hidden=true;refreshOrderDeliveryLinks();});
-    document.getElementById('clear-selected-product')?.addEventListener('click',()=>{selectedProductId='';currentOrderCode='';confirmedItems=[];syncSelectedProduct();refreshOrderDeliveryLinks();});
+    document.getElementById('selected-quantity')?.addEventListener('input',()=>{currentOrderCode='';confirmedItems=[];if(deliveryActions)deliveryActions.hidden=true;syncSelectedProduct();refreshOrderDeliveryLinks();refreshCheckoutProgress();});
+    document.getElementById('clear-selected-product')?.addEventListener('click',()=>{selectedProductId='';currentOrderCode='';confirmedItems=[];if(deliveryActions)deliveryActions.hidden=true;syncSelectedProduct();refreshOrderDeliveryLinks();refreshCheckoutProgress();});
 
     languageToggles.forEach((toggle) => toggle.addEventListener("click", () => {
         currentLanguage = currentLanguage === "ar" ? "en" : "ar";
@@ -1201,14 +1284,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }));
 
     const invalidateReceipt = (event) => {
+        const field=event?.target;
+        if(field?.getAttribute?.('aria-invalid')==='true'&&field.value?.trim())field.removeAttribute?.('aria-invalid');
+        if(['phone','email'].includes(field?.name)&&[...contactForm.querySelectorAll('[name="phone"],[name="email"]')].some(input=>input.value.trim()))contactForm.querySelectorAll('[name="phone"],[name="email"]').forEach(input=>input.removeAttribute?.('aria-invalid'));
         if (event?.target?.name === "deliveryChannel") {
             refreshOrderDeliveryLinks();
+            refreshCheckoutProgress();
             return;
         }
         currentOrderCode = "";
         if (deliveryActions) deliveryActions.hidden = true;
-        if (formStatus) formStatus.textContent = "";
+        setCheckoutStatus("");
         refreshOrderDeliveryLinks();
+        refreshCheckoutProgress();
     };
     contactForm?.addEventListener("input", invalidateReceipt);
     contactForm?.addEventListener("change", invalidateReceipt);
@@ -1319,16 +1407,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const ui = uiText[currentLanguage];
             copyText(currentOrderMessage || buildContactOrderMessage(contactForm, currentLanguage, currentOrderCode))
                 .then(() => {
-                    if (formStatus) {
-                        formStatus.textContent = ui.copiedOrder;
-                    }
+                    setCheckoutStatus(ui.copiedOrder,'success');
                 })
                 .catch(() => {
-                    if (formStatus) {
-                        formStatus.textContent = currentLanguage === "ar"
-                            ? "تعذر النسخ تلقائيا. حدد ملخص الطلب وانسخه."
-                            : "Could not copy automatically. Select the order summary and copy it.";
-                    }
+                    setCheckoutStatus(currentLanguage === "ar"
+                        ? "تعذر النسخ تلقائيا. حدد ملخص الطلب وانسخه."
+                        : "Could not copy automatically. Select the order summary and copy it.",'error');
                 });
             return;
         }
@@ -1542,6 +1626,7 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
         if (saving || !contactForm.checkValidity()) {
             if (!saving) contactForm.reportValidity();
+            refreshCheckoutProgress();
             return;
         }
         const channel = selectedOrderChannel(contactForm);
@@ -1552,14 +1637,17 @@ document.addEventListener("DOMContentLoaded", () => {
         if(selectedProductId) {
             const items=selectedItems();
             if(!products.some(p=>p.id===selectedProductId) || !Number.isInteger(items[0].quantity) || items[0].quantity<1 || items[0].quantity>9999) {
-                if(formStatus)formStatus.textContent=currentLanguage==='ar'?'راجع المنتج والكمية، أو ألغِ الاختيار لإرسال طلب عام.':'Check the product and quantity, or clear the selection to send a general inquiry.';
+                setCheckoutStatus(currentLanguage==='ar'?'راجع المنتج والكمية، أو ألغِ الاختيار لإرسال طلب عام.':'Check the product and quantity, or clear the selection to send a general inquiry.','error');
+                refreshCheckoutProgress();
                 return;
             }
             data.items=items;
         }
         if (!data.email && !data.phone) {
-            if (formStatus) formStatus.textContent = uiText[currentLanguage].contactRequired;
+            contactForm.querySelectorAll('[name="phone"],[name="email"]').forEach(field=>field.setAttribute?.('aria-invalid','true'));
+            setCheckoutStatus(uiText[currentLanguage].contactRequired,'error');
             contactForm.querySelector('[name="phone"]')?.focus();
+            refreshCheckoutProgress();
             return;
         }
         const snapshot = JSON.stringify(data);
@@ -1578,7 +1666,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (deliveryActions) deliveryActions.hidden = true;
         contactForm.querySelectorAll('[name="deliveryChannel"]').forEach((input) => { input.disabled = true; });
         if (button) button.disabled = true;
-        if (formStatus) formStatus.textContent = uiText[currentLanguage].saving;
+        if (button) button.textContent=uiText[currentLanguage].saving;
+        setCheckoutStatus(uiText[currentLanguage].saving,'saving');
+        refreshCheckoutProgress();
         try {
             const response = await fetch("/api/quotes", {
                 method: "POST",
@@ -1627,16 +1717,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 deliveryStatus = currentLanguage === "ar" ? "التعديلات الجديدة لم تُحفظ بعد." : "Your new edits have not been saved yet.";
             }
             if (deliveryActions) deliveryActions.hidden = !unchanged;
-            if (formStatus) formStatus.textContent = `${uiText[currentLanguage].saved} ${result.quoteId} ${deliveryStatus}`;
+            setCheckoutStatus(`${uiText[currentLanguage].saved} ${result.quoteId} ${deliveryStatus}`,unchanged?'success':'error');
+            refreshCheckoutProgress();
         } catch (error) {
             deliveryWindow?.close();
             if (deliveryActions) deliveryActions.hidden = false;
             refreshOrderDeliveryLinks();
-            if (formStatus) formStatus.textContent = error.code==='product_unavailable'?(currentLanguage==='ar'?'المنتج اتوقف أو اتحذف قبل حفظ الطلب. اختر منتجًا آخر وأعد المحاولة.':'The product is no longer available. Choose another and retry.'):error.status === 429 ? uiText[currentLanguage].rateLimited : uiText[currentLanguage].saveFailed;
+            setCheckoutStatus(error.code==='product_unavailable'?(currentLanguage==='ar'?'المنتج اتوقف أو اتحذف قبل حفظ الطلب. اختر منتجًا آخر وأعد المحاولة.':'The product is no longer available. Choose another and retry.'):error.status === 429 ? uiText[currentLanguage].rateLimited : uiText[currentLanguage].saveFailed,'error');
+            refreshCheckoutProgress();
         } finally {
             saving = false;
             contactForm.querySelectorAll('[name="deliveryChannel"]').forEach((input) => { input.disabled = false; });
             if (button) button.disabled = false;
+            refreshCheckoutProgress();
         }
     });
 });
