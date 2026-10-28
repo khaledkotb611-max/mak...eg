@@ -1137,7 +1137,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (!product.id || ids.has(product.id) || !Number.isFinite(product.price) || product.price < 0 || !product.ar?.name || !product.en?.name) throw new Error("Invalid product");
                 ids.add(product.id);
             });
-            products = catalog.products.map((product) => ({ ...product, search: [product.id, product.category, ...Object.values(product.ar), ...Object.values(product.en)].join(" ").toLowerCase() }));
+            const refreshedProducts = catalog.products.map((product) => ({ ...product, search: [product.id, product.category, ...Object.values(product.ar), ...Object.values(product.en)].join(" ").toLowerCase() }));
+            if (catalogLoaded && catalogCanManage) {
+                const previousProducts = new Map(products.map((product) => [product.id, product]));
+                for (let index = refreshedProducts.length - 1; index >= 0; index -= 1) {
+                    const updatedProduct = refreshedProducts[index];
+                    const previousProduct = previousProducts.get(updatedProduct.id);
+                    if (!previousProduct || JSON.stringify(previousProduct) !== JSON.stringify(updatedProduct)) {
+                        catalogPriorityProductId = updatedProduct.id;
+                        break;
+                    }
+                }
+            }
+            products = refreshedProducts;
             catalogManager?.onCatalog(products);
             catalogState = "ready";
             catalogLoaded=true;catalogFailures=0;catalogEtag=response.headers?.get('ETag') || '';
