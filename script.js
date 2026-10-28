@@ -644,11 +644,15 @@ const renderProductCard = (product, language = currentLanguage) => {
             <dt>${escapeHtml(ui.finish)}</dt>
             <dd>${escapeHtml(local.finish)}</dd>
         </div>` : "";
+    const mediaImage = product.image
+        ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(local.name)}" loading="lazy">`
+        : "";
+    const mediaClass = product.image ? "product-item-media" : "product-item-media product-item-media-empty";
 
     return `
         <article class="catalog-card product-item-card" data-category="${escapeHtml(product.category)}" data-search="${escapeHtml(product.search)}">
-            <a class="product-item-media" href="${escapeHtml(productHref(product))}" aria-label="${escapeHtml(ui.details)} ${escapeHtml(local.name)}">
-                <img src="${escapeHtml(product.image)}" alt="${escapeHtml(local.name)}" loading="lazy">
+            <a class="${mediaClass}" href="${escapeHtml(productHref(product))}" aria-label="${escapeHtml(ui.details)} ${escapeHtml(local.name)}">
+                ${mediaImage}
                 <span>${escapeHtml(local.category)}</span>
             </a>
             <div class="catalog-card-body product-item-body">
@@ -735,7 +739,7 @@ const renderProductDetail = () => {
     setAttribute('meta[name="description"]', "content", local.description);
     setAttribute('meta[property="og:title"]', "content", `${local.name} | MAK`);
     setAttribute('meta[property="og:description"]', "content", local.description);
-    setAttribute('meta[property="og:image"]', "content", product.image);
+    if (product.image) setAttribute('meta[property="og:image"]', "content", product.image);
     setAttribute('meta[name="twitter:title"]', "content", `${local.name} | MAK`);
     setAttribute('meta[name="twitter:description"]', "content", local.description);
 
@@ -744,15 +748,20 @@ const renderProductDetail = () => {
             <dt>${escapeHtml(ui.finish)}</dt>
             <dd>${escapeHtml(local.finish)}</dd>
         </div>` : "";
+    const detailMedia = product.image ? `
+                <figure class="product-detail-media">
+                    <img src="${escapeHtml(product.image)}" alt="${escapeHtml(local.name)}">
+                    <figcaption>${escapeHtml(ui.stockNote)}</figcaption>
+                </figure>` : "";
+    const detailGridClass = product.image
+        ? "product-detail-grid"
+        : "product-detail-grid product-detail-grid-no-image";
 
     container.innerHTML = `
         <div class="product-detail-shell">
             <a class="back-link" href="/#pricing">${escapeHtml(ui.backToCatalog)}</a>
-            <div class="product-detail-grid">
-                <figure class="product-detail-media">
-                    <img src="${escapeHtml(product.image)}" alt="${escapeHtml(local.name)}">
-                    <figcaption>${escapeHtml(ui.stockNote)}</figcaption>
-                </figure>
+            <div class="${detailGridClass}">
+                ${detailMedia}
                 <article class="product-detail-info">
                     <p class="section-kicker">${escapeHtml(local.category)}</p>
                     <h1>${escapeHtml(local.name)}</h1>

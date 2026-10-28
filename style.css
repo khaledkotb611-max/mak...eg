@@ -2618,6 +2618,10 @@ html.js .products-page [data-animate] {
     width: 100%;
 }
 
+.product-item-media-empty {
+    min-height: 64px;
+}
+
 .product-item-card:hover .product-item-media img {
     transform: scale(1.04);
 }
@@ -2754,6 +2758,14 @@ html.js .products-page [data-animate] {
     display: grid;
     gap: 28px;
     grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+}
+
+.product-detail-grid-no-image {
+    grid-template-columns: minmax(0, 1fr);
+    justify-content: center;
+    margin-inline: auto;
+    max-width: 860px;
+    width: 100%;
 }
 
 .product-detail-media,
