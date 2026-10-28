@@ -8,24 +8,53 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
 const catalogSeed = JSON.parse(await readFile(join(root, "data/catalog.json"), "utf8"));
 const ids = new Set();
+const catalogImageNames = new Set();
+const productCategories = new Set(["pipes", "fittings", "poly"]);
 for (const product of catalogSeed.products) {
-    if (ids.has(product.id) || !product.id || !Number.isFinite(product.price) || product.price < 0 || !product.ar?.name || !product.en?.name) throw new Error("Invalid catalog product");
+    if (!product || typeof product.id !== "string" || !/^[a-z0-9][a-z0-9-]{0,119}$/.test(product.id)
+        || ids.has(product.id) || !productCategories.has(product.category)
+        || typeof product.price !== "number" || !Number.isFinite(product.price)
+        || product.price < 0 || product.price > 9999999999.99 || Number(product.price.toFixed(2)) !== product.price
+        || typeof product.ar?.name !== "string" || !product.ar.name.trim()
+        || typeof product.en?.name !== "string" || !product.en.name.trim()
+        || (product.active !== undefined && typeof product.active !== "boolean")) throw new Error("Invalid catalog product");
     ids.add(product.id);
+
+    const image = product.image ?? "";
+    if (typeof image !== "string" || image.length > 1000) throw new Error(`Invalid image for product ${product.id}`);
+    if (/^\/images\/[A-Za-z0-9_.-]+$/.test(image)) {
+        const name = image.slice("/images/".length);
+        if (!/^[A-Za-z0-9][A-Za-z0-9_.-]*\.(?:jpe?g|png|webp)$/i.test(name)) throw new Error(`Invalid image for product ${product.id}`);
+        catalogImageNames.add(name);
+    } else if (image) {
+        if (!/^https:\/\/[^\s<>"']+$/.test(image)) throw new Error(`Invalid image for product ${product.id}`);
+        let safeRemoteImage = false;
+        try {
+            const url = new URL(image);
+            safeRemoteImage = url.protocol === "https:" && Boolean(url.hostname) && !url.username && !url.password;
+        } catch {
+            // Invalid image URLs are reported with the product ID below.
+        }
+        if (!safeRemoteImage) throw new Error(`Invalid image for product ${product.id}`);
+    }
 }
 const schemaSource = (await readFile(join(root, "db/schema.ts"), "utf8")).replace("export const", "const");
 const execFile = promisify(execFileCallback);
 
-const imageAssets = [
+const featuredImageAssets = [
     { name: "hero.jpg", width: 1400, quality: 74 },
     { name: "about.jpg", width: 1200, quality: 72 },
     { name: "ppr.jpg", width: 1100, quality: 72 },
     { name: "pvc.jpg", width: 1100, quality: 72 },
-    { name: "value.jpg", width: 1100, quality: 72 },
-    { name: "pvc-access-elbow.jpeg", original: true },
-    { name: "pvc-elbow-90.jpeg", original: true },
-    { name: "pvc-elbow-45.jpeg", original: true },
-    { name: "pvc-vent.jpeg", original: true },
-    { name: "pvc-coupling.jpeg", original: true }
+    { name: "value.jpg", width: 1100, quality: 72 }
+];
+const featuredImageNames = new Set(featuredImageAssets.map(({ name }) => name));
+const imageAssets = [
+    ...featuredImageAssets,
+    ...[...catalogImageNames]
+        .filter((name) => !featuredImageNames.has(name))
+        .sort()
+        .map((name) => ({ name, original: true }))
 ];
 
 const contentTypes = {

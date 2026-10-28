@@ -1,0 +1,190 @@
+{
+  "updatedAt": "2026-10-28",
+  "items": [
+    {
+      "id": "tee-female-thread",
+      "name": ["تي بولي بسن داخلي", "PPR female-thread tee"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["تي بسن داخلي", "Female-thread tee"],
+      "image": "poly-tee-female-thread.jpg",
+      "rows": [
+        ["20*20", 93.66, null],
+        ["25*20", 118.4, 133.04],
+        ["25*25", 165.67, 184.07],
+        ["32*25", 234, 260],
+        ["32*32", 298.31, 331.45]
+      ]
+    },
+    {
+      "id": "elbow-female-thread",
+      "name": ["كوع بولي بسن داخلي", "PPR female-thread elbow"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["كوع بسن داخلي", "Female-thread elbow"],
+      "image": "poly-elbow-female-thread.jpg",
+      "rows": [
+        ["20*20", 72.28, null],
+        ["25*20", 91.35, 102.48],
+        ["25*25", 139.76, 155.28],
+        ["32*25", 173.55, 192.83],
+        ["32*32", 245.93, 273.26]
+      ]
+    },
+    {
+      "id": "union-male-thread",
+      "name": ["جلبة بولي بسن خارجي", "PPR male-thread socket"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["جلبة بسن خارجي", "Male-thread socket"],
+      "image": "poly-union-male-thread.jpg",
+      "rows": [
+        ["20*20", 91.28, null],
+        ["25*20", 119.6, 132.89],
+        ["25*25", 146.03, 162.25],
+        ["32*25", 199.47, 221.63],
+        ["32*32", 274.52, 288.97],
+        ["50", 499.38, null],
+        ["63", 782.24, null]
+      ]
+    },
+    {
+      "id": "union-female-thread",
+      "name": ["جلبة بولي بسن داخلي", "PPR female-thread socket"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["جلبة بسن داخلي", "Female-thread socket"],
+      "image": "poly-union-female.jpg",
+      "rows": [
+        ["20*20", 79.96, null],
+        ["25*20", 111.79, 124.21],
+        ["25*25", 119.88, 133.2],
+        ["32*25", 165.67, 184.07],
+        ["32*32", 234.59, 260.65],
+        ["50", 471.85, null],
+        ["63", 741.72, null]
+      ]
+    },
+    {
+      "id": "tee-concealed",
+      "name": ["تي محبس دفن بولي", "PPR concealed-valve tee"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["تي محبس دفن", "Concealed-valve tee"],
+      "image": "poly-tee-concealed.jpg",
+      "rows": [
+        ["20", 156.47, null],
+        ["25", 166.99, null],
+        ["32", 251.2, null]
+      ]
+    },
+    {
+      "id": "valve-concealed",
+      "name": ["محبس دفن بولي", "PPR concealed valve"],
+      "category": ["محابس بولي", "PPR valves"],
+      "spec": ["محبس دفن", "Concealed valve"],
+      "image": "poly-valve-concealed.jpg",
+      "rows": [
+        ["20", 540.36, null],
+        ["25", 590.53, null],
+        ["32", 721.1, null]
+      ]
+    },
+    {
+      "id": "elbow-square-thread",
+      "name": ["كوع مسطرة بولي بسن داخلي", "PPR female-thread straight elbow"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["كوع مسطرة بسن داخلي", "Female-thread straight elbow"],
+      "image": "poly-elbow-square-thread.jpg",
+      "rows": [["25*20", 213.09, 229.12]]
+    },
+    {
+      "id": "elbow-open-weld",
+      "name": ["كوع لحام مفتوح بولي", "PPR open weld elbow"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["كوع لحام مفتوح", "Open weld elbow"],
+      "image": "poly-elbow-open-weld.jpg",
+      "rows": [
+        ["20", null, null],
+        ["25", 24.13, 25.94],
+        ["32", 35.6, 38.27],
+        ["50", 127.81, 137.41],
+        ["63", 181.3, 195]
+      ]
+    },
+    {
+      "id": "test-plug",
+      "name": ["طبة اختبار بولي", "PPR test plug"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["طبة اختبار", "Test plug"],
+      "image": "poly-test-plug.jpg",
+      "rows": [["20", 6.73, null]]
+    },
+    {
+      "id": "elbow-threadless",
+      "name": ["كوع بولي بسن", "PPR threaded elbow"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["كوع بسن بدون", "Threaded elbow"],
+      "image": "poly-elbow-threadless.jpg",
+      "rows": [["25*20", 89.6, 100.5]]
+    },
+    {
+      "id": "ball-valve",
+      "name": ["محبس كرة بولي", "PPR ball valve"],
+      "category": ["محابس بولي", "PPR valves"],
+      "spec": ["أسعار قطعية", "Fixed unit price"],
+      "image": "poly-ball-valve.jpg",
+      "rows": [
+        ["20", 247, null],
+        ["25", 338, 388],
+        ["32", 459, 520],
+        ["50", 1135, 1390],
+        ["63", 1705, 2100]
+      ]
+    },
+    {
+      "id": "check-valve",
+      "name": ["شيك بلف بولي", "PPR check valve"],
+      "category": ["محابس بولي", "PPR valves"],
+      "spec": ["بلف عدم رجوع", "Check valve"],
+      "image": "value.jpg",
+      "variants": [
+        ["weld", "لحام", "Weld", 1],
+        ["female-thread", "سن داخلي", "Female thread", 2],
+        ["male-thread", "سن خارجي", "Male thread", 3]
+      ],
+      "rows": [
+        ["25", 272, 376, 425],
+        ["32", 361, 488, 540]
+      ]
+    },
+    {
+      "id": "union-male-cut",
+      "name": ["لاكور بسن خارجي قطعي", "PPR cut-price male-thread union"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["لاكور بسن خارجي قطعي", "Male-thread union"],
+      "image": "poly-union-male-cut.jpg",
+      "rows": [
+        ["25", 153, 180],
+        ["32", 231, 255]
+      ]
+    },
+    {
+      "id": "union-brass-body",
+      "name": ["لاكور لحام جسم نحاس قطعي", "PPR weld union with brass body"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["لحام جسم نحاس", "Weld, brass body"],
+      "image": "poly-union-brass-body.jpg",
+      "rows": [
+        ["25", 105, 115],
+        ["32", 149, 152]
+      ]
+    },
+    {
+      "id": "union-female",
+      "name": ["لاكور بسن داخلي", "PPR female-thread union"],
+      "category": ["وصلات بولي", "PPR fittings"],
+      "spec": ["لاكور بسن داخلي", "Female-thread union"],
+      "image": "poly-union-female.jpg",
+      "rows": [
+        ["25", 120, 142],
+        ["32", 180, 210]
+      ]
+    }
+  ]
+}

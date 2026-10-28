@@ -109,7 +109,7 @@ const editAdmin=(app,id)=>app.element('products-list').events.click({target:{clo
 test('both actual management surfaces persist Add/Edit/Delete in one D1 binding and poll each other; historical orders remain priced at purchase',async()=>{
     const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com'};
     const front=await frontendApp(env),admin=await dashboardApp(env);
-    const originals=env.DB.sqlite.prepare('SELECT * FROM products ORDER BY id').all();assert.equal(originals.length,107);
+    const originals=env.DB.sqlite.prepare('SELECT * FROM products ORDER BY id').all();assert.equal(originals.length,seed.products.length);
     assert.equal(front.element('catalog-management').hidden,false);
     assert.ok(front.element('catalog-grid').innerHTML.includes('data-manage-product='));
     assert.equal(front.requests.filter(r=>r.path==='/admin.html').length,0);

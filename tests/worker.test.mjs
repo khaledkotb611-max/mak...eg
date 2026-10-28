@@ -65,7 +65,7 @@ test('storage failure never returns success or exposes requests', async () => {
 
 test('catalog IDs are unique, stable URLs and complete prices have no embedded frontend copies', () => {
     const catalog=JSON.parse(readFileSync('data/catalog.json'));
-    assert.equal(new Set(catalog.products.map(p=>p.id)).size,107);
+    assert.equal(new Set(catalog.products.map(p=>p.id)).size,catalog.products.length);
     for(const p of catalog.products) { assert.ok(Number.isFinite(p.price)); assert.ok(p.ar.name && p.en.name); }
     const source=readFileSync('script.js','utf8');
     assert.ok(!source.includes('const pipeSeries')); assert.ok(!source.includes('const pvcFittings'));

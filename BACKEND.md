@@ -17,7 +17,15 @@ Open `/admin` and sign in with the email and password created in the terminal. R
 
 ## Products and prices
 
-The business database is the only runtime source of product data and prices. `data/catalog.json` is retained only as the original, one-time migration input, preserving all 107 products, prices, translations, sizes, specifications and finishes. It is never a fallback for a failed API or an empty catalog. Once `catalog_seed_v1` is recorded, edits to that file and redeployment cannot overwrite database changes or resurrect deleted products.
+The business database is the only runtime source of product data and prices. `data/catalog.json` is the one-time migration input and the read-only GitHub Pages catalog source; it currently contains 216 products built from the original 107 entries, generated PPR price-list entries, and added PVC fittings from the price sheets. It is never a fallback for a failed API or an empty live catalog. Once `catalog_seed_v1` is recorded, edits to that file and redeployment cannot overwrite database changes or resurrect deleted products.
+
+`data/poly-price-list.json` is the editable source for the PPR price list. Run `node scripts/apply-poly-price-list.mjs` to regenerate its entries in `data/catalog.json`; Arabic and English sizes are formatted separately. This updates the seed and GitHub Pages build only. To update a live Worker/D1 or Django database, use the protected catalog API with a preview-first file import:
+
+```sh
+node scripts/sync-catalog.mjs --catalog data/catalog.json --target https://YOUR_ORIGIN
+```
+
+Set `MAK_CATALOG_TARGET_TOKEN` in the shell when the target requires bearer access, review the add/update counts, then add `--apply` to send the changes. Extra target products are preserved unless `--prune` is explicitly passed. Existing availability is preserved when the seed file omits an `active` field; newly imported products start active. This changes products only; it does not transfer customer orders.
 
 `mak_backend.models.Product` represents the `products` table in the separate `business` SQLite connection (`quotes.sqlite3`); authentication remains in `auth.sqlite3`. The model is unmanaged because the shared versioned SQL migration owns the table in both SQLite and D1. Django's model-state migration also initializes/imports the business database on `manage.py migrate`. The normal storage initializer applies the same migration once if an existing installation starts before that command. ORM tools use the business database router; the existing API/services keep their transactional SQL architecture.
 
@@ -29,7 +37,7 @@ Authorized staff also manage products from the public home/list/detail pages. `c
 
 A successful public edit immediately re-fetches the public catalog; the other open surface observes it through the existing 15-second dashboard or 30-second public poll. A save during an outstanding public read queues one immediate follow-up read, so the older response cannot remain displayed until the next polling interval. Polling preserves unsaved form fields, blocks stale version saves, and offers explicit reload. Session expiry removes management actions and closes the editor. Django staff writes use the existing session CSRF token; no bearer credential is stored in public JavaScript.
 
-The bidirectional UI integration tests execute both real scripts against the compiled Worker and one isolated SQLite-backed D1 adapter. They assert Add/Edit/Delete in both directions, deactivation/reactivation, preservation of all 107 seed records and historical purchase prices, ordinary visitor restrictions, session expiry, concurrent drafts, network recovery, duplicate prevention and Django's frontend CSRF contract. These tests do not write fixtures into the live customer database.
+The bidirectional UI integration tests execute both real scripts against the compiled Worker and one isolated SQLite-backed D1 adapter. They assert Add/Edit/Delete in both directions, deactivation/reactivation, preservation of all seed catalog records and historical purchase prices, ordinary visitor restrictions, session expiry, concurrent drafts, network recovery, duplicate prevention and Django's frontend CSRF contract. These tests do not write fixtures into the live customer database.
 
 ## Catalog API
 

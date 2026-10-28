@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04",
+  "updatedAt": "2026-10-28",
   "currency": "EGP",
   "products": [
     {
@@ -1702,20 +1702,20 @@
       "image": "/images/pvc.jpg",
       "price": 108.86,
       "ar": {
-        "name": "مشترك 3 / 2 عادة",
+        "name": "مشترك PVC 3 / 2 عادي سوبر",
         "category": "وصلات مسلوب",
         "size": "3 / 2",
         "spec": "وصلة صرف",
         "unit": "قطعة",
-        "description": "مشترك 3 / 2 عادة من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+        "description": "مشترك PVC 3 / 2 عادي سوبر بمقاس 3 / 2 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
       },
       "en": {
-        "name": "Standard Tee 3 / 2",
+        "name": "PVC Super Standard Reducing Tee 3\" / 2\"",
         "category": "Reducing Fittings",
         "size": "3 / 2",
         "spec": "Drainage fitting",
         "unit": "piece",
-        "description": "Standard Tee 3 / 2 drainage fitting. Price is per piece according to the list."
+        "description": "PVC Super Standard Reducing Tee 3\" / 2\", a PVC drainage fitting. Price is per piece according to the price list."
       }
     },
     {
@@ -1724,20 +1724,20 @@
       "image": "/images/pvc.jpg",
       "price": 198.41,
       "ar": {
-        "name": "مشترك 4 / 2 باب",
+        "name": "مشترك PVC 4 / 2 باب سوبر",
         "category": "وصلات مسلوب",
         "size": "4 / 2",
         "spec": "وصلة صرف",
         "unit": "قطعة",
-        "description": "مشترك 4 / 2 باب من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+        "description": "مشترك PVC 4 / 2 باب سوبر بمقاس 4 / 2 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
       },
       "en": {
-        "name": "Access Tee 4 / 2",
+        "name": "PVC Super Access Reducing Tee 4\" / 2\"",
         "category": "Reducing Fittings",
         "size": "4 / 2",
         "spec": "Drainage fitting",
         "unit": "piece",
-        "description": "Access Tee 4 / 2 drainage fitting. Price is per piece according to the list."
+        "description": "PVC Super Access Reducing Tee 4\" / 2\", a PVC drainage fitting. Price is per piece according to the price list."
       }
     },
     {
@@ -1746,20 +1746,20 @@
       "image": "/images/pvc.jpg",
       "price": 204.23,
       "ar": {
-        "name": "واي 4 / 2",
+        "name": "واي PVC 4 / 2 سوبر",
         "category": "وصلات مسلوب",
         "size": "4 / 2",
         "spec": "وصلة صرف",
         "unit": "قطعة",
-        "description": "واي 4 / 2 من وصلات الصرف. السعر للقطعة الواحدة حسب الليستة."
+        "description": "واي PVC 4 / 2 سوبر بمقاس 4 / 2 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
       },
       "en": {
-        "name": "Wye 4 / 2",
+        "name": "PVC Super Wye 4\" / 2\"",
         "category": "Reducing Fittings",
         "size": "4 / 2",
         "spec": "Drainage fitting",
         "unit": "piece",
-        "description": "Wye 4 / 2 drainage fitting. Price is per piece according to the list."
+        "description": "PVC Super Wye 4\" / 2\", a PVC drainage fitting. Price is per piece according to the price list."
       }
     },
     {
@@ -2339,73 +2339,2637 @@
     {
       "id": "ppr-fitting-concealed-valve-green-25-mm",
       "category": "poly",
-      "image": "/images/value.jpg",
+      "image": "/images/poly-valve-concealed.jpg",
       "price": 590.53,
       "ar": {
-        "name": "محبس دفن أخضر 25 مم",
-        "category": "قطع لحام بولي",
+        "name": "محبس دفن بولي",
+        "category": "محابس بولي",
         "size": "25 مم",
-        "spec": "لحام بولي",
-        "finish": "أخضر",
+        "spec": "محبس دفن",
         "unit": "قطعة",
-        "description": "محبس دفن أخضر بمقاس 25 مم. السعر للقطعة الواحدة حسب الليستة."
+        "finish": "أخضر",
+        "description": "محبس دفن بولي مقاس 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
       },
       "en": {
-        "name": "Green PPR Concealed Valve 25 mm",
-        "category": "PPR Welding Fittings",
+        "name": "PPR concealed valve",
+        "category": "PPR valves",
         "size": "25 mm",
-        "spec": "PPR weld fitting",
-        "finish": "Green",
+        "spec": "Concealed valve",
         "unit": "piece",
-        "description": "Green PPR Concealed Valve in 25 mm size. Price is per piece according to the list."
+        "finish": "Green",
+        "description": "PPR concealed valve, size 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
       }
     },
     {
       "id": "ppr-fitting-female-union-green-32-mm",
       "category": "poly",
-      "image": "/images/value.jpg",
+      "image": "/images/poly-union-female.jpg",
       "price": 180,
       "ar": {
-        "name": "لاكور داخلي أخضر 32 مم",
-        "category": "قطع لحام بولي",
+        "name": "لاكور بسن داخلي",
+        "category": "وصلات بولي",
         "size": "32 مم",
-        "spec": "لحام بولي",
-        "finish": "أخضر",
+        "spec": "لاكور بسن داخلي",
         "unit": "قطعة",
-        "description": "لاكور داخلي أخضر بمقاس 32 مم. السعر للقطعة الواحدة حسب الليستة."
+        "finish": "أخضر",
+        "description": "لاكور بسن داخلي مقاس 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
       },
       "en": {
-        "name": "Green PPR Female Union 32 mm",
-        "category": "PPR Welding Fittings",
+        "name": "PPR female-thread union",
+        "category": "PPR fittings",
         "size": "32 mm",
-        "spec": "PPR weld fitting",
-        "finish": "Green",
+        "spec": "Female-thread union",
         "unit": "piece",
-        "description": "Green PPR Female Union in 32 mm size. Price is per piece according to the list."
+        "finish": "Green",
+        "description": "PPR female-thread union, size 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
       }
     },
     {
       "id": "ppr-fitting-female-union-insulated-32-mm",
       "category": "poly",
-      "image": "/images/value.jpg",
+      "image": "/images/poly-union-female.jpg",
       "price": 210,
       "ar": {
-        "name": "لاكور داخلي معزول 32 مم",
-        "category": "قطع لحام بولي",
+        "name": "لاكور بسن داخلي",
+        "category": "وصلات بولي",
         "size": "32 مم",
-        "spec": "لحام بولي",
-        "finish": "معزول",
+        "spec": "لاكور بسن داخلي",
         "unit": "قطعة",
-        "description": "لاكور داخلي معزول بمقاس 32 مم. السعر للقطعة الواحدة حسب الليستة."
+        "finish": "معزول",
+        "description": "لاكور بسن داخلي مقاس 32 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
       },
       "en": {
-        "name": "Insulated PPR Female Union 32 mm",
-        "category": "PPR Welding Fittings",
+        "name": "PPR female-thread union",
+        "category": "PPR fittings",
         "size": "32 mm",
-        "spec": "PPR weld fitting",
-        "finish": "Insulated",
+        "spec": "Female-thread union",
         "unit": "piece",
-        "description": "Insulated PPR Female Union in 32 mm size. Price is per piece according to the list."
+        "finish": "Insulated",
+        "description": "PPR female-thread union, size 32 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-female-thread-20-20-green",
+      "category": "poly",
+      "image": "/images/poly-tee-female-thread.jpg",
+      "price": 93.66,
+      "ar": {
+        "name": "تي بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "20 × 20 مم",
+        "spec": "تي بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "تي بولي بسن داخلي مقاس 20 × 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread tee",
+        "category": "PPR fittings",
+        "size": "20 × 20 mm",
+        "spec": "Female-thread tee",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread tee, size 20 × 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-female-thread-25-20-green",
+      "category": "poly",
+      "image": "/images/poly-tee-female-thread.jpg",
+      "price": 118.4,
+      "ar": {
+        "name": "تي بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "تي بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "تي بولي بسن داخلي مقاس 25 × 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread tee",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Female-thread tee",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread tee, size 25 × 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-female-thread-25-20-insulated",
+      "category": "poly",
+      "image": "/images/poly-tee-female-thread.jpg",
+      "price": 133.04,
+      "ar": {
+        "name": "تي بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "تي بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "تي بولي بسن داخلي مقاس 25 × 20 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread tee",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Female-thread tee",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread tee, size 25 × 20 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-female-thread-25-25-green",
+      "category": "poly",
+      "image": "/images/poly-tee-female-thread.jpg",
+      "price": 165.67,
+      "ar": {
+        "name": "تي بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 25 مم",
+        "spec": "تي بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "تي بولي بسن داخلي مقاس 25 × 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread tee",
+        "category": "PPR fittings",
+        "size": "25 × 25 mm",
+        "spec": "Female-thread tee",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread tee, size 25 × 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-female-thread-25-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-tee-female-thread.jpg",
+      "price": 184.07,
+      "ar": {
+        "name": "تي بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 25 مم",
+        "spec": "تي بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "تي بولي بسن داخلي مقاس 25 × 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread tee",
+        "category": "PPR fittings",
+        "size": "25 × 25 mm",
+        "spec": "Female-thread tee",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread tee, size 25 × 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-female-thread-32-25-green",
+      "category": "poly",
+      "image": "/images/poly-tee-female-thread.jpg",
+      "price": 234,
+      "ar": {
+        "name": "تي بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 25 مم",
+        "spec": "تي بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "تي بولي بسن داخلي مقاس 32 × 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread tee",
+        "category": "PPR fittings",
+        "size": "32 × 25 mm",
+        "spec": "Female-thread tee",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread tee, size 32 × 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-female-thread-32-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-tee-female-thread.jpg",
+      "price": 260,
+      "ar": {
+        "name": "تي بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 25 مم",
+        "spec": "تي بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "تي بولي بسن داخلي مقاس 32 × 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread tee",
+        "category": "PPR fittings",
+        "size": "32 × 25 mm",
+        "spec": "Female-thread tee",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread tee, size 32 × 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-female-thread-32-32-green",
+      "category": "poly",
+      "image": "/images/poly-tee-female-thread.jpg",
+      "price": 298.31,
+      "ar": {
+        "name": "تي بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 32 مم",
+        "spec": "تي بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "تي بولي بسن داخلي مقاس 32 × 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread tee",
+        "category": "PPR fittings",
+        "size": "32 × 32 mm",
+        "spec": "Female-thread tee",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread tee, size 32 × 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-female-thread-32-32-insulated",
+      "category": "poly",
+      "image": "/images/poly-tee-female-thread.jpg",
+      "price": 331.45,
+      "ar": {
+        "name": "تي بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 32 مم",
+        "spec": "تي بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "تي بولي بسن داخلي مقاس 32 × 32 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread tee",
+        "category": "PPR fittings",
+        "size": "32 × 32 mm",
+        "spec": "Female-thread tee",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread tee, size 32 × 32 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-female-thread-20-20-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-female-thread.jpg",
+      "price": 72.28,
+      "ar": {
+        "name": "كوع بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "20 × 20 مم",
+        "spec": "كوع بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع بولي بسن داخلي مقاس 20 × 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread elbow",
+        "category": "PPR fittings",
+        "size": "20 × 20 mm",
+        "spec": "Female-thread elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread elbow, size 20 × 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-female-thread-25-20-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-female-thread.jpg",
+      "price": 91.35,
+      "ar": {
+        "name": "كوع بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "كوع بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع بولي بسن داخلي مقاس 25 × 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread elbow",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Female-thread elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread elbow, size 25 × 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-female-thread-25-20-insulated",
+      "category": "poly",
+      "image": "/images/poly-elbow-female-thread.jpg",
+      "price": 102.48,
+      "ar": {
+        "name": "كوع بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "كوع بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "كوع بولي بسن داخلي مقاس 25 × 20 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread elbow",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Female-thread elbow",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread elbow, size 25 × 20 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-female-thread-25-25-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-female-thread.jpg",
+      "price": 139.76,
+      "ar": {
+        "name": "كوع بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 25 مم",
+        "spec": "كوع بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع بولي بسن داخلي مقاس 25 × 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread elbow",
+        "category": "PPR fittings",
+        "size": "25 × 25 mm",
+        "spec": "Female-thread elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread elbow, size 25 × 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-female-thread-25-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-elbow-female-thread.jpg",
+      "price": 155.28,
+      "ar": {
+        "name": "كوع بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 25 مم",
+        "spec": "كوع بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "كوع بولي بسن داخلي مقاس 25 × 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread elbow",
+        "category": "PPR fittings",
+        "size": "25 × 25 mm",
+        "spec": "Female-thread elbow",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread elbow, size 25 × 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-female-thread-32-25-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-female-thread.jpg",
+      "price": 173.55,
+      "ar": {
+        "name": "كوع بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 25 مم",
+        "spec": "كوع بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع بولي بسن داخلي مقاس 32 × 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread elbow",
+        "category": "PPR fittings",
+        "size": "32 × 25 mm",
+        "spec": "Female-thread elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread elbow, size 32 × 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-female-thread-32-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-elbow-female-thread.jpg",
+      "price": 192.83,
+      "ar": {
+        "name": "كوع بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 25 مم",
+        "spec": "كوع بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "كوع بولي بسن داخلي مقاس 32 × 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread elbow",
+        "category": "PPR fittings",
+        "size": "32 × 25 mm",
+        "spec": "Female-thread elbow",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread elbow, size 32 × 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-female-thread-32-32-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-female-thread.jpg",
+      "price": 245.93,
+      "ar": {
+        "name": "كوع بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 32 مم",
+        "spec": "كوع بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع بولي بسن داخلي مقاس 32 × 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread elbow",
+        "category": "PPR fittings",
+        "size": "32 × 32 mm",
+        "spec": "Female-thread elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread elbow, size 32 × 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-female-thread-32-32-insulated",
+      "category": "poly",
+      "image": "/images/poly-elbow-female-thread.jpg",
+      "price": 273.26,
+      "ar": {
+        "name": "كوع بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 32 مم",
+        "spec": "كوع بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "كوع بولي بسن داخلي مقاس 32 × 32 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread elbow",
+        "category": "PPR fittings",
+        "size": "32 × 32 mm",
+        "spec": "Female-thread elbow",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread elbow, size 32 × 32 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-20-20-green",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 91.28,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "20 × 20 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن خارجي مقاس 20 × 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "20 × 20 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR male-thread socket, size 20 × 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-25-20-green",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 119.6,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن خارجي مقاس 25 × 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR male-thread socket, size 25 × 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-25-20-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 132.89,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "جلبة بولي بسن خارجي مقاس 25 × 20 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR male-thread socket, size 25 × 20 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-25-25-green",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 146.03,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "25 × 25 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن خارجي مقاس 25 × 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "25 × 25 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR male-thread socket, size 25 × 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-25-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 162.25,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "25 × 25 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "جلبة بولي بسن خارجي مقاس 25 × 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "25 × 25 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR male-thread socket, size 25 × 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-32-25-green",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 199.47,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "32 × 25 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن خارجي مقاس 32 × 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "32 × 25 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR male-thread socket, size 32 × 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-32-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 221.63,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "32 × 25 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "جلبة بولي بسن خارجي مقاس 32 × 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "32 × 25 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR male-thread socket, size 32 × 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-32-32-green",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 274.52,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "32 × 32 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن خارجي مقاس 32 × 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "32 × 32 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR male-thread socket, size 32 × 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-32-32-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 288.97,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "32 × 32 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "جلبة بولي بسن خارجي مقاس 32 × 32 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "32 × 32 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR male-thread socket, size 32 × 32 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-50-green",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 499.38,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "50 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن خارجي مقاس 50 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "50 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR male-thread socket, size 50 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-thread-63-green",
+      "category": "poly",
+      "image": "/images/poly-union-male-thread.jpg",
+      "price": 782.24,
+      "ar": {
+        "name": "جلبة بولي بسن خارجي",
+        "category": "وصلات بولي",
+        "size": "63 مم",
+        "spec": "جلبة بسن خارجي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن خارجي مقاس 63 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR male-thread socket",
+        "category": "PPR fittings",
+        "size": "63 mm",
+        "spec": "Male-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR male-thread socket, size 63 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-20-20-green",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 79.96,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "20 × 20 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن داخلي مقاس 20 × 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "20 × 20 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread socket, size 20 × 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-25-20-green",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 111.79,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن داخلي مقاس 25 × 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread socket, size 25 × 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-25-20-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 124.21,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "جلبة بولي بسن داخلي مقاس 25 × 20 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread socket, size 25 × 20 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-25-25-green",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 119.88,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 25 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن داخلي مقاس 25 × 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "25 × 25 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread socket, size 25 × 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-25-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 133.2,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 25 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "جلبة بولي بسن داخلي مقاس 25 × 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "25 × 25 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread socket, size 25 × 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-32-25-green",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 165.67,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 25 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن داخلي مقاس 32 × 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "32 × 25 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread socket, size 32 × 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-32-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 184.07,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 25 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "جلبة بولي بسن داخلي مقاس 32 × 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "32 × 25 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread socket, size 32 × 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-32-32-green",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 234.59,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 32 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن داخلي مقاس 32 × 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "32 × 32 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread socket, size 32 × 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-32-32-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 260.65,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "32 × 32 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "جلبة بولي بسن داخلي مقاس 32 × 32 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "32 × 32 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread socket, size 32 × 32 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-50-green",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 471.85,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "50 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن داخلي مقاس 50 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "50 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread socket, size 50 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-thread-63-green",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 741.72,
+      "ar": {
+        "name": "جلبة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "63 مم",
+        "spec": "جلبة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "جلبة بولي بسن داخلي مقاس 63 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread socket",
+        "category": "PPR fittings",
+        "size": "63 mm",
+        "spec": "Female-thread socket",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread socket, size 63 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-concealed-20-green",
+      "category": "poly",
+      "image": "/images/poly-tee-concealed.jpg",
+      "price": 156.47,
+      "ar": {
+        "name": "تي محبس دفن بولي",
+        "category": "وصلات بولي",
+        "size": "20 مم",
+        "spec": "تي محبس دفن",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "تي محبس دفن بولي مقاس 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR concealed-valve tee",
+        "category": "PPR fittings",
+        "size": "20 mm",
+        "spec": "Concealed-valve tee",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR concealed-valve tee, size 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-concealed-25-green",
+      "category": "poly",
+      "image": "/images/poly-tee-concealed.jpg",
+      "price": 166.99,
+      "ar": {
+        "name": "تي محبس دفن بولي",
+        "category": "وصلات بولي",
+        "size": "25 مم",
+        "spec": "تي محبس دفن",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "تي محبس دفن بولي مقاس 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR concealed-valve tee",
+        "category": "PPR fittings",
+        "size": "25 mm",
+        "spec": "Concealed-valve tee",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR concealed-valve tee, size 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-tee-concealed-32-green",
+      "category": "poly",
+      "image": "/images/poly-tee-concealed.jpg",
+      "price": 251.2,
+      "ar": {
+        "name": "تي محبس دفن بولي",
+        "category": "وصلات بولي",
+        "size": "32 مم",
+        "spec": "تي محبس دفن",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "تي محبس دفن بولي مقاس 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR concealed-valve tee",
+        "category": "PPR fittings",
+        "size": "32 mm",
+        "spec": "Concealed-valve tee",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR concealed-valve tee, size 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-valve-concealed-20-green",
+      "category": "poly",
+      "image": "/images/poly-valve-concealed.jpg",
+      "price": 540.36,
+      "ar": {
+        "name": "محبس دفن بولي",
+        "category": "محابس بولي",
+        "size": "20 مم",
+        "spec": "محبس دفن",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "محبس دفن بولي مقاس 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR concealed valve",
+        "category": "PPR valves",
+        "size": "20 mm",
+        "spec": "Concealed valve",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR concealed valve, size 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-valve-concealed-32-green",
+      "category": "poly",
+      "image": "/images/poly-valve-concealed.jpg",
+      "price": 721.1,
+      "ar": {
+        "name": "محبس دفن بولي",
+        "category": "محابس بولي",
+        "size": "32 مم",
+        "spec": "محبس دفن",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "محبس دفن بولي مقاس 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR concealed valve",
+        "category": "PPR valves",
+        "size": "32 mm",
+        "spec": "Concealed valve",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR concealed valve, size 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-square-thread-25-20-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-square-thread.jpg",
+      "price": 213.09,
+      "ar": {
+        "name": "كوع مسطرة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "كوع مسطرة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع مسطرة بولي بسن داخلي مقاس 25 × 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread straight elbow",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Female-thread straight elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread straight elbow, size 25 × 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-square-thread-25-20-insulated",
+      "category": "poly",
+      "image": "/images/poly-elbow-square-thread.jpg",
+      "price": 229.12,
+      "ar": {
+        "name": "كوع مسطرة بولي بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "كوع مسطرة بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "كوع مسطرة بولي بسن داخلي مقاس 25 × 20 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread straight elbow",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Female-thread straight elbow",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread straight elbow, size 25 × 20 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-open-weld-25-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-open-weld.jpg",
+      "price": 24.13,
+      "ar": {
+        "name": "كوع لحام مفتوح بولي",
+        "category": "وصلات بولي",
+        "size": "25 مم",
+        "spec": "كوع لحام مفتوح",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع لحام مفتوح بولي مقاس 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR open weld elbow",
+        "category": "PPR fittings",
+        "size": "25 mm",
+        "spec": "Open weld elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR open weld elbow, size 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-open-weld-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-elbow-open-weld.jpg",
+      "price": 25.94,
+      "ar": {
+        "name": "كوع لحام مفتوح بولي",
+        "category": "وصلات بولي",
+        "size": "25 مم",
+        "spec": "كوع لحام مفتوح",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "كوع لحام مفتوح بولي مقاس 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR open weld elbow",
+        "category": "PPR fittings",
+        "size": "25 mm",
+        "spec": "Open weld elbow",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR open weld elbow, size 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-open-weld-32-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-open-weld.jpg",
+      "price": 35.6,
+      "ar": {
+        "name": "كوع لحام مفتوح بولي",
+        "category": "وصلات بولي",
+        "size": "32 مم",
+        "spec": "كوع لحام مفتوح",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع لحام مفتوح بولي مقاس 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR open weld elbow",
+        "category": "PPR fittings",
+        "size": "32 mm",
+        "spec": "Open weld elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR open weld elbow, size 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-open-weld-32-insulated",
+      "category": "poly",
+      "image": "/images/poly-elbow-open-weld.jpg",
+      "price": 38.27,
+      "ar": {
+        "name": "كوع لحام مفتوح بولي",
+        "category": "وصلات بولي",
+        "size": "32 مم",
+        "spec": "كوع لحام مفتوح",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "كوع لحام مفتوح بولي مقاس 32 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR open weld elbow",
+        "category": "PPR fittings",
+        "size": "32 mm",
+        "spec": "Open weld elbow",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR open weld elbow, size 32 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-open-weld-50-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-open-weld.jpg",
+      "price": 127.81,
+      "ar": {
+        "name": "كوع لحام مفتوح بولي",
+        "category": "وصلات بولي",
+        "size": "50 مم",
+        "spec": "كوع لحام مفتوح",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع لحام مفتوح بولي مقاس 50 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR open weld elbow",
+        "category": "PPR fittings",
+        "size": "50 mm",
+        "spec": "Open weld elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR open weld elbow, size 50 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-open-weld-50-insulated",
+      "category": "poly",
+      "image": "/images/poly-elbow-open-weld.jpg",
+      "price": 137.41,
+      "ar": {
+        "name": "كوع لحام مفتوح بولي",
+        "category": "وصلات بولي",
+        "size": "50 مم",
+        "spec": "كوع لحام مفتوح",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "كوع لحام مفتوح بولي مقاس 50 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR open weld elbow",
+        "category": "PPR fittings",
+        "size": "50 mm",
+        "spec": "Open weld elbow",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR open weld elbow, size 50 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-open-weld-63-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-open-weld.jpg",
+      "price": 181.3,
+      "ar": {
+        "name": "كوع لحام مفتوح بولي",
+        "category": "وصلات بولي",
+        "size": "63 مم",
+        "spec": "كوع لحام مفتوح",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع لحام مفتوح بولي مقاس 63 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR open weld elbow",
+        "category": "PPR fittings",
+        "size": "63 mm",
+        "spec": "Open weld elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR open weld elbow, size 63 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-open-weld-63-insulated",
+      "category": "poly",
+      "image": "/images/poly-elbow-open-weld.jpg",
+      "price": 195,
+      "ar": {
+        "name": "كوع لحام مفتوح بولي",
+        "category": "وصلات بولي",
+        "size": "63 مم",
+        "spec": "كوع لحام مفتوح",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "كوع لحام مفتوح بولي مقاس 63 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR open weld elbow",
+        "category": "PPR fittings",
+        "size": "63 mm",
+        "spec": "Open weld elbow",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR open weld elbow, size 63 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-test-plug-20-green",
+      "category": "poly",
+      "image": "/images/poly-test-plug.jpg",
+      "price": 6.73,
+      "ar": {
+        "name": "طبة اختبار بولي",
+        "category": "وصلات بولي",
+        "size": "20 مم",
+        "spec": "طبة اختبار",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "طبة اختبار بولي مقاس 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR test plug",
+        "category": "PPR fittings",
+        "size": "20 mm",
+        "spec": "Test plug",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR test plug, size 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-threadless-25-20-green",
+      "category": "poly",
+      "image": "/images/poly-elbow-threadless.jpg",
+      "price": 89.6,
+      "ar": {
+        "name": "كوع بولي بسن",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "كوع بسن بدون",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "كوع بولي بسن مقاس 25 × 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR threaded elbow",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Threaded elbow",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR threaded elbow, size 25 × 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-elbow-threadless-25-20-insulated",
+      "category": "poly",
+      "image": "/images/poly-elbow-threadless.jpg",
+      "price": 100.5,
+      "ar": {
+        "name": "كوع بولي بسن",
+        "category": "وصلات بولي",
+        "size": "25 × 20 مم",
+        "spec": "كوع بسن بدون",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "كوع بولي بسن مقاس 25 × 20 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR threaded elbow",
+        "category": "PPR fittings",
+        "size": "25 × 20 mm",
+        "spec": "Threaded elbow",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR threaded elbow, size 25 × 20 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-ball-valve-20-green",
+      "category": "poly",
+      "image": "/images/poly-ball-valve.jpg",
+      "price": 247,
+      "ar": {
+        "name": "محبس كرة بولي",
+        "category": "محابس بولي",
+        "size": "20 مم",
+        "spec": "أسعار قطعية",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "محبس كرة بولي مقاس 20 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR ball valve",
+        "category": "PPR valves",
+        "size": "20 mm",
+        "spec": "Fixed unit price",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR ball valve, size 20 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-ball-valve-25-green",
+      "category": "poly",
+      "image": "/images/poly-ball-valve.jpg",
+      "price": 338,
+      "ar": {
+        "name": "محبس كرة بولي",
+        "category": "محابس بولي",
+        "size": "25 مم",
+        "spec": "أسعار قطعية",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "محبس كرة بولي مقاس 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR ball valve",
+        "category": "PPR valves",
+        "size": "25 mm",
+        "spec": "Fixed unit price",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR ball valve, size 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-ball-valve-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-ball-valve.jpg",
+      "price": 388,
+      "ar": {
+        "name": "محبس كرة بولي",
+        "category": "محابس بولي",
+        "size": "25 مم",
+        "spec": "أسعار قطعية",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "محبس كرة بولي مقاس 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR ball valve",
+        "category": "PPR valves",
+        "size": "25 mm",
+        "spec": "Fixed unit price",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR ball valve, size 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-ball-valve-32-green",
+      "category": "poly",
+      "image": "/images/poly-ball-valve.jpg",
+      "price": 459,
+      "ar": {
+        "name": "محبس كرة بولي",
+        "category": "محابس بولي",
+        "size": "32 مم",
+        "spec": "أسعار قطعية",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "محبس كرة بولي مقاس 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR ball valve",
+        "category": "PPR valves",
+        "size": "32 mm",
+        "spec": "Fixed unit price",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR ball valve, size 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-ball-valve-32-insulated",
+      "category": "poly",
+      "image": "/images/poly-ball-valve.jpg",
+      "price": 520,
+      "ar": {
+        "name": "محبس كرة بولي",
+        "category": "محابس بولي",
+        "size": "32 مم",
+        "spec": "أسعار قطعية",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "محبس كرة بولي مقاس 32 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR ball valve",
+        "category": "PPR valves",
+        "size": "32 mm",
+        "spec": "Fixed unit price",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR ball valve, size 32 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-ball-valve-50-green",
+      "category": "poly",
+      "image": "/images/poly-ball-valve.jpg",
+      "price": 1135,
+      "ar": {
+        "name": "محبس كرة بولي",
+        "category": "محابس بولي",
+        "size": "50 مم",
+        "spec": "أسعار قطعية",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "محبس كرة بولي مقاس 50 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR ball valve",
+        "category": "PPR valves",
+        "size": "50 mm",
+        "spec": "Fixed unit price",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR ball valve, size 50 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-ball-valve-50-insulated",
+      "category": "poly",
+      "image": "/images/poly-ball-valve.jpg",
+      "price": 1390,
+      "ar": {
+        "name": "محبس كرة بولي",
+        "category": "محابس بولي",
+        "size": "50 مم",
+        "spec": "أسعار قطعية",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "محبس كرة بولي مقاس 50 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR ball valve",
+        "category": "PPR valves",
+        "size": "50 mm",
+        "spec": "Fixed unit price",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR ball valve, size 50 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-ball-valve-63-green",
+      "category": "poly",
+      "image": "/images/poly-ball-valve.jpg",
+      "price": 1705,
+      "ar": {
+        "name": "محبس كرة بولي",
+        "category": "محابس بولي",
+        "size": "63 مم",
+        "spec": "أسعار قطعية",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "محبس كرة بولي مقاس 63 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR ball valve",
+        "category": "PPR valves",
+        "size": "63 mm",
+        "spec": "Fixed unit price",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR ball valve, size 63 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-ball-valve-63-insulated",
+      "category": "poly",
+      "image": "/images/poly-ball-valve.jpg",
+      "price": 2100,
+      "ar": {
+        "name": "محبس كرة بولي",
+        "category": "محابس بولي",
+        "size": "63 مم",
+        "spec": "أسعار قطعية",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "محبس كرة بولي مقاس 63 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR ball valve",
+        "category": "PPR valves",
+        "size": "63 mm",
+        "spec": "Fixed unit price",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR ball valve, size 63 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-check-valve-25-weld",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 272,
+      "ar": {
+        "name": "شيك بلف بولي",
+        "category": "محابس بولي",
+        "size": "25 مم",
+        "spec": "بلف عدم رجوع",
+        "unit": "قطعة",
+        "finish": "لحام",
+        "description": "شيك بلف بولي مقاس 25 مم - لحام. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR check valve",
+        "category": "PPR valves",
+        "size": "25 mm",
+        "spec": "Check valve",
+        "unit": "piece",
+        "finish": "Weld",
+        "description": "PPR check valve, size 25 mm, Weld. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-check-valve-25-female-thread",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 376,
+      "ar": {
+        "name": "شيك بلف بولي",
+        "category": "محابس بولي",
+        "size": "25 مم",
+        "spec": "بلف عدم رجوع",
+        "unit": "قطعة",
+        "finish": "سن داخلي",
+        "description": "شيك بلف بولي مقاس 25 مم - سن داخلي. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR check valve",
+        "category": "PPR valves",
+        "size": "25 mm",
+        "spec": "Check valve",
+        "unit": "piece",
+        "finish": "Female thread",
+        "description": "PPR check valve, size 25 mm, Female thread. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-check-valve-25-male-thread",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 425,
+      "ar": {
+        "name": "شيك بلف بولي",
+        "category": "محابس بولي",
+        "size": "25 مم",
+        "spec": "بلف عدم رجوع",
+        "unit": "قطعة",
+        "finish": "سن خارجي",
+        "description": "شيك بلف بولي مقاس 25 مم - سن خارجي. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR check valve",
+        "category": "PPR valves",
+        "size": "25 mm",
+        "spec": "Check valve",
+        "unit": "piece",
+        "finish": "Male thread",
+        "description": "PPR check valve, size 25 mm, Male thread. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-check-valve-32-weld",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 361,
+      "ar": {
+        "name": "شيك بلف بولي",
+        "category": "محابس بولي",
+        "size": "32 مم",
+        "spec": "بلف عدم رجوع",
+        "unit": "قطعة",
+        "finish": "لحام",
+        "description": "شيك بلف بولي مقاس 32 مم - لحام. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR check valve",
+        "category": "PPR valves",
+        "size": "32 mm",
+        "spec": "Check valve",
+        "unit": "piece",
+        "finish": "Weld",
+        "description": "PPR check valve, size 32 mm, Weld. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-check-valve-32-female-thread",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 488,
+      "ar": {
+        "name": "شيك بلف بولي",
+        "category": "محابس بولي",
+        "size": "32 مم",
+        "spec": "بلف عدم رجوع",
+        "unit": "قطعة",
+        "finish": "سن داخلي",
+        "description": "شيك بلف بولي مقاس 32 مم - سن داخلي. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR check valve",
+        "category": "PPR valves",
+        "size": "32 mm",
+        "spec": "Check valve",
+        "unit": "piece",
+        "finish": "Female thread",
+        "description": "PPR check valve, size 32 mm, Female thread. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-check-valve-32-male-thread",
+      "category": "poly",
+      "image": "/images/value.jpg",
+      "price": 540,
+      "ar": {
+        "name": "شيك بلف بولي",
+        "category": "محابس بولي",
+        "size": "32 مم",
+        "spec": "بلف عدم رجوع",
+        "unit": "قطعة",
+        "finish": "سن خارجي",
+        "description": "شيك بلف بولي مقاس 32 مم - سن خارجي. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR check valve",
+        "category": "PPR valves",
+        "size": "32 mm",
+        "spec": "Check valve",
+        "unit": "piece",
+        "finish": "Male thread",
+        "description": "PPR check valve, size 32 mm, Male thread. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-cut-25-green",
+      "category": "poly",
+      "image": "/images/poly-union-male-cut.jpg",
+      "price": 153,
+      "ar": {
+        "name": "لاكور بسن خارجي قطعي",
+        "category": "وصلات بولي",
+        "size": "25 مم",
+        "spec": "لاكور بسن خارجي قطعي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "لاكور بسن خارجي قطعي مقاس 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR cut-price male-thread union",
+        "category": "PPR fittings",
+        "size": "25 mm",
+        "spec": "Male-thread union",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR cut-price male-thread union, size 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-cut-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-male-cut.jpg",
+      "price": 180,
+      "ar": {
+        "name": "لاكور بسن خارجي قطعي",
+        "category": "وصلات بولي",
+        "size": "25 مم",
+        "spec": "لاكور بسن خارجي قطعي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "لاكور بسن خارجي قطعي مقاس 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR cut-price male-thread union",
+        "category": "PPR fittings",
+        "size": "25 mm",
+        "spec": "Male-thread union",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR cut-price male-thread union, size 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-cut-32-green",
+      "category": "poly",
+      "image": "/images/poly-union-male-cut.jpg",
+      "price": 231,
+      "ar": {
+        "name": "لاكور بسن خارجي قطعي",
+        "category": "وصلات بولي",
+        "size": "32 مم",
+        "spec": "لاكور بسن خارجي قطعي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "لاكور بسن خارجي قطعي مقاس 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR cut-price male-thread union",
+        "category": "PPR fittings",
+        "size": "32 mm",
+        "spec": "Male-thread union",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR cut-price male-thread union, size 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-male-cut-32-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-male-cut.jpg",
+      "price": 255,
+      "ar": {
+        "name": "لاكور بسن خارجي قطعي",
+        "category": "وصلات بولي",
+        "size": "32 مم",
+        "spec": "لاكور بسن خارجي قطعي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "لاكور بسن خارجي قطعي مقاس 32 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR cut-price male-thread union",
+        "category": "PPR fittings",
+        "size": "32 mm",
+        "spec": "Male-thread union",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR cut-price male-thread union, size 32 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-brass-body-25-green",
+      "category": "poly",
+      "image": "/images/poly-union-brass-body.jpg",
+      "price": 105,
+      "ar": {
+        "name": "لاكور لحام جسم نحاس قطعي",
+        "category": "وصلات بولي",
+        "size": "25 مم",
+        "spec": "لحام جسم نحاس",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "لاكور لحام جسم نحاس قطعي مقاس 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR weld union with brass body",
+        "category": "PPR fittings",
+        "size": "25 mm",
+        "spec": "Weld, brass body",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR weld union with brass body, size 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-brass-body-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-brass-body.jpg",
+      "price": 115,
+      "ar": {
+        "name": "لاكور لحام جسم نحاس قطعي",
+        "category": "وصلات بولي",
+        "size": "25 مم",
+        "spec": "لحام جسم نحاس",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "لاكور لحام جسم نحاس قطعي مقاس 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR weld union with brass body",
+        "category": "PPR fittings",
+        "size": "25 mm",
+        "spec": "Weld, brass body",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR weld union with brass body, size 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-brass-body-32-green",
+      "category": "poly",
+      "image": "/images/poly-union-brass-body.jpg",
+      "price": 149,
+      "ar": {
+        "name": "لاكور لحام جسم نحاس قطعي",
+        "category": "وصلات بولي",
+        "size": "32 مم",
+        "spec": "لحام جسم نحاس",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "لاكور لحام جسم نحاس قطعي مقاس 32 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR weld union with brass body",
+        "category": "PPR fittings",
+        "size": "32 mm",
+        "spec": "Weld, brass body",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR weld union with brass body, size 32 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-brass-body-32-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-brass-body.jpg",
+      "price": 152,
+      "ar": {
+        "name": "لاكور لحام جسم نحاس قطعي",
+        "category": "وصلات بولي",
+        "size": "32 مم",
+        "spec": "لحام جسم نحاس",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "لاكور لحام جسم نحاس قطعي مقاس 32 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR weld union with brass body",
+        "category": "PPR fittings",
+        "size": "32 mm",
+        "spec": "Weld, brass body",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR weld union with brass body, size 32 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-25-green",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 120,
+      "ar": {
+        "name": "لاكور بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 مم",
+        "spec": "لاكور بسن داخلي",
+        "unit": "قطعة",
+        "finish": "أخضر",
+        "description": "لاكور بسن داخلي مقاس 25 مم - أخضر. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread union",
+        "category": "PPR fittings",
+        "size": "25 mm",
+        "spec": "Female-thread union",
+        "unit": "piece",
+        "finish": "Green",
+        "description": "PPR female-thread union, size 25 mm, Green. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "poly-list-union-female-25-insulated",
+      "category": "poly",
+      "image": "/images/poly-union-female.jpg",
+      "price": 142,
+      "ar": {
+        "name": "لاكور بسن داخلي",
+        "category": "وصلات بولي",
+        "size": "25 مم",
+        "spec": "لاكور بسن داخلي",
+        "unit": "قطعة",
+        "finish": "معزول",
+        "description": "لاكور بسن داخلي مقاس 25 مم - معزول. السعر للقطعة الواحدة حسب قائمة أسعار البولي بتاريخ 2026-10-28."
+      },
+      "en": {
+        "name": "PPR female-thread union",
+        "category": "PPR fittings",
+        "size": "25 mm",
+        "spec": "Female-thread union",
+        "unit": "piece",
+        "finish": "Insulated",
+        "description": "PPR female-thread union, size 25 mm, Insulated. Per-piece price from the PPR list dated 2026-10-28."
+      }
+    },
+    {
+      "id": "pvc-super-elbow-90-2",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-90.jpeg",
+      "price": 39.43,
+      "ar": {
+        "name": "كوع 90 عادي سوبر PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 90 عادي سوبر PVC 2 بمقاس 2 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super 90 Elbow 2\"",
+        "category": "PVC Fittings",
+        "size": "2 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super 90 Elbow 2\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-super-elbow-90-4",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-90.jpeg",
+      "price": 129.93,
+      "ar": {
+        "name": "كوع 90 عادي سوبر PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع 90 عادي سوبر PVC 4 بمقاس 4 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super 90 Elbow 4\"",
+        "category": "PVC Fittings",
+        "size": "4 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super 90 Elbow 4\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-super-access-elbow-2",
+      "category": "fittings",
+      "image": "/images/pvc-access-elbow.jpeg",
+      "price": 53.91,
+      "ar": {
+        "name": "كوع باب سوبر PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع باب سوبر PVC 2 بمقاس 2 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Access Elbow 2\"",
+        "category": "PVC Fittings",
+        "size": "2 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Access Elbow 2\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-super-access-elbow-4",
+      "category": "fittings",
+      "image": "/images/pvc-access-elbow.jpeg",
+      "price": 169.98,
+      "ar": {
+        "name": "كوع باب سوبر PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع باب سوبر PVC 4 بمقاس 4 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Access Elbow 4\"",
+        "category": "PVC Fittings",
+        "size": "4 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Access Elbow 4\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-super-access-tee-2",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 52.63,
+      "ar": {
+        "name": "مشترك باب سوبر PVC 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك باب سوبر PVC 2 بمقاس 2 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Access Tee 2\"",
+        "category": "PVC Fittings",
+        "size": "2 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Access Tee 2\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-super-access-tee-3",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 124.63,
+      "ar": {
+        "name": "مشترك باب سوبر PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك باب سوبر PVC 3 بمقاس 3 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Access Tee 3\"",
+        "category": "PVC Fittings",
+        "size": "3 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Access Tee 3\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-super-access-tee-4",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 205.14,
+      "ar": {
+        "name": "مشترك باب سوبر PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك باب سوبر PVC 4 بمقاس 4 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Access Tee 4\"",
+        "category": "PVC Fittings",
+        "size": "4 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Access Tee 4\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-super-access-tee-6",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 494.55,
+      "ar": {
+        "name": "مشترك باب سوبر PVC 6",
+        "category": "قطع ووصلات PVC",
+        "size": "6 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك باب سوبر PVC 6 بمقاس 6 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Access Tee 6\"",
+        "category": "PVC Fittings",
+        "size": "6 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Access Tee 6\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-cross-tee-3",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 198.23,
+      "ar": {
+        "name": "مشترك صليبة PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك صليبة PVC 3 بمقاس 3 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Cross Tee 3\"",
+        "category": "PVC Fittings",
+        "size": "3 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Cross Tee 3\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-cross-tee-4",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 249.37,
+      "ar": {
+        "name": "مشترك صليبة PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك صليبة PVC 4 بمقاس 4 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Cross Tee 4\"",
+        "category": "PVC Fittings",
+        "size": "4 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Cross Tee 4\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-swept-elbow-4",
+      "category": "fittings",
+      "image": "/images/pvc-elbow-45.jpeg",
+      "price": 215.96,
+      "ar": {
+        "name": "كوع ريحة PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "كوع ريحة PVC 4 بمقاس 4 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Long-Sweep Elbow 4\"",
+        "category": "PVC Fittings",
+        "size": "4 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Long-Sweep Elbow 4\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-cleanout-cap-3",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 70.6,
+      "ar": {
+        "name": "طبة تسليك PVC 3",
+        "category": "قطع ووصلات PVC",
+        "size": "3 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "طبة تسليك PVC 3 بمقاس 3 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Cleanout Cap 3\"",
+        "category": "PVC Fittings",
+        "size": "3 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Cleanout Cap 3\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-cleanout-cap-4",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 92.4,
+      "ar": {
+        "name": "طبة تسليك PVC 4",
+        "category": "قطع ووصلات PVC",
+        "size": "4 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "طبة تسليك PVC 4 بمقاس 4 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Cleanout Cap 4\"",
+        "category": "PVC Fittings",
+        "size": "4 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Cleanout Cap 4\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "pvc-cleanout-cap-6",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 176.83,
+      "ar": {
+        "name": "طبة تسليك PVC 6",
+        "category": "قطع ووصلات PVC",
+        "size": "6 بوصة",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "طبة تسليك PVC 6 بمقاس 6 بوصة من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Cleanout Cap 6\"",
+        "category": "PVC Fittings",
+        "size": "6 in",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Cleanout Cap 6\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-reducer-6-4",
+      "category": "fittings",
+      "image": "/images/pvc-coupling.jpeg",
+      "price": 139.65,
+      "ar": {
+        "name": "نقاص PVC 6 / 4",
+        "category": "قطع ووصلات PVC",
+        "size": "6 / 4",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "نقاص PVC 6 / 4 بمقاس 6 / 4 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Reducer 6\" / 4\"",
+        "category": "PVC Fittings",
+        "size": "6 / 4",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Reducer 6\" / 4\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-cross-tee-4-2",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 248.91,
+      "ar": {
+        "name": "مشترك صليبة PVC 4 / 2",
+        "category": "قطع ووصلات PVC",
+        "size": "4 / 2",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك صليبة PVC 4 / 2 بمقاس 4 / 2 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Cross Tee 4\" / 2\"",
+        "category": "PVC Fittings",
+        "size": "4 / 2",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Cross Tee 4\" / 2\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-cross-tee-4-3",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 260.47,
+      "ar": {
+        "name": "مشترك صليبة PVC 4 / 3",
+        "category": "قطع ووصلات PVC",
+        "size": "4 / 3",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك صليبة PVC 4 / 3 بمقاس 4 / 3 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Cross Tee 4\" / 3\"",
+        "category": "PVC Fittings",
+        "size": "4 / 3",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Cross Tee 4\" / 3\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-floor-drain-2-1-5",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 100.59,
+      "ar": {
+        "name": "بيبة PVC 2 * 1.5",
+        "category": "قطع ووصلات PVC",
+        "size": "2 * 1.5",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "بيبة PVC 2 * 1.5 بمقاس 2 * 1.5 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Floor Drain 2\" * 1.5\"",
+        "category": "PVC Fittings",
+        "size": "2 * 1.5",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Floor Drain 2\" * 1.5\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-floor-drain-2-2",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 108.91,
+      "ar": {
+        "name": "بيبة PVC 2 * 2",
+        "category": "قطع ووصلات PVC",
+        "size": "2 * 2",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "بيبة PVC 2 * 2 بمقاس 2 * 2 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Floor Drain 2\" * 2\"",
+        "category": "PVC Fittings",
+        "size": "2 * 2",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Floor Drain 2\" * 2\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-tee-3-2-access",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 124.97,
+      "ar": {
+        "name": "مشترك PVC 3 / 2 باب سوبر",
+        "category": "قطع ووصلات PVC",
+        "size": "3 / 2",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك PVC 3 / 2 باب سوبر بمقاس 3 / 2 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Access Reducing Tee 3\" / 2\"",
+        "category": "PVC Fittings",
+        "size": "3 / 2",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Access Reducing Tee 3\" / 2\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-tee-4-2-standard",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 166.6,
+      "ar": {
+        "name": "مشترك PVC 4 / 2 عادي سوبر",
+        "category": "قطع ووصلات PVC",
+        "size": "4 / 2",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك PVC 4 / 2 عادي سوبر بمقاس 4 / 2 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Standard Reducing Tee 4\" / 2\"",
+        "category": "PVC Fittings",
+        "size": "4 / 2",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Standard Reducing Tee 4\" / 2\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-tee-4-3-standard",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 175.18,
+      "ar": {
+        "name": "مشترك PVC 4 / 3 عادي سوبر",
+        "category": "قطع ووصلات PVC",
+        "size": "4 / 3",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك PVC 4 / 3 عادي سوبر بمقاس 4 / 3 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Standard Reducing Tee 4\" / 3\"",
+        "category": "PVC Fittings",
+        "size": "4 / 3",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Standard Reducing Tee 4\" / 3\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-tee-4-3-access",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 207.98,
+      "ar": {
+        "name": "مشترك PVC 4 / 3 باب سوبر",
+        "category": "قطع ووصلات PVC",
+        "size": "4 / 3",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك PVC 4 / 3 باب سوبر بمقاس 4 / 3 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Access Reducing Tee 4\" / 3\"",
+        "category": "PVC Fittings",
+        "size": "4 / 3",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Access Reducing Tee 4\" / 3\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-tee-6-4-standard",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 437.08,
+      "ar": {
+        "name": "مشترك PVC 6 / 4 عادي سوبر",
+        "category": "قطع ووصلات PVC",
+        "size": "6 / 4",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك PVC 6 / 4 عادي سوبر بمقاس 6 / 4 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Standard Reducing Tee 6\" / 4\"",
+        "category": "PVC Fittings",
+        "size": "6 / 4",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Standard Reducing Tee 6\" / 4\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-tee-6-4-access",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 481.35,
+      "ar": {
+        "name": "مشترك PVC 6 / 4 باب سوبر",
+        "category": "قطع ووصلات PVC",
+        "size": "6 / 4",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "مشترك PVC 6 / 4 باب سوبر بمقاس 6 / 4 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Access Reducing Tee 6\" / 4\"",
+        "category": "PVC Fittings",
+        "size": "6 / 4",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Access Reducing Tee 6\" / 4\", a PVC drainage fitting. Price is per piece according to the price list."
+      }
+    },
+    {
+      "id": "fitting-wye-6-4",
+      "category": "fittings",
+      "image": "/images/pvc.jpg",
+      "price": 580.0,
+      "ar": {
+        "name": "واي PVC 6 / 4 سوبر",
+        "category": "قطع ووصلات PVC",
+        "size": "6 / 4",
+        "spec": "PVC صرف",
+        "unit": "قطعة",
+        "description": "واي PVC 6 / 4 سوبر بمقاس 6 / 4 من وصلات PVC للصرف. السعر للقطعة الواحدة حسب قائمة الأسعار."
+      },
+      "en": {
+        "name": "PVC Super Wye 6\" / 4\"",
+        "category": "PVC Fittings",
+        "size": "6 / 4",
+        "spec": "PVC drainage fitting",
+        "unit": "piece",
+        "description": "PVC Super Wye 6\" / 4\", a PVC drainage fitting. Price is per piece according to the price list."
       }
     }
   ]

@@ -1,8 +1,10 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import worker from '../dist/server/index.js';
 import {D1} from './d1-helper.mjs';
 const origin='https://mak.example';
+const catalogSeed=JSON.parse(readFileSync('data/catalog.json','utf8'));
 const owner={'oai-authenticated-user-id':'owner','oai-authenticated-user-email':'owner@example.com'};
 class R2 {
     objects=new Map();fail=false;
@@ -41,7 +43,7 @@ test('backup versions are private, preserve Arabic, include notes and are separa
     assert.equal((await call('/orders/v1/'+backup+'.json',environment,{headers:{}})).status,404);
     const response=await call('/api/admin/backups/'+backup,environment);assert.equal(response.headers.get('Cache-Control'),'no-store');
     const envelope=await response.json(),snapshot=JSON.parse(envelope.data);
-    assert.equal(snapshot.tables.quotes[0].name,'خالد');assert.equal(snapshot.tables.quote_admin[0].notes,'اتصل بالعميل');assert.equal(snapshot.catalog.products.length,107);
+    assert.equal(snapshot.tables.quotes[0].name,'خالد');assert.equal(snapshot.tables.quote_admin[0].notes,'اتصل بالعميل');assert.equal(snapshot.catalog.products.length,catalogSeed.products.length);
     assert.ok(!envelope.data.includes('ADMIN_EMAILS'));assert.ok(!envelope.data.includes('RESEND_API_KEY'));
     const failedDatabase={...environment,DB:undefined};
     assert.equal((await call('/api/admin/backups/'+backup,failedDatabase)).status,200);
