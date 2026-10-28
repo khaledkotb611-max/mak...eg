@@ -1138,7 +1138,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ids.add(product.id);
             });
             const refreshedProducts = catalog.products.map((product) => ({ ...product, search: [product.id, product.category, ...Object.values(product.ar), ...Object.values(product.en)].join(" ").toLowerCase() }));
-            if (catalogLoaded && catalogCanManage) {
+            if (catalogLoaded) {
                 const previousProducts = new Map(products.map((product) => [product.id, product]));
                 for (let index = refreshedProducts.length - 1; index >= 0; index -= 1) {
                     const updatedProduct = refreshedProducts[index];
