@@ -1004,7 +1004,7 @@ document.addEventListener("DOMContentLoaded", () => {
             : "";
         const emptyState = `<div class="catalog-empty-state" role="status"><span aria-hidden="true">⌕</span><strong>${escapeHtml(ui.noResults)}</strong><p>${escapeHtml(currentLanguage === "ar" ? "جرّب اسمًا أو مقاسًا مختلفًا، أو امسح الفلاتر." : "Try another name or size, or clear the filters.")}</p></div>`;
 
-        catalogGrid.setAttribute("aria-busy", "false");
+        catalogGrid.setAttribute?.("aria-busy", "false");
         catalogGrid.innerHTML = visible.length ? `${cards}${showMore}` : emptyState;
         catalogTabs.forEach((tab) => {
             const isActive = (tab.dataset.catalogTab || "all") === activeCatalogTab;
@@ -1235,7 +1235,7 @@ document.addEventListener("DOMContentLoaded", () => {
         filterCatalog();
         catalogSearch?.focus();
     });
-    catalogGrid?.addEventListener("click", (event) => {
+    catalogGrid?.addEventListener?.("click", (event) => {
         if (!event.target.closest("[data-catalog-more]")) return;
         visibleCatalogLimit += catalogPageSize;
         filterCatalog();
