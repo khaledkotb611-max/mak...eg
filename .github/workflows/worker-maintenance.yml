@@ -13,6 +13,7 @@ concurrency:
 
 jobs:
   maintain:
+    if: ${{ vars.MAK_WORKER_ORIGIN != '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
@@ -32,3 +33,12 @@ jobs:
           WORKER_ORIGIN="${WORKER_ORIGIN%/}"
           curl --fail --silent --show-error --connect-timeout 10 --max-time 30 \
             "$WORKER_ORIGIN/api/health"
+
+  missing-origin:
+    if: ${{ github.event_name == 'workflow_dispatch' && vars.MAK_WORKER_ORIGIN == '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Explain required repository variable
+        run: |
+          echo "::error::Set the MAK_WORKER_ORIGIN Actions variable before running this workflow."
+          exit 1
