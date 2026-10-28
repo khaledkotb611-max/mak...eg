@@ -758,7 +758,7 @@ const renderCatalog = () => {
 
     if (catalogState === "ready") return;
     const ui = uiText[currentLanguage];
-    catalogGrid.setAttribute("aria-busy", String(catalogState === "loading"));
+    catalogGrid.setAttribute?.("aria-busy", String(catalogState === "loading"));
     catalogGrid.innerHTML = `<p role="status">${escapeHtml(catalogState === "loading" ? ui.catalogLoading : ui.catalogFailed)}</p>${catalogState === "error" ? `<button class="button button-outline" type="button" data-retry-catalog>${escapeHtml(ui.retry)}</button>` : ""}`;
 };
 
