@@ -1787,7 +1787,7 @@
     {
       "id": "ppr-pn20-green-20-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-green.jpg",
       "price": 134.67,
       "ar": {
         "name": "ماسورة بولي PN20 أخضر 20 مم",
@@ -1811,7 +1811,7 @@
     {
       "id": "ppr-pn20-green-25-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-green.jpg",
       "price": 213.07,
       "ar": {
         "name": "ماسورة بولي PN20 أخضر 25 مم",
@@ -1859,7 +1859,7 @@
     {
       "id": "ppr-pn20-green-32-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-green.jpg",
       "price": 307.3,
       "ar": {
         "name": "ماسورة بولي PN20 أخضر 32 مم",
@@ -1907,7 +1907,7 @@
     {
       "id": "ppr-pn20-green-50-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-green.jpg",
       "price": 717.24,
       "ar": {
         "name": "ماسورة بولي PN20 أخضر 50 مم",
@@ -1955,7 +1955,7 @@
     {
       "id": "ppr-pn20-green-63-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-green.jpg",
       "price": 1124.21,
       "ar": {
         "name": "ماسورة بولي PN20 أخضر 63 مم",
@@ -2003,7 +2003,7 @@
     {
       "id": "ppr-pn16-green-32-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-green.jpg",
       "price": 272.2,
       "ar": {
         "name": "ماسورة بولي PN16 أخضر 32 مم",
@@ -2051,7 +2051,7 @@
     {
       "id": "ppr-pn10-green-50-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-green.jpg",
       "price": 573.53,
       "ar": {
         "name": "ماسورة بولي PN10 أخضر 50 مم",
