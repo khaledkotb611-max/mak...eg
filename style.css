@@ -3020,7 +3020,7 @@ html.js .products-page [data-animate] {
 
 .selected-product{display:grid;gap:12px;padding:16px;border:1px solid var(--line);border-radius:12px;grid-column:1 / -1}.selected-product[hidden]{display:none}.selected-product input{max-width:160px}.selected-product small{font-size:14px}#catalog-sync-status{font-size:14px;color:var(--muted);margin-block:12px}
 
-/* Preserve the complete original product photo in cards and detail pages. */
+/* Fill product image frames without distorting the source photo. */
 .product-item-media img[src="/images/pvc-access-elbow.jpeg"],
 .product-detail-media img[src="/images/pvc-access-elbow.jpeg"],
 .product-item-media img[src="/images/pvc-elbow-90.jpeg"],
@@ -3029,7 +3029,7 @@ html.js .products-page [data-animate] {
 .product-detail-media img[src="/images/pvc-elbow-45.jpeg"],
 .product-item-media img[src="/images/pvc-coupling.jpeg"],
 .product-detail-media img[src="/images/pvc-coupling.jpeg"] {
-    object-fit: contain;
+    object-fit: cover;
     background: #fff;
 }
 
@@ -3479,8 +3479,8 @@ body {
     background: #fff;
     height: 100%;
     inset: 0;
-    object-fit: contain;
-    padding: 12px;
+    object-fit: cover;
+    padding: 0;
     position: absolute;
     transition: transform 0.3s ease;
     width: 100%;
@@ -3677,8 +3677,8 @@ body {
 
 .product-detail-media img {
     background: #fff;
-    object-fit: contain;
-    padding: clamp(14px, 3vw, 32px);
+    object-fit: cover;
+    padding: 0;
 }
 
 .product-detail-info {
