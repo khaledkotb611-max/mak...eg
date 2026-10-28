@@ -46,7 +46,7 @@
             if(!form)throw new Error('Invalid product form');
             document.body.append(document.importNode(form,true));
             editor=window.MakProductEditor.mount({request,isAuthorized:()=>authorized,onUnauthorized:()=>setAuthority(false),
-                onSaved(){editor.lock();message(getLanguage()==='en'?'Product saved.':'تم حفظ المنتج.');refresh();},
+                onSaved(product){editor.lock();message(getLanguage()==='en'?'Product saved.':'تم حفظ المنتج.');refresh(product?.id);},
                 onDeleted(){message(getLanguage()==='en'?'Product deleted; previous orders preserved.':'تم حذف المنتج. الطلبات السابقة محفوظة.');refresh();}
             });return editor;
         };

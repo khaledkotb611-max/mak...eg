@@ -921,6 +921,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const catalogPageSize = 24;
     let visibleCatalogLimit = catalogPageSize;
     let activeSortOrder = "featured";
+    let catalogPriorityProductId = "";
 
     if (catalogToolbar && !catalogSort) {
         const sortLabel = document.createElement("label");
@@ -998,6 +999,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (activeSortOrder === "high") ordered.sort((a, b) => b.price - a.price || collator.compare(a[currentLanguage].name, b[currentLanguage].name));
 
         const visible = ordered.slice(0, visibleCatalogLimit);
+        const priorityProductIndex = ordered.findIndex((product) => product.id === catalogPriorityProductId);
+        if (priorityProductIndex >= visible.length && priorityProductIndex >= 0) {
+            visible.push(ordered[priorityProductIndex]);
+        }
         const cards = visible.map((product) => renderProductCard(product)).join("");
         const showMore = ordered.length > visible.length
             ? `<div class="catalog-more-wrap"><button class="button button-outline catalog-load-more" type="button" data-catalog-more aria-controls="catalog-grid">${escapeHtml(ui.showMore)}</button></div>`
@@ -1162,7 +1167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     catalogManager=window.MakCatalogManager?.start({
         getLanguage:()=>currentLanguage,
         onAuthorityChange(value){catalogCanManage=value;renderCatalog();renderProductDetail();filterCatalog();},
-        refresh(){catalogEtag='';if(catalogController)catalogRefreshPending=true;else if(!document.hidden)void loadCatalog();}
+        refresh(productId){if(productId)catalogPriorityProductId=productId;catalogEtag='';if(catalogController)catalogRefreshPending=true;else if(!document.hidden)void loadCatalog();}
     });
 
     document.addEventListener("click", (event) => {
