@@ -130,6 +130,17 @@ function readAsset(pathname) {
 }
 
 export default {
+    async scheduled(_controller, env) {
+        // Keep delivery and backups moving when the hosted platform enables
+        // a Cron Trigger, even if the site receives no visitor traffic.
+        const results = await Promise.allSettled([
+            flushNotifications(env),
+            ensureBackup(env)
+        ]);
+        if (results.some((result) => result.status === "rejected")) {
+            throw new Error("Scheduled backend maintenance failed");
+        }
+    },
     async fetch(request, env, ctx) {
         const url = new URL(request.url);
         if (ctx?.waitUntil && !(url.pathname === "/api/quotes" && request.method === "POST")) ctx.waitUntil((async()=>{await flushNotifications(env).catch(()=>{});await ensureBackup(env).catch(()=>{});})());
