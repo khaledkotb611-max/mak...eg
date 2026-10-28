@@ -5,7 +5,7 @@
     {
       "id": "gold-pipe-1-1-2-sdr-17-2-85",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 537,
       "ar": {
         "name": "ماسورة MAK الجولد 1 1/2",
@@ -27,7 +27,7 @@
     {
       "id": "gold-pipe-1-1-2-sdr-21-2-26",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 423,
       "ar": {
         "name": "ماسورة MAK الجولد 1 1/2",
@@ -49,7 +49,7 @@
     {
       "id": "gold-pipe-1-1-2-sdr-26-1-86",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 394,
       "ar": {
         "name": "ماسورة MAK الجولد 1 1/2",
@@ -71,7 +71,7 @@
     {
       "id": "gold-pipe-2-sdr-17-3-56",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 775,
       "ar": {
         "name": "ماسورة MAK الجولد 2",
@@ -93,7 +93,7 @@
     {
       "id": "gold-pipe-2-sdr-21-2-88",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 682,
       "ar": {
         "name": "ماسورة MAK الجولد 2",
@@ -115,7 +115,7 @@
     {
       "id": "gold-pipe-2-sdr-26-2-32",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 585,
       "ar": {
         "name": "ماسورة MAK الجولد 2",
@@ -137,7 +137,7 @@
     {
       "id": "gold-pipe-3-sdr-21-4-25",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1415,
       "ar": {
         "name": "ماسورة MAK الجولد 3",
@@ -159,7 +159,7 @@
     {
       "id": "gold-pipe-3-sdr-26-3-43",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1037,
       "ar": {
         "name": "ماسورة MAK الجولد 3",
@@ -181,7 +181,7 @@
     {
       "id": "gold-pipe-3-sdr-32-5-2-75",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 912,
       "ar": {
         "name": "ماسورة MAK الجولد 3",
@@ -203,7 +203,7 @@
     {
       "id": "gold-pipe-4-2-5",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1104,
       "ar": {
         "name": "ماسورة MAK الجولد 4",
@@ -225,7 +225,7 @@
     {
       "id": "gold-pipe-4-sdr-41-2-8",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1241,
       "ar": {
         "name": "ماسورة MAK الجولد 4",
@@ -247,7 +247,7 @@
     {
       "id": "gold-pipe-4-sdr-32-5-3-5",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1524,
       "ar": {
         "name": "ماسورة MAK الجولد 4",
@@ -269,7 +269,7 @@
     {
       "id": "gold-pipe-4-4",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1674,
       "ar": {
         "name": "ماسورة MAK الجولد 4",
@@ -291,7 +291,7 @@
     {
       "id": "gold-pipe-4-5",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1973,
       "ar": {
         "name": "ماسورة MAK الجولد 4",
@@ -313,7 +313,7 @@
     {
       "id": "gold-pipe-6-3",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1945,
       "ar": {
         "name": "ماسورة MAK الجولد 6",
@@ -335,7 +335,7 @@
     {
       "id": "gold-pipe-6-sdr-41-4-12",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 2500,
       "ar": {
         "name": "ماسورة MAK الجولد 6",
@@ -357,7 +357,7 @@
     {
       "id": "gold-pipe-6-5",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 3127,
       "ar": {
         "name": "ماسورة MAK الجولد 6",
@@ -379,7 +379,7 @@
     {
       "id": "b-pipe-1-1-2-sdr-17-2-85",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 431,
       "ar": {
         "name": "ماسورة MAK B 1 1/2",
@@ -401,7 +401,7 @@
     {
       "id": "b-pipe-1-1-2-sdr-21-2-26",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 353,
       "ar": {
         "name": "ماسورة MAK B 1 1/2",
@@ -423,7 +423,7 @@
     {
       "id": "b-pipe-1-1-2-sdr-26-1-86",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 251,
       "ar": {
         "name": "ماسورة MAK B 1 1/2",
@@ -445,7 +445,7 @@
     {
       "id": "b-pipe-2-sdr-17-3-56",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 536,
       "ar": {
         "name": "ماسورة MAK B 2",
@@ -467,7 +467,7 @@
     {
       "id": "b-pipe-2-sdr-21-2-88",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 477,
       "ar": {
         "name": "ماسورة MAK B 2",
@@ -489,7 +489,7 @@
     {
       "id": "b-pipe-2-sdr-26-2-32",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 407,
       "ar": {
         "name": "ماسورة MAK B 2",
@@ -511,7 +511,7 @@
     {
       "id": "b-pipe-3-sdr-21-4-25",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 780,
       "ar": {
         "name": "ماسورة MAK B 3",
@@ -533,7 +533,7 @@
     {
       "id": "b-pipe-3-sdr-26-3-43",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 748,
       "ar": {
         "name": "ماسورة MAK B 3",
@@ -555,7 +555,7 @@
     {
       "id": "b-pipe-3-sdr-32-5-2-75",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 602,
       "ar": {
         "name": "ماسورة MAK B 3",
@@ -577,7 +577,7 @@
     {
       "id": "b-pipe-4-sdr-64-1-78",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 705,
       "ar": {
         "name": "ماسورة MAK B 4",
@@ -599,7 +599,7 @@
     {
       "id": "b-pipe-4-sdr-41-2-8",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 850,
       "ar": {
         "name": "ماسورة MAK B 4",
@@ -621,7 +621,7 @@
     {
       "id": "b-pipe-4-sdr-32-5-3-5",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1081,
       "ar": {
         "name": "ماسورة MAK B 4",
@@ -643,7 +643,7 @@
     {
       "id": "b-pipe-4-4",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1192,
       "ar": {
         "name": "ماسورة MAK B 4",
@@ -665,7 +665,7 @@
     {
       "id": "b-pipe-4-5",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1350,
       "ar": {
         "name": "ماسورة MAK B 4",
@@ -687,7 +687,7 @@
     {
       "id": "b-pipe-6-3",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1327,
       "ar": {
         "name": "ماسورة MAK B 6",
@@ -709,7 +709,7 @@
     {
       "id": "b-pipe-6-sdr-41-4-12",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1580,
       "ar": {
         "name": "ماسورة MAK B 6",
@@ -731,7 +731,7 @@
     {
       "id": "b-pipe-6-5",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-white-pipes.jpg",
       "price": 1904,
       "ar": {
         "name": "ماسورة MAK B 6",
