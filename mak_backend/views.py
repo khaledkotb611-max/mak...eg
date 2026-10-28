@@ -15,7 +15,23 @@ from . import storage
 
 
 PUBLIC_FILES = {"index.html", "products.html", "product.html", "pricing.html", "style.css", "script.js", "admin.html", "admin.css", "admin.js", "catalog-admin.js", "product-editor.js", "catalog-frontend.js", "product-editor.css", "vendor/exceljs-4.4.0.min.js"}
-PUBLIC_IMAGES = {f"images/{name}.jpg" for name in ("hero", "about", "ppr", "pvc", "value")} | {"images/pvc-access-elbow.jpeg", "images/pvc-elbow-90.jpeg", "images/pvc-elbow-45.jpeg", "images/pvc-vent.jpeg", "images/pvc-coupling.jpeg"}
+PUBLIC_IMAGES = (
+    {f"images/{name}.jpg" for name in ("hero", "about", "ppr", "pvc", "value")}
+    | {
+        "images/pvc-access-elbow.jpeg", "images/pvc-elbow-90.jpeg",
+        "images/pvc-elbow-45.jpeg", "images/pvc-vent.jpeg", "images/pvc-coupling.jpeg",
+    }
+    | {
+        "images/category-pvc-pipes.jpg", "images/category-ppr-pipes.jpg",
+        "images/category-fittings.png", "images/mak-grey-pipes.jpg",
+        "images/mak-white-pipes.jpg", "images/poly-elbow-open-weld.jpg",
+        "images/poly-lacor-female-thread.jpg", "images/poly-reducing-coupling.jpg",
+        "images/poly-tee-female-thread.jpg", "images/poly-union-brass-body.jpg",
+        "images/poly-union-male-cut.jpg", "images/poly-weld-tee-green.jpg",
+        "images/ppr-elbow-female-thread.jpg", "images/ppr-pipes-green.jpg",
+        "images/ppr-pipes-insulated.jpg",
+    }
+)
 
 
 def _json_response(payload, status=200):
