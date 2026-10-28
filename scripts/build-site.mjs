@@ -46,7 +46,10 @@ const featuredImageAssets = [
     { name: "about.jpg", width: 1200, quality: 72 },
     { name: "ppr.jpg", width: 1100, quality: 72 },
     { name: "pvc.jpg", width: 1100, quality: 72 },
-    { name: "value.jpg", width: 1100, quality: 72 }
+    { name: "value.jpg", width: 1100, quality: 72 },
+    { name: "category-pvc-pipes.jpg", width: 1200, quality: 76 },
+    { name: "category-ppr-pipes.jpg", width: 900, quality: 76 },
+    { name: "category-fittings.png", original: true }
 ];
 const featuredImageNames = new Set(featuredImageAssets.map(({ name }) => name));
 const imageAssets = [
@@ -109,7 +112,7 @@ await Promise.all([
     ...imageAssets.map(optimizeImage)
 ]);
 
-const cacheRevision = "20261028-full-refresh-v1";
+const cacheRevision = "20261028-category-images-v1";
 for (const pageName of ["index.html", "products.html", "product.html", "pricing.html"]) {
     const pagePath = join(dist, pageName);
     const pageHtml = await readFile(pagePath, "utf8");

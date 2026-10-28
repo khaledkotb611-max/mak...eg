@@ -3318,6 +3318,11 @@ body {
     padding: 14px;
 }
 
+#services .product-card > img {
+    object-fit: cover;
+    padding: 0;
+}
+
 .card-body {
     padding: 26px;
 }
