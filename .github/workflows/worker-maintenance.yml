@@ -1,0 +1,34 @@
+name: Keep hosted Worker maintenance moving
+
+on:
+  schedule:
+    - cron: "3/5 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: mak-worker-maintenance
+  cancel-in-progress: false
+
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Trigger queued emails and pending backups
+        env:
+          WORKER_ORIGIN: ${{ vars.MAK_WORKER_ORIGIN }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$WORKER_ORIGIN" ]]; then
+            echo "::error::Set the MAK_WORKER_ORIGIN Actions variable to the deployed Worker origin."
+            exit 1
+          fi
+          if [[ "$WORKER_ORIGIN" != https://* ]]; then
+            echo "::error::MAK_WORKER_ORIGIN must use HTTPS."
+            exit 1
+          fi
+          WORKER_ORIGIN="${WORKER_ORIGIN%/}"
+          curl --fail --silent --show-error --connect-timeout 10 --max-time 30 \
+            "$WORKER_ORIGIN/api/health"
