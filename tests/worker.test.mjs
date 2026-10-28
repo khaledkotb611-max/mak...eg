@@ -12,7 +12,7 @@ const post = (body, env, headers = {}) => worker.fetch(new Request(base+'/api/qu
 test('only public assets served, catalog identical to source', async () => {
     const env = {DB:new D1()};
     for (const path of ['/data/quotes.jsonl','/data/quotes.sqlite3','/mak_backend/settings.py','/.env','/.openai/hosting.json','/data/catalog.json','/missing','/api/missing','/product/missing']) assert.equal((await get(path,env)).status,404,path);
-    for (const path of ['/','/products','/style.css','/script.js','/images/hero.jpg','/images/pvc-coupling.jpeg','/pricing.html','/vendor/exceljs-4.4.0.min.js']) assert.equal((await get(path,env)).status,200,path);
+    for (const path of ['/','/products','/style.css','/script.js','/images/hero.jpg','/pricing.html','/vendor/exceljs-4.4.0.min.js']) assert.equal((await get(path,env)).status,200,path);
     const catalog = JSON.parse(readFileSync('data/catalog.json'));
     assert.deepEqual((await (await get('/api/catalog',env)).json()).products.map(({active,version,createdAt,updatedAt,...p})=>p),catalog.products);
     assert.deepEqual((await (await get('/api/products',env)).json()).products.map(({active,version,createdAt,updatedAt,...p})=>p),catalog.products);

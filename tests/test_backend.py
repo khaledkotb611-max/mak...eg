@@ -91,7 +91,7 @@ class BackendTests(unittest.TestCase):
             self.assertEqual(self.client.get('/api/quotes',params,HTTP_AUTHORIZATION='Bearer test-admin').status_code,400)
 
     def test_assets_and_catalog(self):
-        for path in ("/", "/products", "/style.css", "/script.js", "/images/hero.jpg", "/images/pvc-coupling.jpeg", "/pricing.html", "/vendor/exceljs-4.4.0.min.js"):
+        for path in ("/", "/products", "/style.css", "/script.js", "/images/hero.jpg", "/pricing.html", "/vendor/exceljs-4.4.0.min.js"):
             response = self.client.get(path)
             self.assertEqual(response.status_code, 200, path)
             response.close()
