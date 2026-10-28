@@ -124,17 +124,23 @@ if (repositoryName) {
     ];
     await mkdir(join(pages, "data"), { recursive: true });
     await Promise.all(pagesFiles.map(async (filePath) => {
-        const source = await readFile(join(dist, filePath), "utf8");
-        const pageSource = source
+        const source = await readFile(join(dist, filePath));
+        const target = join(pages, filePath);
+        await mkdir(dirname(target), { recursive: true });
+
+        if (filePath.startsWith("images/")) {
+            await writeFile(target, source);
+            return;
+        }
+
+        const pageSource = source.toString("utf8")
             .replace(/(["'`])\/(?!\/)([^"'`]*)\1/g, (_, quote, path) => `${quote}${pagesBase}/${path}${quote}`)
             .replaceAll(`${pagesBase}/products"`, `${pagesBase}/products.html"`)
             .replaceAll(`${pagesBase}/products'`, `${pagesBase}/products.html'`)
             .replaceAll(`${pagesBase}/products\``, `${pagesBase}/products.html\``)
             .replace(/<a id="catalog-admin-link"[^>]*>.*?<\/a>/gs, "")
             .replace(/<link\b[^>]*href="[^"]*product-editor\.css[^"]*"[^>]*>/g, "")
-            .replace(/<script\b[^>]*src="[^"]*(?:product-editor|catalog-frontend)\.js[^"]*"[^>]*><\/script>/g, "");
-        const target = join(pages, filePath);
-        await mkdir(dirname(target), { recursive: true });
+            .replace(/<script\b[^>]*src="[^"]*(?:product-editor|catalog-frontend)\.js[^"]*"><\/script>/g, "");
         await writeFile(target, pageSource);
     }));
 
