@@ -753,7 +753,7 @@
     {
       "id": "grey-pipe-3-4-sch-80-sch80",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-grey-pipes.jpg",
       "price": 228,
       "ar": {
         "name": "ماسورة MAK رمادي 3/4",
@@ -775,7 +775,7 @@
     {
       "id": "grey-pipe-1-sch-80-sch80",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-grey-pipes.jpg",
       "price": 327,
       "ar": {
         "name": "ماسورة MAK رمادي 1",
@@ -797,7 +797,7 @@
     {
       "id": "grey-pipe-3-4-b-s-b-s",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-grey-pipes.jpg",
       "price": 175,
       "ar": {
         "name": "ماسورة MAK رمادي 3/4",
@@ -819,7 +819,7 @@
     {
       "id": "grey-pipe-1-b-s-b-s",
       "category": "pipes",
-      "image": "",
+      "image": "/images/mak-grey-pipes.jpg",
       "price": 279,
       "ar": {
         "name": "ماسورة MAK رمادي 1",
