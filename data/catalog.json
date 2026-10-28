@@ -1835,7 +1835,7 @@
     {
       "id": "ppr-pn20-insulated-25-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-insulated.jpg",
       "price": 306.17,
       "ar": {
         "name": "ماسورة بولي PN20 معزول 25 مم",
@@ -1883,7 +1883,7 @@
     {
       "id": "ppr-pn20-insulated-32-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-insulated.jpg",
       "price": 452.17,
       "ar": {
         "name": "ماسورة بولي PN20 معزول 32 مم",
@@ -1931,7 +1931,7 @@
     {
       "id": "ppr-pn20-insulated-50-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-insulated.jpg",
       "price": 1118.22,
       "ar": {
         "name": "ماسورة بولي PN20 معزول 50 مم",
@@ -1979,7 +1979,7 @@
     {
       "id": "ppr-pn20-insulated-63-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-insulated.jpg",
       "price": 1513.45,
       "ar": {
         "name": "ماسورة بولي PN20 معزول 63 مم",
@@ -2027,7 +2027,7 @@
     {
       "id": "ppr-pn16-insulated-32-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-insulated.jpg",
       "price": 398,
       "ar": {
         "name": "ماسورة بولي PN16 معزول 32 مم",
@@ -2075,7 +2075,7 @@
     {
       "id": "ppr-pn10-insulated-50-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-pipes-insulated.jpg",
       "price": 741.49,
       "ar": {
         "name": "ماسورة بولي PN10 معزول 50 مم",
