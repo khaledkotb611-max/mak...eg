@@ -181,6 +181,25 @@ if (repositoryName) {
     }));
     await writeFile(join(pages, "data/catalog.json"), `${JSON.stringify(pagesCatalog, null, 2)}\n`);
     await writeFile(join(pages, ".nojekyll"), "");
+
+    const pagesOrigin = `https://${process.env.GITHUB_REPOSITORY.split("/")[0]}.github.io`;
+    const pagesUrl = `${pagesOrigin}${pagesBase}`;
+    const sitemapUrls = [
+        `${pagesUrl}/`,
+        `${pagesUrl}/products.html`,
+        ...catalogSeed.products
+            .filter((product) => product.active !== false)
+            .map((product) => `${pagesUrl}/product.html?id=${encodeURIComponent(product.id)}`)
+    ];
+    const escapeXml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+    const sitemap = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        ...sitemapUrls.map((url) => `  <url><loc>${escapeXml(url)}</loc></url>`),
+        '</urlset>',
+        ''
+    ].join("\n");
+    await writeFile(join(pages, "sitemap.xml"), sitemap);
 }
 
 const assetFiles = [

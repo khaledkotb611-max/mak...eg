@@ -8,6 +8,8 @@ After enabling Pages with **Settings → Pages → Build and deployment → GitH
 
 GitHub Pages does not run this project's API or database. Product administration and server-backed quote submission therefore require the Worker or Django deployment described here; the Pages site is for browsing the static catalog.
 
+The Pages build also creates `sitemap.xml` with the public landing, catalog, and product detail URLs. To request Google indexing, verify the Pages URL in Google Search Console and submit `https://<owner>.github.io/<repository>/sitemap.xml`. Publishing updates the site immediately after the workflow succeeds; Google decides when pages enter search results.
+
 ## Prepare the server
 
 Use a Linux server with Docker Compose, Nginx, an owned domain pointing to it, and a valid TLS certificate. Copy `.env.production.example` to a private `.env.production`, then set:
