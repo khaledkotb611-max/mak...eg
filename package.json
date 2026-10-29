@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build-site.mjs",
+    "test": "npm run build && npm run test:worker",
     "start": "python3 manage.py runserver 0.0.0.0:8000",
     "dev": "python3 manage.py runserver 0.0.0.0:8000",
     "test:worker": "node --test tests/*.test.mjs"

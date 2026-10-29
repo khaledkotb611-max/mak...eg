@@ -841,7 +841,7 @@
     {
       "id": "pvc-elbow-90-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-90.jpeg",
       "price": 32.22,
       "ar": {
         "name": "كوع 90 PVC 2",
@@ -863,7 +863,7 @@
     {
       "id": "pvc-elbow-90-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-90.jpeg",
       "price": 72.16,
       "ar": {
         "name": "كوع 90 PVC 3",
@@ -885,7 +885,7 @@
     {
       "id": "pvc-elbow-90-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-90.jpeg",
       "price": 117.77,
       "ar": {
         "name": "كوع 90 PVC 4",
@@ -907,7 +907,7 @@
     {
       "id": "pvc-elbow-90-6",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-90.jpeg",
       "price": 285,
       "ar": {
         "name": "كوع 90 PVC 6",
@@ -929,7 +929,7 @@
     {
       "id": "pvc-elbow-90-1-5",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-90.jpeg",
       "price": 19.7,
       "ar": {
         "name": "كوع 90 PVC 1.5",
@@ -951,7 +951,7 @@
     {
       "id": "pvc-elbow-45-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-45.jpeg",
       "price": 29.76,
       "ar": {
         "name": "كوع 45 PVC 2",
@@ -973,7 +973,7 @@
     {
       "id": "pvc-elbow-45-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-45.jpeg",
       "price": 66.13,
       "ar": {
         "name": "كوع 45 PVC 3",
@@ -995,7 +995,7 @@
     {
       "id": "pvc-elbow-45-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-45.jpeg",
       "price": 93.63,
       "ar": {
         "name": "كوع 45 PVC 4",
@@ -1017,7 +1017,7 @@
     {
       "id": "pvc-elbow-45-6",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-45.jpeg",
       "price": 256.79,
       "ar": {
         "name": "كوع 45 PVC 6",
@@ -1039,7 +1039,7 @@
     {
       "id": "pvc-elbow-45-1-5",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-45.jpeg",
       "price": 18.75,
       "ar": {
         "name": "كوع 45 PVC 1.5",
@@ -1061,7 +1061,7 @@
     {
       "id": "pvc-access-elbow-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-elbow.jpeg",
       "price": 41.75,
       "ar": {
         "name": "كوع باب PVC 2",
@@ -1083,7 +1083,7 @@
     {
       "id": "pvc-access-elbow-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-elbow.jpeg",
       "price": 100.38,
       "ar": {
         "name": "كوع باب PVC 3",
@@ -1105,7 +1105,7 @@
     {
       "id": "pvc-access-elbow-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-elbow.jpeg",
       "price": 153.42,
       "ar": {
         "name": "كوع باب PVC 4",
@@ -1127,7 +1127,7 @@
     {
       "id": "pvc-access-elbow-6",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-elbow.jpeg",
       "price": 322,
       "ar": {
         "name": "كوع باب PVC 6",
@@ -1149,7 +1149,7 @@
     {
       "id": "pvc-coupling-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-coupling.jpeg",
       "price": 20.57,
       "ar": {
         "name": "جلبة عادية PVC 2",
@@ -1171,7 +1171,7 @@
     {
       "id": "pvc-coupling-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-coupling.jpeg",
       "price": 49.5,
       "ar": {
         "name": "جلبة عادية PVC 3",
@@ -1193,7 +1193,7 @@
     {
       "id": "pvc-coupling-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-coupling.jpeg",
       "price": 64.62,
       "ar": {
         "name": "جلبة عادية PVC 4",
@@ -1215,7 +1215,7 @@
     {
       "id": "pvc-coupling-6",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-coupling.jpeg",
       "price": 161.95,
       "ar": {
         "name": "جلبة عادية PVC 6",
@@ -1237,7 +1237,7 @@
     {
       "id": "pvc-coupling-1-5",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-coupling.jpeg",
       "price": 13.67,
       "ar": {
         "name": "جلبة عادية PVC 1.5",
@@ -1259,7 +1259,7 @@
     {
       "id": "pvc-super-tee-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-standard-tee.jpg",
       "price": 45.39,
       "ar": {
         "name": "مشترك عادة سوبر PVC 2",
@@ -1281,7 +1281,7 @@
     {
       "id": "pvc-super-tee-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-standard-tee.jpg",
       "price": 105.38,
       "ar": {
         "name": "مشترك عادة سوبر PVC 3",
@@ -1303,7 +1303,7 @@
     {
       "id": "pvc-super-tee-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-standard-tee.jpg",
       "price": 172.12,
       "ar": {
         "name": "مشترك عادة سوبر PVC 4",
@@ -1325,7 +1325,7 @@
     {
       "id": "pvc-super-tee-6",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-standard-tee.jpg",
       "price": 417.35,
       "ar": {
         "name": "مشترك عادة سوبر PVC 6",
@@ -1347,7 +1347,7 @@
     {
       "id": "pvc-super-tee-1-5",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-standard-tee.jpg",
       "price": 26.81,
       "ar": {
         "name": "مشترك عادة سوبر PVC 1.5",
@@ -1369,7 +1369,7 @@
     {
       "id": "pvc-wye-tee-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-wye-tee.jpg",
       "price": 61.15,
       "ar": {
         "name": "مشترك واي PVC 2",
@@ -1391,7 +1391,7 @@
     {
       "id": "pvc-wye-tee-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-wye-tee.jpg",
       "price": 130.82,
       "ar": {
         "name": "مشترك واي PVC 3",
@@ -1413,7 +1413,7 @@
     {
       "id": "pvc-wye-tee-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-wye-tee.jpg",
       "price": 221.16,
       "ar": {
         "name": "مشترك واي PVC 4",
@@ -1435,7 +1435,7 @@
     {
       "id": "pvc-wye-tee-6",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-wye-tee.jpg",
       "price": 585,
       "ar": {
         "name": "مشترك واي PVC 6",
@@ -1457,7 +1457,7 @@
     {
       "id": "pvc-wye-tee-1-5",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-wye-tee.jpg",
       "price": 40.24,
       "ar": {
         "name": "مشترك واي PVC 1.5",
@@ -1479,7 +1479,7 @@
     {
       "id": "pvc-vent-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-vent.jpeg",
       "price": 19.7,
       "ar": {
         "name": "هواية PVC 2",
@@ -1501,7 +1501,7 @@
     {
       "id": "pvc-vent-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-vent.jpeg",
       "price": 34.35,
       "ar": {
         "name": "هواية PVC 3",
@@ -1523,7 +1523,7 @@
     {
       "id": "pvc-vent-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-vent.jpeg",
       "price": 42.28,
       "ar": {
         "name": "هواية PVC 4",
@@ -1545,7 +1545,7 @@
     {
       "id": "pvc-cap-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-end-cap.jpg",
       "price": 27.75,
       "ar": {
         "name": "طبة سد PVC 2",
@@ -1567,7 +1567,7 @@
     {
       "id": "pvc-cap-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-end-cap.jpg",
       "price": 44.44,
       "ar": {
         "name": "طبة سد PVC 3",
@@ -1589,7 +1589,7 @@
     {
       "id": "pvc-cap-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-end-cap.jpg",
       "price": 71.53,
       "ar": {
         "name": "طبة سد PVC 4",
@@ -1699,7 +1699,7 @@
     {
       "id": "fitting-tee-3-2-standard",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-standard-tee.jpg",
       "price": 108.86,
       "ar": {
         "name": "مشترك PVC 3 / 2 عادي سوبر",
@@ -1721,7 +1721,7 @@
     {
       "id": "fitting-tee-4-2-access",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-tee.jpg",
       "price": 198.41,
       "ar": {
         "name": "مشترك PVC 4 / 2 باب سوبر",
@@ -1743,7 +1743,7 @@
     {
       "id": "fitting-wye-4-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-wye-tee.jpg",
       "price": 204.23,
       "ar": {
         "name": "واي PVC 4 / 2 سوبر",
@@ -1765,7 +1765,7 @@
     {
       "id": "fitting-floor-drain-3-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-floor-drain.jpg",
       "price": 135.86,
       "ar": {
         "name": "بيبة 3 * 2",
@@ -2171,7 +2171,7 @@
     {
       "id": "ppr-fitting-elbow-90-insulated-32-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-elbow-open-weld.jpg",
       "price": 39.82,
       "ar": {
         "name": "كوع 90 معزول 32 مم",
@@ -2219,7 +2219,7 @@
     {
       "id": "ppr-fitting-weld-tee-insulated-32-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-weld-tee-green.jpg",
       "price": 47.1,
       "ar": {
         "name": "تي لحام معزول 32 مم",
@@ -2243,7 +2243,7 @@
     {
       "id": "ppr-fitting-reducing-tee-green-63-32",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-reducing-tee.jpg",
       "price": 176.11,
       "ar": {
         "name": "تي مسلوب أخضر 63*32",
@@ -2267,7 +2267,7 @@
     {
       "id": "ppr-fitting-reducing-tee-insulated-63-32",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-reducing-tee.jpg",
       "price": 200.12,
       "ar": {
         "name": "تي مسلوب معزول 63*32",
@@ -2291,7 +2291,7 @@
     {
       "id": "ppr-fitting-concealed-valve-green-25-mm",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-valve-concealed.jpg",
       "price": 590.53,
       "ar": {
         "name": "محبس دفن بولي",
@@ -2795,7 +2795,7 @@
     {
       "id": "poly-list-union-male-thread-20-20-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 91.28,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -2819,7 +2819,7 @@
     {
       "id": "poly-list-union-male-thread-25-20-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 119.6,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -2843,7 +2843,7 @@
     {
       "id": "poly-list-union-male-thread-25-20-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 132.89,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -2867,7 +2867,7 @@
     {
       "id": "poly-list-union-male-thread-25-25-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 146.03,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -2891,7 +2891,7 @@
     {
       "id": "poly-list-union-male-thread-25-25-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 162.25,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -2915,7 +2915,7 @@
     {
       "id": "poly-list-union-male-thread-32-25-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 199.47,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -2939,7 +2939,7 @@
     {
       "id": "poly-list-union-male-thread-32-25-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 221.63,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -2963,7 +2963,7 @@
     {
       "id": "poly-list-union-male-thread-32-32-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 274.52,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -2987,7 +2987,7 @@
     {
       "id": "poly-list-union-male-thread-32-32-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 288.97,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -3011,7 +3011,7 @@
     {
       "id": "poly-list-union-male-thread-50-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 499.38,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -3035,7 +3035,7 @@
     {
       "id": "poly-list-union-male-thread-63-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-union-male-thread.jpg",
       "price": 782.24,
       "ar": {
         "name": "جلبة بولي بسن خارجي",
@@ -3323,7 +3323,7 @@
     {
       "id": "poly-list-tee-concealed-20-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-tee-concealed.jpg",
       "price": 156.47,
       "ar": {
         "name": "تي محبس دفن بولي",
@@ -3347,7 +3347,7 @@
     {
       "id": "poly-list-tee-concealed-25-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-tee-concealed.jpg",
       "price": 166.99,
       "ar": {
         "name": "تي محبس دفن بولي",
@@ -3371,7 +3371,7 @@
     {
       "id": "poly-list-tee-concealed-32-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-tee-concealed.jpg",
       "price": 251.2,
       "ar": {
         "name": "تي محبس دفن بولي",
@@ -3395,7 +3395,7 @@
     {
       "id": "poly-list-valve-concealed-20-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-valve-concealed.jpg",
       "price": 540.36,
       "ar": {
         "name": "محبس دفن بولي",
@@ -3419,7 +3419,7 @@
     {
       "id": "poly-list-valve-concealed-32-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-valve-concealed.jpg",
       "price": 721.1,
       "ar": {
         "name": "محبس دفن بولي",
@@ -3443,7 +3443,7 @@
     {
       "id": "poly-list-elbow-square-thread-25-20-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-elbow-female-thread.jpg",
       "price": 213.09,
       "ar": {
         "name": "كوع مسطرة بولي بسن داخلي",
@@ -3467,7 +3467,7 @@
     {
       "id": "poly-list-elbow-square-thread-25-20-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-elbow-female-thread.jpg",
       "price": 229.12,
       "ar": {
         "name": "كوع مسطرة بولي بسن داخلي",
@@ -3683,7 +3683,7 @@
     {
       "id": "poly-list-test-plug-20-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-test-plug.jpg",
       "price": 6.73,
       "ar": {
         "name": "طبة اختبار بولي",
@@ -3707,7 +3707,7 @@
     {
       "id": "poly-list-elbow-threadless-25-20-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-elbow-female-thread.jpg",
       "price": 89.6,
       "ar": {
         "name": "كوع بولي بسن",
@@ -3731,7 +3731,7 @@
     {
       "id": "poly-list-elbow-threadless-25-20-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/ppr-elbow-female-thread.jpg",
       "price": 100.5,
       "ar": {
         "name": "كوع بولي بسن",
@@ -3755,7 +3755,7 @@
     {
       "id": "poly-list-ball-valve-20-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-ball-valve.jpg",
       "price": 247,
       "ar": {
         "name": "محبس كرة بولي",
@@ -3779,7 +3779,7 @@
     {
       "id": "poly-list-ball-valve-25-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-ball-valve.jpg",
       "price": 338,
       "ar": {
         "name": "محبس كرة بولي",
@@ -3803,7 +3803,7 @@
     {
       "id": "poly-list-ball-valve-25-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-ball-valve.jpg",
       "price": 388,
       "ar": {
         "name": "محبس كرة بولي",
@@ -3827,7 +3827,7 @@
     {
       "id": "poly-list-ball-valve-32-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-ball-valve.jpg",
       "price": 459,
       "ar": {
         "name": "محبس كرة بولي",
@@ -3851,7 +3851,7 @@
     {
       "id": "poly-list-ball-valve-32-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-ball-valve.jpg",
       "price": 520,
       "ar": {
         "name": "محبس كرة بولي",
@@ -3875,7 +3875,7 @@
     {
       "id": "poly-list-ball-valve-50-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-ball-valve.jpg",
       "price": 1135,
       "ar": {
         "name": "محبس كرة بولي",
@@ -3899,7 +3899,7 @@
     {
       "id": "poly-list-ball-valve-50-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-ball-valve.jpg",
       "price": 1390,
       "ar": {
         "name": "محبس كرة بولي",
@@ -3923,7 +3923,7 @@
     {
       "id": "poly-list-ball-valve-63-green",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-ball-valve.jpg",
       "price": 1705,
       "ar": {
         "name": "محبس كرة بولي",
@@ -3947,7 +3947,7 @@
     {
       "id": "poly-list-ball-valve-63-insulated",
       "category": "poly",
-      "image": "",
+      "image": "/images/poly-ball-valve.jpg",
       "price": 2100,
       "ar": {
         "name": "محبس كرة بولي",
@@ -4355,7 +4355,7 @@
     {
       "id": "pvc-super-elbow-90-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-90.jpeg",
       "price": 39.43,
       "ar": {
         "name": "كوع 90 عادي سوبر PVC 2",
@@ -4377,7 +4377,7 @@
     {
       "id": "pvc-super-elbow-90-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-90.jpeg",
       "price": 129.93,
       "ar": {
         "name": "كوع 90 عادي سوبر PVC 4",
@@ -4399,7 +4399,7 @@
     {
       "id": "pvc-super-access-elbow-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-elbow.jpeg",
       "price": 53.91,
       "ar": {
         "name": "كوع باب سوبر PVC 2",
@@ -4421,7 +4421,7 @@
     {
       "id": "pvc-super-access-elbow-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-elbow.jpeg",
       "price": 169.98,
       "ar": {
         "name": "كوع باب سوبر PVC 4",
@@ -4443,7 +4443,7 @@
     {
       "id": "pvc-super-access-tee-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-tee.jpg",
       "price": 52.63,
       "ar": {
         "name": "مشترك باب سوبر PVC 2",
@@ -4465,7 +4465,7 @@
     {
       "id": "pvc-super-access-tee-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-tee.jpg",
       "price": 124.63,
       "ar": {
         "name": "مشترك باب سوبر PVC 3",
@@ -4487,7 +4487,7 @@
     {
       "id": "pvc-super-access-tee-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-tee.jpg",
       "price": 205.14,
       "ar": {
         "name": "مشترك باب سوبر PVC 4",
@@ -4509,7 +4509,7 @@
     {
       "id": "pvc-super-access-tee-6",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-tee.jpg",
       "price": 494.55,
       "ar": {
         "name": "مشترك باب سوبر PVC 6",
@@ -4531,7 +4531,7 @@
     {
       "id": "pvc-cross-tee-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-cross-tee.jpg",
       "price": 198.23,
       "ar": {
         "name": "مشترك صليبة PVC 3",
@@ -4553,7 +4553,7 @@
     {
       "id": "pvc-cross-tee-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-cross-tee.jpg",
       "price": 249.37,
       "ar": {
         "name": "مشترك صليبة PVC 4",
@@ -4575,7 +4575,7 @@
     {
       "id": "pvc-swept-elbow-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-elbow-90.jpeg",
       "price": 215.96,
       "ar": {
         "name": "كوع ريحة PVC 4",
@@ -4597,7 +4597,7 @@
     {
       "id": "pvc-cleanout-cap-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-cleanout-cap.jpg",
       "price": 70.6,
       "ar": {
         "name": "طبة تسليك PVC 3",
@@ -4619,7 +4619,7 @@
     {
       "id": "pvc-cleanout-cap-4",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-cleanout-cap.jpg",
       "price": 92.4,
       "ar": {
         "name": "طبة تسليك PVC 4",
@@ -4641,7 +4641,7 @@
     {
       "id": "pvc-cleanout-cap-6",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-cleanout-cap.jpg",
       "price": 176.83,
       "ar": {
         "name": "طبة تسليك PVC 6",
@@ -4685,7 +4685,7 @@
     {
       "id": "fitting-cross-tee-4-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-cross-tee.jpg",
       "price": 248.91,
       "ar": {
         "name": "مشترك صليبة PVC 4 / 2",
@@ -4707,7 +4707,7 @@
     {
       "id": "fitting-cross-tee-4-3",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-cross-tee.jpg",
       "price": 260.47,
       "ar": {
         "name": "مشترك صليبة PVC 4 / 3",
@@ -4729,7 +4729,7 @@
     {
       "id": "fitting-floor-drain-2-1-5",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-floor-drain.jpg",
       "price": 100.59,
       "ar": {
         "name": "بيبة PVC 2 * 1.5",
@@ -4751,7 +4751,7 @@
     {
       "id": "fitting-floor-drain-2-2",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-floor-drain.jpg",
       "price": 108.91,
       "ar": {
         "name": "بيبة PVC 2 * 2",
@@ -4773,7 +4773,7 @@
     {
       "id": "fitting-tee-3-2-access",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-tee.jpg",
       "price": 124.97,
       "ar": {
         "name": "مشترك PVC 3 / 2 باب سوبر",
@@ -4795,7 +4795,7 @@
     {
       "id": "fitting-tee-4-2-standard",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-standard-tee.jpg",
       "price": 166.6,
       "ar": {
         "name": "مشترك PVC 4 / 2 عادي سوبر",
@@ -4817,7 +4817,7 @@
     {
       "id": "fitting-tee-4-3-standard",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-standard-tee.jpg",
       "price": 175.18,
       "ar": {
         "name": "مشترك PVC 4 / 3 عادي سوبر",
@@ -4839,7 +4839,7 @@
     {
       "id": "fitting-tee-4-3-access",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-tee.jpg",
       "price": 207.98,
       "ar": {
         "name": "مشترك PVC 4 / 3 باب سوبر",
@@ -4861,7 +4861,7 @@
     {
       "id": "fitting-tee-6-4-standard",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-standard-tee.jpg",
       "price": 437.08,
       "ar": {
         "name": "مشترك PVC 6 / 4 عادي سوبر",
@@ -4883,7 +4883,7 @@
     {
       "id": "fitting-tee-6-4-access",
       "category": "fittings",
-      "image": "",
+      "image": "/images/pvc-access-tee.jpg",
       "price": 481.35,
       "ar": {
         "name": "مشترك PVC 6 / 4 باب سوبر",
@@ -4905,8 +4905,8 @@
     {
       "id": "fitting-wye-6-4",
       "category": "fittings",
-      "image": "",
-      "price": 580.0,
+      "image": "/images/pvc-wye-tee.jpg",
+      "price": 580,
       "ar": {
         "name": "واي PVC 6 / 4 سوبر",
         "category": "قطع ووصلات PVC",

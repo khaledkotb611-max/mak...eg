@@ -4,6 +4,7 @@ document.querySelectorAll(".stats [data-counter]").forEach((counter) => counter.
 
 const WHATSAPP_NUMBER = "201282708833";
 const ORDER_EMAIL = "khaledkotb611@icloud.com";
+const workerApiUrl = (path) => window.MAK_WORKER_ORIGIN ? new URL(path, window.MAK_WORKER_ORIGIN).href : path;
 const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
 const getStoredValue = (key, fallback) => {
@@ -1202,7 +1203,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let catalog;
             let response;
             try {
-                response = await fetch("/api/products", { cache:'no-store',headers:catalogEtag?{'If-None-Match':catalogEtag}:{},signal:controller.signal });
+                response = await fetch(workerApiUrl("/api/products"), { cache:'no-store',headers:catalogEtag?{'If-None-Match':catalogEtag}:{},signal:controller.signal });
                 if(response.status===304 && catalogLoaded){catalogManager?.onCatalog(products);catalogFailures=0;const status=document.getElementById('catalog-sync-status');if(status)status.textContent='';return;}
                 if (!response.ok) throw new Error("Catalog unavailable");
                 catalog = await response.json();
@@ -1670,7 +1671,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setCheckoutStatus(uiText[currentLanguage].saving,'saving');
         refreshCheckoutProgress();
         try {
-            const response = await fetch("/api/quotes", {
+            const response = await fetch(workerApiUrl("/api/quotes"), {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ ...data, requestId: pendingRequest.requestId }),

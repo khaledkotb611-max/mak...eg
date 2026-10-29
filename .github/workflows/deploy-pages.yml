@@ -23,11 +23,10 @@ jobs:
         with:
           node-version: 24
 
-      - name: Build site and Pages bundle
-        run: npm run build
-
-      - name: Run JavaScript tests
-        run: npm run test:worker
+      - name: Build and test site
+        env:
+          MAK_WORKER_ORIGIN: ${{ vars.MAK_WORKER_ORIGIN }}
+        run: npm test
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

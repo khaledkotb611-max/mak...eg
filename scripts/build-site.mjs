@@ -1,11 +1,20 @@
 import { execFile as execFileCallback } from "node:child_process";
-import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { access, cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { promisify } from "node:util";
 import { dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
+const workerOrigin = (process.env.MAK_WORKER_ORIGIN || "").trim().replace(/\/$/, "");
+if (workerOrigin) {
+    try {
+        const url = new URL(workerOrigin);
+        if (url.protocol !== "https:" || url.origin !== workerOrigin || url.username || url.password) throw new Error();
+    } catch {
+        throw new Error("MAK_WORKER_ORIGIN must be an HTTPS origin without a path.");
+    }
+}
 const catalogSeed = JSON.parse(await readFile(join(root, "data/catalog.json"), "utf8"));
 const ids = new Set();
 const catalogImageNames = new Set();
@@ -25,6 +34,11 @@ for (const product of catalogSeed.products) {
     if (/^\/images\/[A-Za-z0-9_.-]+$/.test(image)) {
         const name = image.slice("/images/".length);
         if (!/^[A-Za-z0-9][A-Za-z0-9_.-]*\.(?:jpe?g|png|webp)$/i.test(name)) throw new Error(`Invalid image for product ${product.id}`);
+        try {
+            await access(join(root, "images", name));
+        } catch {
+            throw new Error(`Missing local image for product ${product.id}: ${name}`);
+        }
         catalogImageNames.add(name);
     } else if (image) {
         if (!/^https:\/\/[^\s<>"']+$/.test(image)) throw new Error(`Invalid image for product ${product.id}`);
@@ -112,7 +126,7 @@ await Promise.all([
     ...imageAssets.map(optimizeImage)
 ]);
 
-const cacheRevision = "20261029-checkout-v1";
+const cacheRevision = "20261029-catalog-images-v1";
 for (const pageName of ["index.html", "products.html", "product.html", "pricing.html"]) {
     const pagePath = join(dist, pageName);
     const pageHtml = await readFile(pagePath, "utf8");
@@ -147,14 +161,17 @@ if (repositoryName) {
         }
 
         const pageSource = source.toString("utf8")
-            .replace(/(["'`])\/(?!\/)([^"'`]*)\1/g, (_, quote, path) => `${quote}${pagesBase}/${path}${quote}`)
+            .replace(/(["'`])\/(?!\/)([^"'`]*)\1/g, (_, quote, path) => path.startsWith("api/") ? `${quote}/${path}${quote}` : `${quote}${pagesBase}/${path}${quote}`)
             .replaceAll(`${pagesBase}/products"`, `${pagesBase}/products.html"`)
             .replaceAll(`${pagesBase}/products'`, `${pagesBase}/products.html'`)
             .replaceAll(`${pagesBase}/products\``, `${pagesBase}/products.html\``)
             .replace(/<a id="catalog-admin-link"[^>]*>.*?<\/a>/gs, "")
             .replace(/<link\b[^>]*href="[^"]*product-editor\.css[^"]*"[^>]*>/g, "")
             .replace(/<script\b[^>]*src="[^"]*(?:product-editor|catalog-frontend)\.js[^"]*"><\/script>/g, "");
-        await writeFile(target, pageSource);
+        const configuredPage = filePath.endsWith(".html")
+            ? pageSource.replace("</head>", `<script>window.MAK_WORKER_ORIGIN=${JSON.stringify(workerOrigin)};</script>\n</head>`)
+            : pageSource;
+        await writeFile(target, configuredPage);
     }));
 
     const pagesCatalog = structuredClone(catalogSeed);

@@ -19,11 +19,8 @@ jobs:
         with:
           node-version: 24
 
-      - name: Build JavaScript site
-        run: npm run build
-
-      - name: Run JavaScript tests
-        run: npm run test:worker
+      - name: Build and test JavaScript site
+        run: npm test
 
       - name: Set up Python
         uses: actions/setup-python@v6

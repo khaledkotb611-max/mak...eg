@@ -67,6 +67,16 @@ test('GitHub Pages falls back to the static catalog and links to static product 
     assert.equal(app.element('catalog-sync-status').textContent,'');
 });
 
+test('GitHub Pages sends public API calls to the configured Worker origin',async()=>{
+    const app=dom();app.context.window.location.hostname='khaledkotb611-max.github.io';app.context.window.location.href='https://khaledkotb611-max.github.io/makc-company/';
+    app.context.window.MAK_WORKER_ORIGIN='https://mak-worker.example';
+    const requests=[];app.context.fetch=async(path)=>{requests.push(path);if(path==='https://mak-worker.example/api/products')throw new TypeError('API unavailable');assert.equal(path,'https://khaledkotb611-max.github.io/makc-company/data/catalog.json');return {ok:true,json:async()=>seed};};
+    vm.createContext(app.context);vm.runInContext(readFileSync('script.js','utf8'),app.context);app.listeners.get('DOMContentLoaded')();await settle(app);
+    assert.equal(requests[0],'https://mak-worker.example/api/products');
+    assert.equal(requests[1],'https://khaledkotb611-max.github.io/makc-company/data/catalog.json');
+    assert.equal(app.element('catalog-sync-status').textContent,'');
+});
+
 test('directional catalog synchronization reuses CRUD APIs, compares real content and makes deletion opt-in',()=>{
     const p={...seed.products[0],active:true,version:8};const source={currency:'EGP',products:[{...p,price:3.45}]};const target={currency:'EGP',products:[p,{...p,id:'extra-product'}]};
     let plan=syncPlan(source,target);assert.equal(plan.length,1);assert.equal(plan[0].method,'PUT');assert.equal(plan[0].body.version,8);

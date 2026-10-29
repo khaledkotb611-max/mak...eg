@@ -56,6 +56,29 @@ test('durable rate limits, validation, cross-origin and request size protections
     assert.equal((await worker.fetch(new Request(base+'/api/quotes',{method:'DELETE'}),env)).status,405);
 });
 
+test('GitHub Pages can read the public catalog and save orders through a narrow CORS allowlist', async () => {
+    const env = { DB: new D1() };
+    const siteOrigin = 'https://khaledkotb611-max.github.io';
+    const preflight = await worker.fetch(new Request(base+'/api/quotes', { method:'OPTIONS', headers:{
+        Origin:siteOrigin, 'Access-Control-Request-Method':'POST', 'Access-Control-Request-Headers':'content-type'
+    }}), env);
+    assert.equal(preflight.status,204);
+    assert.equal(preflight.headers.get('Access-Control-Allow-Origin'),siteOrigin);
+    assert.equal(preflight.headers.get('Access-Control-Allow-Methods'),'POST, OPTIONS');
+    const catalog = await get('/api/products',env,{Origin:siteOrigin});
+    assert.equal(catalog.status,200);
+    assert.equal(catalog.headers.get('Access-Control-Allow-Origin'),siteOrigin);
+    assert.equal(catalog.headers.get('Access-Control-Expose-Headers'),'ETag');
+    const saved = await post(payload(),env,{Origin:siteOrigin});
+    assert.equal(saved.status,201);
+    assert.equal(saved.headers.get('Access-Control-Allow-Origin'),siteOrigin);
+    assert.equal((await get('/api/quotes',env,{Origin:siteOrigin})).status,403);
+    const denied = await worker.fetch(new Request(base+'/api/quotes', { method:'OPTIONS', headers:{
+        Origin:'https://evil.example', 'Access-Control-Request-Method':'POST', 'Access-Control-Request-Headers':'content-type'
+    }}), env);
+    assert.equal(denied.status,403);
+});
+
 test('storage failure never returns success or exposes requests', async () => {
     assert.equal((await get('/api/health',{})).status,503);
     assert.equal((await post(payload(),{})).status,503);

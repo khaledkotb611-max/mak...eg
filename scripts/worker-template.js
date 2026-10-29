@@ -1,6 +1,31 @@
 // Build embeds public assets and the one-time migration seed. Runtime reads only the database.
 const fieldNames = ["name", "email", "phone", "projectType", "message"];
 const fieldLimits = [120, 160, 40, 80, 2000];
+const publicSiteOrigin = "https://khaledkotb611-max.github.io";
+
+function publicCorsRoute(pathname, method) {
+    const isProductRead = ["/api/catalog", "/api/products"].includes(pathname) || /^\/api\/products\/[a-z0-9][a-z0-9-]{0,119}$/.test(pathname);
+    return method === "GET" && isProductRead || method === "POST" && pathname === "/api/quotes";
+}
+
+function withPublicCors(request, response) {
+    if (request.headers.get("Origin") !== publicSiteOrigin) return response;
+    const headers = new Headers(response.headers);
+    headers.set("Access-Control-Allow-Origin", publicSiteOrigin);
+    headers.set("Access-Control-Expose-Headers", "ETag");
+    headers.set("Vary", headers.has("Vary") ? `${headers.get("Vary")}, Origin` : "Origin");
+    return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+}
+
+function publicCorsPreflight(method) {
+    return new Response(null, { status: 204, headers: {
+        "Access-Control-Allow-Origin": publicSiteOrigin,
+        "Access-Control-Allow-Methods": `${method}, OPTIONS`,
+        "Access-Control-Allow-Headers": "Content-Type, If-None-Match",
+        "Access-Control-Max-Age": "600",
+        "Vary": "Origin"
+    } });
+}
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
     status,
@@ -74,8 +99,6 @@ async function quoteBody(request) {
 async function handleQuotes(request, env, ctx) {
     if (request.method === "GET") return listOrders(request,env);
     if (request.method !== "POST") return json({ error: "Method not allowed" }, 405);
-    const origin = request.headers.get("Origin");
-    if (origin && origin !== new URL(request.url).origin) return json({ error: "Origin not allowed" }, 403);
     if (request.headers.get("Content-Type")?.split(";")[0].trim().toLowerCase() !== "application/json") return json({ error: "JSON content type required" }, 415);
     const fields = await quoteBody(request);
     if (fields?.tooLarge) return json({ error: "Request body is too large" }, 413);
@@ -145,11 +168,24 @@ export default {
         const url = new URL(request.url);
         if (ctx?.waitUntil && !(url.pathname === "/api/quotes" && request.method === "POST")) ctx.waitUntil((async()=>{await flushNotifications(env).catch(()=>{});await ensureBackup(env).catch(()=>{});})());
         if (url.pathname.startsWith("/api/")) {
+            const origin = request.headers.get("Origin");
+            const crossOrigin = origin && origin !== url.origin;
+            if (crossOrigin) {
+                const requestedMethod = request.headers.get("Access-Control-Request-Method") || "";
+                const requestedHeaders = (request.headers.get("Access-Control-Request-Headers") || "").toLowerCase().split(",").map(value => value.trim()).filter(Boolean);
+                const allowedHeaders = new Set(["content-type", "if-none-match"]);
+                const preflightAllowed = origin === publicSiteOrigin && request.method === "OPTIONS"
+                    && publicCorsRoute(url.pathname, requestedMethod)
+                    && requestedHeaders.every(header => allowedHeaders.has(header));
+                if (preflightAllowed) return publicCorsPreflight(requestedMethod);
+                if (origin !== publicSiteOrigin || !publicCorsRoute(url.pathname, request.method)) return json({ error: "Origin not allowed" }, 403);
+            }
+            const cors = (response) => crossOrigin ? withPublicCors(request, response) : response;
             try {
-                if (url.pathname === "/api/quotes") return await handleQuotes(request, env, ctx);
-                if (["/api/catalog","/api/products"].includes(url.pathname))return await catalogApi(request,env);
+                if (url.pathname === "/api/quotes") return cors(await handleQuotes(request, env, ctx));
+                if (["/api/catalog","/api/products"].includes(url.pathname))return cors(await catalogApi(request,env));
                 const productMatch=url.pathname.match(/^\/api\/products\/([a-z0-9][a-z0-9-]{0,119})$/);
-                if(productMatch)return await catalogApi(request,env,productMatch[1]);
+                if(productMatch)return cors(await catalogApi(request,env,productMatch[1]));
                 if (url.pathname === "/api/admin/session" && request.method === "GET") return await adminSession(request,env);
                 if (url.pathname === '/api/admin/health') return await adminHealth(request,env);
                 const historyMatch=url.pathname.match(/^\/api\/quotes\/([0-9a-f-]{36})\/history$/i);
@@ -171,8 +207,8 @@ export default {
                 }
                 if (request.method !== "GET") return json({ error: "Method not allowed" }, 405);
                 if (url.pathname === "/api/health") { await database(env); return json({ ok: true, service: "mak-backend", storage: "ready" }); }
-                return json({ error: "Not found" }, 404);
-            } catch { return json({ error: "Storage unavailable. Retry later." }, 503); }
+                return cors(json({ error: "Not found" }, 404));
+            } catch { return cors(json({ error: "Storage unavailable. Retry later." }, 503)); }
         }
         if (!["GET", "HEAD"].includes(request.method)) return json({ error: "Method not allowed" }, 405);
         let pathname = url.pathname;
