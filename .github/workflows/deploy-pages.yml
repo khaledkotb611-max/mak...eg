@@ -23,9 +23,26 @@ jobs:
         with:
           node-version: 24
 
+      - name: Require the production Worker origin
+        env:
+          MAK_WORKER_ORIGIN: ${{ vars.MAK_WORKER_ORIGIN }}
+        run: node scripts/validate-pages-origin.mjs
+
+      - name: Verify read-only Worker CORS preflight
+        env:
+          MAK_WORKER_ORIGIN: ${{ vars.MAK_WORKER_ORIGIN }}
+        run: node scripts/check-worker-preflight.mjs
+
+      - name: Install JavaScript build dependencies
+        run: npm ci
+
+      - name: Lint JavaScript
+        run: npm run lint
+
       - name: Build and test site
         env:
           MAK_WORKER_ORIGIN: ${{ vars.MAK_WORKER_ORIGIN }}
+          MAK_REQUIRE_WORKER_ORIGIN: "true"
         run: npm test
 
       - name: Configure GitHub Pages

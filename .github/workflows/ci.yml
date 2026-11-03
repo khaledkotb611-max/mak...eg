@@ -19,6 +19,12 @@ jobs:
         with:
           node-version: 24
 
+      - name: Install JavaScript build dependencies
+        run: npm ci
+
+      - name: Lint JavaScript
+        run: npm run lint
+
       - name: Build and test JavaScript site
         run: npm test
 

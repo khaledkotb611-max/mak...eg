@@ -2,11 +2,13 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import { readFileSync } from 'node:fs';
+import worker from '../dist/server/index.js';
+import { D1 } from './d1-helper.mjs';
 
 const source=readFileSync('script.js','utf8');
 const catalog=JSON.parse(readFileSync('data/catalog.json'));
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
-function app(send, { blockedPopup = false, selectedProduct = '' } = {}) {
+function app(send, { blockedPopup = false, selectedProduct = '', catalogFetcher } = {}) {
     const classes={add(){},remove(){},toggle(){},contains(){return false;}};
     const attributes=new Map();
     const button={disabled:false};
@@ -35,7 +37,7 @@ function app(send, { blockedPopup = false, selectedProduct = '' } = {}) {
         const popup={opener:{},closed:false,location:{replace(href){destinations.push(href);}},close(){popup.closed=true;closed.push(popup);}};
         return popup;
     },addEventListener(){},innerHeight:800,scrollY:0},localStorage:{getItem:()=>null,setItem(){}},FormData:class {constructor(){this.values=new Map(Object.entries(fields));}get(k){return this.values.get(k);}[Symbol.iterator](){return this.values[Symbol.iterator]();}},setTimeout:()=>1,clearTimeout(){},AbortController,URLSearchParams,AbortSignal,crypto,Intl,Date,requestAnimationFrame:()=>1,fetch:async(path,options)=>{
-        if(path==='/api/products')return {ok:true,json:async()=>catalog};
+        if(path==='/api/products')return catalogFetcher?catalogFetcher(path,options):{ok:true,json:async()=>catalog};
         requests.push(JSON.parse(options.body)); return send(requests.at(-1));
     }};
     vm.runInNewContext(source,context);
@@ -157,4 +159,67 @@ test('product selection submits only product ID and quantity and sends the serve
     const message=new URL(appInstance.destinations[0]).searchParams.get('text');
     assert.ok(message.includes('أسعار المنتجات المحفوظة وقت إنشاء الطلب'));
     assert.ok(message.includes('١٢٣٫٤٥'));assert.ok(message.includes('priced-order'));
+});
+
+class MemoryR2 {
+    objects=new Map();
+    async put(key,data,options={}){this.objects.set(key,{key,data,...options,size:new TextEncoder().encode(data).length,uploaded:new Date()});}
+    async get(key){const object=this.objects.get(key);return object?{...object,text:async()=>object.data}:null;}
+    async list({prefix='',limit=1000,cursor}={}){const keys=[...this.objects.keys()].filter(key=>key.startsWith(prefix)&&(!cursor||key>cursor)).sort();const selected=keys.slice(0,limit);return{objects:selected.map(key=>this.objects.get(key)),truncated:keys.length>limit,cursor:selected.at(-1)};}
+    async delete(keys){for(const key of Array.isArray(keys)?keys:[keys])this.objects.delete(key);}
+}
+
+test('safe end-to-end quotation uses the real frontend and Worker with ephemeral D1/R2 and a fake mail provider',async()=>{
+    const workerOrigin='https://worker.example.test';
+    const pageOrigin='https://khaledkotb611-max.github.io';
+    const owner={'oai-authenticated-user-id':'test-owner','oai-authenticated-user-email':'owner@example.com'};
+    const env={DB:new D1(),BACKUPS:new MemoryR2(),ADMIN_EMAILS:'owner@example.com',TRUSTED_SITES_IDENTITY:'true',RESEND_API_KEY:'test-only-key',NOTIFICATION_FROM:'orders@example.test',NOTIFICATION_TO:'owner@example.test'};
+    const tasks=[];const sent=[];let submittedReceipt;
+    const originalFetch=globalThis.fetch;
+    globalThis.fetch=async(url,options)=>{sent.push({url,options});return new Response(JSON.stringify({id:'test-provider-id'}),{status:200,headers:{'Content-Type':'application/json'}});};
+    const call=(path,{method='GET',headers={},body,ctx}={})=>worker.fetch(new Request(workerOrigin+path,{method,headers,...(body?{body}: {})}),env,ctx);
+    try{
+        const preflight=await call('/api/quotes',{method:'OPTIONS',headers:{Origin:pageOrigin,'Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type'}});
+        assert.equal(preflight.status,204);assert.equal(preflight.headers.get('Access-Control-Allow-Origin'),pageOrigin);
+
+        const selected=catalog.products[0];
+        const instance=app(async body=>{
+            const response=await call('/api/quotes',{method:'POST',headers:{Origin:pageOrigin,'Content-Type':'application/json','CF-Connecting-IP':'198.51.100.25'},body:JSON.stringify(body),ctx:{waitUntil(task){tasks.push(task);}}});
+            if(response.ok)submittedReceipt=await response.clone().json();
+            return response;
+        },{selectedProduct:selected.id,catalogFetcher:(_path,options)=>call('/api/products',{headers:{Origin:pageOrigin,...options.headers}})});
+        for(let attempt=0;attempt<20&&!instance.grid.innerHTML.includes(selected.ar.name);attempt++)await tick();
+        assert.ok(instance.grid.innerHTML.includes(selected.ar.name),instance.status.textContent);
+        await instance.events.submit({preventDefault(){}});
+        await Promise.all(tasks);
+        assert.ok(instance.status.textContent.includes('تم حفظ'));
+        assert.equal(submittedReceipt.ok,true);
+        assert.deepEqual(instance.requests[0].items,[{productId:selected.id,quantity:1}]);
+        assert.equal(instance.requests[0].price,undefined);
+        assert.equal(submittedReceipt.items[0].unitPrice,selected.price);
+        assert.equal(env.DB.sqlite.prepare('SELECT COUNT(*) AS count FROM quotes').get().count,1);
+        assert.equal(env.DB.sqlite.prepare('SELECT unit_price FROM quote_items').get().unit_price,selected.price);
+        assert.equal(sent.length,1);assert.equal(sent[0].url,'https://api.resend.com/emails');
+        assert.equal(env.DB.sqlite.prepare('SELECT state FROM quote_notifications').get().state,'submitted');
+        const duplicate=await call('/api/quotes',{method:'POST',headers:{Origin:pageOrigin,'Content-Type':'application/json','CF-Connecting-IP':'198.51.100.25'},body:JSON.stringify(instance.requests[0])});
+        assert.equal(duplicate.status,200);assert.equal(env.DB.sqlite.prepare('SELECT COUNT(*) AS count FROM quotes').get().count,1);assert.equal(sent.length,1);
+
+        const adminList=await call('/api/quotes?limit=30',{headers:owner});
+        assert.equal(adminList.status,200);
+        const orders=await adminList.json();assert.equal(orders.total,1);assert.equal(orders.quotes[0].id,submittedReceipt.quoteId);
+        assert.equal(orders.quotes[0].items[0].unitPrice,selected.price);
+
+        const changed=await call('/api/quotes/'+submittedReceipt.quoteId,{method:'PATCH',headers:{...owner,Origin:workerOrigin,'Content-Type':'application/json'},body:JSON.stringify({status:'contacted',notes:'Local end-to-end check',version:0})});
+        assert.equal(changed.status,200);
+        const history=await call('/api/quotes/'+submittedReceipt.quoteId+'/history',{headers:owner});
+        const events=(await history.json()).events;assert.equal(events.length,1);assert.equal(events[0].status,'contacted');assert.equal(events[0].actor,'owner@example.com');
+
+        const backupsResponse=await call('/api/admin/backups',{headers:owner});
+        const backups=await backupsResponse.json();assert.equal(backupsResponse.status,200);assert.ok(backups.backups.length>=1);
+        assert.equal(backups.state.revision,backups.state.saved_revision);
+        const backupId=backups.backups[0].id;
+        const preview=await call('/api/admin/backups/'+backupId+'/restore',{method:'POST',headers:{...owner,Origin:workerOrigin,'Content-Type':'application/json'},body:JSON.stringify({mode:'preview'})});
+        const previewBody=await preview.json();assert.equal(preview.status,200);assert.equal(previewBody.missing,0);assert.equal(previewBody.preserved,1);
+        assert.equal(env.DB.sqlite.prepare('SELECT COUNT(*) AS count FROM quotes').get().count,1);
+    }finally{globalThis.fetch=originalFetch;}
 });

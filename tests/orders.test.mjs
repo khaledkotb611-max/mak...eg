@@ -4,7 +4,7 @@ import worker from '../dist/server/index.js';
 import {D1} from './d1-helper.mjs';
 const origin='https://mak.example';
 const owner={'oai-authenticated-user-id':'trusted-site-user','oai-authenticated-user-email':'owner@example.com'};
-const environment=()=>({DB:new D1(),ADMIN_EMAILS:'owner@example.com',ADMIN_TOKEN:'test-token',NOTIFICATION_TO:'owner@example.com'});
+const environment=()=>({DB:new D1(),ADMIN_EMAILS:'owner@example.com',TRUSTED_SITES_IDENTITY:'true',ADMIN_TOKEN:'test-token',NOTIFICATION_TO:'owner@example.com'});
 const body=()=>({requestId:crypto.randomUUID(),name:'عميل',email:'customer@example.com',phone:'01000000000',projectType:'Home',message:'ماسورة 25 مم'});
 const request=(path,env,{method='GET',headers={},data,ctx}={})=>worker.fetch(new Request(origin+path,{method,headers:{...headers,...(data?{'Content-Type':'application/json'}:{})},...(data?{body:JSON.stringify(data)}:{})}),env,ctx);
 const save=async(env,data=body(),ctx)=>{const response=await request('/api/quotes',env,{method:'POST',data,ctx});assert.equal(response.status,201);return (await response.json()).quoteId;};
@@ -34,6 +34,20 @@ test('only authorized site owner or admin token can access customer data and upd
     const page=await request('/admin',env,{headers:owner});assert.equal(page.status,200);assert.equal(page.headers.get('Cache-Control'),'no-store');
     assert.equal((await request('/api/admin/session',env,{headers:owner})).status,200);
     assert.equal((await request('/api/admin/session',env,{headers:{Authorization:'Bearer test-token'}})).status,200);
+});
+
+test('forwarded identity headers fail closed unless the deployment explicitly trusts the Sites edge',async()=>{
+    for(const setting of [undefined,'false']){
+        const env=environment();if(setting===undefined)delete env.TRUSTED_SITES_IDENTITY;else env.TRUSTED_SITES_IDENTITY=setting;
+        const id=await save(env);
+        assert.equal((await request('/api/admin/session',env,{headers:owner})).status,401);
+        assert.equal((await request('/api/quotes?limit=30',env,{headers:{...owner,Authorization:'Bearer test-token'}})).status,200); // Explicit ADMIN_TOKEN remains independently usable.
+        const noToken={...env,ADMIN_TOKEN:''};
+        assert.equal((await request('/api/quotes?limit=30',noToken,{headers:owner})).status,401);
+        assert.equal((await request('/api/quotes/'+id,noToken,{method:'PATCH',headers:owner,data:{status:'contacted',notes:'forged',version:0}})).status,401);
+        assert.equal((await request('/api/products?includeInactive=1',noToken,{headers:owner})).status,401);
+        assert.equal((await request('/admin',noToken,{headers:owner})).status,403);
+    }
 });
 
 test('pagination, search, summary, status changes, notes and stale writes are durable',async()=>{

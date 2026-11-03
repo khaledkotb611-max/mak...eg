@@ -63,6 +63,8 @@ The Docker volume survives normal container recreation. Do not run `docker compo
 ## Checks before cutover
 
 ```bash
+npm ci
+npm run lint
 python manage.py test tests
 npm run build
 npm run test:worker

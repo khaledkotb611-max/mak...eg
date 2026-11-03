@@ -5,6 +5,7 @@ import worker from '../dist/server/index.js';
 import {D1} from './d1-helper.mjs';
 
 const seed=JSON.parse(readFileSync('data/catalog.json','utf8'));
+const omitCatalogMetadata=product=>Object.fromEntries(Object.entries(product).filter(([key])=>!['active','version','createdAt','updatedAt'].includes(key)));
 const product=()=>({...structuredClone(seed.products[0]),id:'new-product',price:12.35,active:true});
 const env=()=>({DB:new D1(),ADMIN_TOKEN:'owner'});
 const call=(db,path,method='GET',body,admin=false,headers={})=>worker.fetch(new Request('https://mak.example'+path,{method,headers:{...(body===undefined?{}:{'Content-Type':'application/json'}),...(admin?{Authorization:'Bearer owner'}:{}),...headers},...(body===undefined?{}:{body:JSON.stringify(body)})}),db);
@@ -12,7 +13,7 @@ const quote=items=>({requestId:crypto.randomUUID(),name:'Client',phone:'01000000
 
 test('one-time import preserves every existing product and never reseeds deleted or externally modified data',async()=>{
     const db=env();const initial=await (await call(db,'/api/catalog')).json();
-    assert.deepEqual(initial.products.map(({active,version,createdAt,updatedAt,...p})=>p),seed.products);
+    assert.deepEqual(initial.products.map(omitCatalogMetadata),seed.products);
     db.DB.sqlite.prepare('UPDATE products SET price=? WHERE id=?').run(1.25,seed.products[0].id);
     const changed=await (await call(db,'/api/catalog')).json();
     assert.equal(changed.products[0].price,1.25);assert.equal(changed.products[0].version,1);

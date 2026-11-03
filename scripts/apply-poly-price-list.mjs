@@ -41,7 +41,6 @@ for (const item of priceList.items) {
             const matchKey = `${item.id}:${size}:${variantKey}`;
             const productId = legacyIds[matchKey]
                 || `poly-list-${item.id}-${slug(size)}-${variantKey}`;
-            const sizeLabel = /^\d+$/.test(size) ? `${size} مم` : `${size} مم`;
             const categoryAr = item.category[0];
             const categoryEn = item.category[1];
             const image = `/images/${item.image || "value.jpg"}`;

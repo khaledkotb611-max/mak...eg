@@ -13,7 +13,7 @@ class R2 {
     async list({prefix='',limit=1000,cursor}={}){const keys=[...this.objects.keys()].filter(key=>key.startsWith(prefix) && (!cursor || key>cursor)).sort();const selected=keys.slice(0,limit);return {objects:selected.map(key=>({key,...this.objects.get(key)})),truncated:keys.length>limit,cursor:selected.at(-1)};}
     async delete(keys){for(const key of Array.isArray(keys)?keys:[keys])this.objects.delete(key);}
 }
-const env=()=>({DB:new D1(),BACKUPS:new R2(),ADMIN_EMAILS:'owner@example.com'});
+const env=()=>({DB:new D1(),BACKUPS:new R2(),ADMIN_EMAILS:'owner@example.com',TRUSTED_SITES_IDENTITY:'true'});
 const call=(path,environment,{method='GET',headers=owner,body}={})=>worker.fetch(new Request(origin+path,{method,headers:{...headers,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})}),environment);
 const quote=()=>({requestId:crypto.randomUUID(),name:'خالد',email:'customer@example.com',phone:'01000000000',projectType:'Home',message:'ماسورة ٢٥ مم'});
 const save=async environment=>{const response=await call('/api/quotes',environment,{method:'POST',headers:{},body:quote()});assert.equal(response.status,201);return (await response.json()).quoteId;};

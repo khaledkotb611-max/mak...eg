@@ -27,7 +27,7 @@ function dom() {
 const trackFetch=(app,fetch)=>{app.context.fetch=(...args)=>{const request=Promise.resolve().then(()=>fetch(...args));app.pendingRequests.add(request);return request.finally(()=>app.pendingRequests.delete(request));};};
 
 test('admin form CRUD reaches the real Worker database; public polling reflects changes, stops while hidden and recovers from failure',async()=>{
-    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com'};
+    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com',TRUSTED_SITES_IDENTITY:'true'};
     const requests=[];let offline=false;
     const frontend=dom();trackFetch(frontend,async(path,options={})=>{const request={path,...options};requests.push(request);if(offline)throw new TypeError('Network offline');const response=await worker.fetch(new Request('https://mak.example'+path,options),env);request.status=response.status;if(path==='/api/products' && response.status===200)request.productNames=(await response.clone().json()).products.map(product=>product.ar.name);return response;});
     vm.createContext(frontend.context);vm.runInContext(readFileSync('script.js','utf8'),frontend.context);frontend.listeners.get('DOMContentLoaded')();await settle(frontend);
@@ -59,8 +59,8 @@ test('admin form CRUD reaches the real Worker database; public polling reflects 
 });
 
 test('GitHub Pages falls back to the static catalog and links to static product pages',async()=>{
-    const app=dom();app.context.window.location.hostname='khaledkotb611-max.github.io';app.context.window.location.href='https://khaledkotb611-max.github.io/makc-company/';
-    const requests=[];app.context.fetch=async(path)=>{requests.push(path);if(path==='/api/products')throw new TypeError('API unavailable');assert.equal(path,'https://khaledkotb611-max.github.io/makc-company/data/catalog.json');return {ok:true,json:async()=>seed};};
+    const app=dom();app.context.window.location.hostname='khaledkotb611-max.github.io';app.context.window.location.href='https://khaledkotb611-max.github.io/mak...eg/';
+    const requests=[];app.context.fetch=async(path)=>{requests.push(path);if(path==='/api/products')throw new TypeError('API unavailable');assert.equal(path,'https://khaledkotb611-max.github.io/mak...eg/data/catalog.json');return {ok:true,json:async()=>seed};};
     vm.createContext(app.context);vm.runInContext(readFileSync('script.js','utf8'),app.context);app.listeners.get('DOMContentLoaded')();await settle(app);
     const product=seed.products[0];const grid=app.element('catalog-grid').innerHTML;
     assert.ok(grid.includes(product.ar.name));assert.ok(grid.includes('product.html?id='+encodeURIComponent(product.id)));assert.equal(requests.length,2);
@@ -68,12 +68,12 @@ test('GitHub Pages falls back to the static catalog and links to static product 
 });
 
 test('GitHub Pages sends public API calls to the configured Worker origin',async()=>{
-    const app=dom();app.context.window.location.hostname='khaledkotb611-max.github.io';app.context.window.location.href='https://khaledkotb611-max.github.io/makc-company/';
+    const app=dom();app.context.window.location.hostname='khaledkotb611-max.github.io';app.context.window.location.href='https://khaledkotb611-max.github.io/mak...eg/';
     app.context.window.MAK_WORKER_ORIGIN='https://mak-worker.example';
-    const requests=[];app.context.fetch=async(path)=>{requests.push(path);if(path==='https://mak-worker.example/api/products')throw new TypeError('API unavailable');assert.equal(path,'https://khaledkotb611-max.github.io/makc-company/data/catalog.json');return {ok:true,json:async()=>seed};};
+    const requests=[];app.context.fetch=async(path)=>{requests.push(path);if(path==='https://mak-worker.example/api/products')throw new TypeError('API unavailable');assert.equal(path,'https://khaledkotb611-max.github.io/mak...eg/data/catalog.json');return {ok:true,json:async()=>seed};};
     vm.createContext(app.context);vm.runInContext(readFileSync('script.js','utf8'),app.context);app.listeners.get('DOMContentLoaded')();await settle(app);
     assert.equal(requests[0],'https://mak-worker.example/api/products');
-    assert.equal(requests[1],'https://khaledkotb611-max.github.io/makc-company/data/catalog.json');
+    assert.equal(requests[1],'https://khaledkotb611-max.github.io/mak...eg/data/catalog.json');
     assert.equal(app.element('catalog-sync-status').textContent,'');
 });
 
@@ -117,7 +117,7 @@ async function editPublic(app,id) {
 const editAdmin=(app,id)=>app.element('products-list').events.click({target:{closest(){return {dataset:{editProduct:id}};}}});
 
 test('both actual management surfaces persist Add/Edit/Delete in one D1 binding and poll each other; historical orders remain priced at purchase',async()=>{
-    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com'};
+    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com',TRUSTED_SITES_IDENTITY:'true'};
     const front=await frontendApp(env),admin=await dashboardApp(env);
     const originals=env.DB.sqlite.prepare('SELECT * FROM products ORDER BY id').all();assert.equal(originals.length,seed.products.length);
     assert.equal(front.element('catalog-management').hidden,false);
@@ -150,7 +150,7 @@ test('both actual management surfaces persist Add/Edit/Delete in one D1 binding 
 });
 
 test('ordinary visitors have no management UI or writes; an expired admin session closes the editor and never submits a mutation',async()=>{
-    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com'};
+    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com',TRUSTED_SITES_IDENTITY:'true'};
     const visitor=await frontendApp(env,{admin:false});
     assert.equal(visitor.element('catalog-management').hidden,true);assert.ok(!visitor.element('catalog-grid').innerHTML.includes('data-manage-product='));
     visitor.element('catalog-add-product').events.click();await settle(visitor);assert.equal(visitor.requests.some(r=>r.path==='/admin.html'),false);
@@ -162,7 +162,7 @@ test('ordinary visitors have no management UI or writes; an expired admin sessio
 });
 
 test('public product editor preserves drafts across network failures and concurrent admin changes, requires reload and prevents duplicate writes',async()=>{
-    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com'};let failed=false,release=null,hold=false;
+    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com',TRUSTED_SITES_IDENTITY:'true'};let failed=false,release=null,hold=false;
     const front=await frontendApp(env,{transport:async(path,options,run)=>{
         if(options.method==='PATCH' && failed)throw new TypeError('Offline');
         if(options.method==='PATCH' && hold)await new Promise(resolve=>release=resolve);
@@ -180,7 +180,7 @@ test('public product editor preserves drafts across network failures and concurr
 });
 
 test('public management keeps the existing Django session CSRF contract on writes only',async()=>{
-    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com'};
+    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com',TRUSTED_SITES_IDENTITY:'true'};
     const front=await frontendApp(env,{transport:async(path,options,run)=>path==='/api/admin/session'?new Response(JSON.stringify({ok:true,authMode:'django',csrfToken:'existing-session-csrf'}),{headers:{'Content-Type':'application/json'}}):run()});
     front.element('catalog-add-product').events.click();await settle(front);fill(front,'django-ui-product','جلسة الإدارة',12.25);await submit(front);
     assert.equal(front.requests.find(r=>r.method==='POST').headers['X-CSRFToken'],'existing-session-csrf');
@@ -189,7 +189,7 @@ test('public management keeps the existing Django session CSRF contract on write
 });
 
 test('saving while an earlier catalog request is in flight forces a fresh read in both surfaces instead of restoring old data',async()=>{
-    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com'};let hold=false,release;
+    const env={DB:new D1(),ADMIN_EMAILS:'owner@example.com',TRUSTED_SITES_IDENTITY:'true'};let hold=false,release;
     const front=await frontendApp(env,{transport:async(path,options,run)=>{
         if(path==='/api/products' && hold){hold=false;const old=await run();await new Promise(resolve=>release=resolve);return old;}
         return run();

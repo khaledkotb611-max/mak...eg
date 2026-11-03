@@ -6,6 +6,7 @@ import worker from '../dist/server/index.js';
 import { D1 } from './d1-helper.mjs';
 const base = 'https://mak.example';
 const payload = () => ({ requestId: crypto.randomUUID(), name: 'عميل', email: '', phone: '01000000000', projectType: 'طلب منزل', message: 'ماسورة 25 مم' });
+const omitCatalogMetadata=product=>Object.fromEntries(Object.entries(product).filter(([key])=>!['active','version','createdAt','updatedAt'].includes(key)));
 const get = (path, env, headers = {}) => worker.fetch(new Request(base+path, { headers }), env);
 const post = (body, env, headers = {}) => worker.fetch(new Request(base+'/api/quotes', { method: 'POST', headers: { 'Content-Type': 'application/json', 'CF-Connecting-IP': '192.0.2.1', ...headers }, body: JSON.stringify(body) }), env);
 
@@ -14,8 +15,8 @@ test('only public assets served, catalog identical to source', async () => {
     for (const path of ['/data/quotes.jsonl','/data/quotes.sqlite3','/mak_backend/settings.py','/.env','/.openai/hosting.json','/data/catalog.json','/missing','/api/missing','/product/missing']) assert.equal((await get(path,env)).status,404,path);
     for (const path of ['/','/products','/style.css','/script.js','/images/hero.jpg','/pricing.html','/vendor/exceljs-4.4.0.min.js']) assert.equal((await get(path,env)).status,200,path);
     const catalog = JSON.parse(readFileSync('data/catalog.json'));
-    assert.deepEqual((await (await get('/api/catalog',env)).json()).products.map(({active,version,createdAt,updatedAt,...p})=>p),catalog.products);
-    assert.deepEqual((await (await get('/api/products',env)).json()).products.map(({active,version,createdAt,updatedAt,...p})=>p),catalog.products);
+    assert.deepEqual((await (await get('/api/catalog',env)).json()).products.map(omitCatalogMetadata),catalog.products);
+    assert.deepEqual((await (await get('/api/products',env)).json()).products.map(omitCatalogMetadata),catalog.products);
     assert.equal((await get('/product/'+catalog.products[0].id,env)).status,200);
     const head=await worker.fetch(new Request(base+'/script.js',{method:'HEAD'}),env);
     assert.equal(head.status,200); assert.equal(await head.text(),'');

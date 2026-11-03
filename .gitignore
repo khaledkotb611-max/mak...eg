@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .venv/
+node_modules/
 .env
 .env.*
 !.env.example
@@ -9,6 +10,7 @@ data/quotes.jsonl
 data/*.sqlite3*
 data/backups/
 dist/
+.wrangler/
 tmp/
 *.bak
 index.html-e
