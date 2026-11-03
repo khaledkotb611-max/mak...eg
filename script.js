@@ -1211,7 +1211,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if(!isGitHubPages())throw error;
                 const catalogUrl = new URL("data/catalog.json",window.location.href).href;
                 response = await fetch(catalogUrl, { cache:'no-store', signal:controller.signal });
-                if (!response.ok) throw new Error("Static catalog unavailable");
+                if (!response.ok) throw new Error("Static catalog unavailable", { cause: error });
                 catalog = await response.json();
             }
             if (!Array.isArray(catalog.products) || catalog.currency !== "EGP") throw new Error("Invalid catalog");

@@ -166,7 +166,7 @@ export default {
     },
     async fetch(request, env, ctx) {
         const url = new URL(request.url);
-        if (ctx?.waitUntil && !(url.pathname === "/api/quotes" && request.method === "POST")) ctx.waitUntil((async()=>{await flushNotifications(env).catch(()=>{});await ensureBackup(env).catch(()=>{});})());
+        if (ctx?.waitUntil && url.pathname === "/api/health" && request.method === "GET") ctx.waitUntil((async()=>{await flushNotifications(env).catch(()=>{});await ensureBackup(env).catch(()=>{});})());
         if (url.pathname.startsWith("/api/")) {
             const origin = request.headers.get("Origin");
             const crossOrigin = origin && origin !== url.origin;

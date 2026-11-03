@@ -4,7 +4,7 @@ import worker from '../dist/server/index.js';
 import {D1} from './d1-helper.mjs';
 
 const owner={'oai-authenticated-user-id':'owner','oai-authenticated-user-email':'owner@example.com'};
-const environment=()=>({DB:new D1(),ADMIN_EMAILS:'owner@example.com',RESEND_API_KEY:'fake-key',NOTIFICATION_FROM:'orders@example.com',NOTIFICATION_TO:'owner@example.com'});
+const environment=()=>({DB:new D1(),ADMIN_EMAILS:'owner@example.com',TRUSTED_SITES_IDENTITY:'true',RESEND_API_KEY:'fake-key',NOTIFICATION_FROM:'orders@example.com',NOTIFICATION_TO:'owner@example.com'});
 const call=(path,env,{method='GET',headers=owner,body,ctx}={})=>worker.fetch(new Request('https://mak.example'+path,{method,headers:{...headers,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})}),env,ctx);
 const save=async env=>{const response=await call('/api/quotes',env,{method:'POST',headers:{},body:{requestId:crypto.randomUUID(),name:'عميل',phone:'01000000000',projectType:'Home',message:'طلب'},ctx:{waitUntil(){}}});assert.equal(response.status,201);return (await response.json()).quoteId;};
 const notice=(env,id)=>env.DB.sqlite.prepare('SELECT * FROM quote_notifications WHERE quote_id=?').get(id);
@@ -28,6 +28,17 @@ test('operational health exposes only authorized counts and accurately identifie
     const data=await (await call('/api/admin/health',env)).json();assert.equal(data.worker.mode,'traffic');assert.equal(data.notifications.configured,false);
     assert.ok(!JSON.stringify(data).includes('owner@example.com'));assert.ok(!JSON.stringify(data).includes('fake-key'));
     assert.equal((await call('/api/admin/health',{...env,DB:{prepare(){throw new Error('failure');}}})).status,503);
+});
+
+test('static asset requests do not trigger maintenance; health pings and scheduled events do',async()=>{
+    const env=environment();delete env.RESEND_API_KEY;await save(env);
+    const tasks=[];const ctx={waitUntil(task){tasks.push(task);}};
+    assert.equal((await call('/',env,{headers:{},ctx})).status,200);
+    assert.equal(tasks.length,0);
+    assert.equal((await call('/api/health',env,{headers:{},ctx})).status,200);
+    assert.equal(tasks.length,1);
+    await Promise.all(tasks);
+    await worker.scheduled({},env);
 });
 
 test('mail retry classification pauses permanent errors and respects provider delays even on manual retry',async()=>{

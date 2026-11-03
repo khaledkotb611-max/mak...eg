@@ -103,7 +103,7 @@ async function catalogApi(request,env,id=null) {
     }
     if(old)return !old.deleted_at && same?json({product:serializeProduct(old)}):json({error:'Product ID already used'},409);
     const values=productValues(product,now);
-    await db.prepare(`INSERT OR IGNORE INTO products (${productColumns.join(',')}) SELECT ${productColumns.map((key,i)=>key==='position'?'(SELECT COALESCE(MAX(position),-1)+1 FROM products)':'?').join(',')}`).bind(...values.filter((_,i)=>i!==13)).run();
+    await db.prepare(`INSERT OR IGNORE INTO products (${productColumns.join(',')}) SELECT ${productColumns.map((key)=>key==='position'?'(SELECT COALESCE(MAX(position),-1)+1 FROM products)':'?').join(',')}`).bind(...values.filter((_,i)=>i!==13)).run();
     const saved=await db.prepare('SELECT * FROM products WHERE id=?').bind(product.id).first();
     if(saved.deleted_at || JSON.stringify(validateProduct(serializeProduct(saved)))!==JSON.stringify(product))return json({error:'Product ID already used'},409);
     return json({product:serializeProduct(saved)},201);

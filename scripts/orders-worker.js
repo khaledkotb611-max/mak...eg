@@ -5,6 +5,9 @@ const orderSelect = `SELECT q.*, COALESCE(a.status, 'new') AS status, COALESCE(a
     FROM quotes q LEFT JOIN quote_admin a ON a.quote_id = q.id LEFT JOIN quote_notifications n ON n.quote_id = q.id`;
 
 function signedInAdmin(request, env) {
+    // Sites forwards these identity headers. They are only trusted when the
+    // deployment has explicitly confirmed that requests cannot bypass that edge.
+    if (env.TRUSTED_SITES_IDENTITY !== "true") return false;
     const email = request.headers.get("oai-authenticated-user-email")?.trim().toLowerCase();
     const id = request.headers.get("oai-authenticated-user-id");
     return !!id && !!email && (env.ADMIN_EMAILS || "").split(",").map(s => s.trim().toLowerCase()).filter(Boolean).includes(email);

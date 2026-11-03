@@ -11,7 +11,7 @@ function renderAdminProducts() {
     adminProductEditor.reconcile([...adminProducts.values()]);
 }
 
-async function loadAdminProducts({force=false}={}) {
+async function loadAdminProducts() {
     if(!authenticated || document.hidden)return;
     if(productLoading){productRefreshPending=true;return productLoading;}
     productLoading=(async()=>{
@@ -34,8 +34,8 @@ async function loadAdminProducts({force=false}={}) {
 
 const adminProductEditor=window.MakProductEditor.mount({
     request:api,isAuthorized:()=>authenticated,onUnauthorized:lockDashboard,
-    onSaved(product){adminProducts.set(product.id,product);renderAdminProducts();productEtag='';void loadAdminProducts({force:true});},
-    onDeleted(product){adminProducts.delete(product.id);renderAdminProducts();productEtag='';$('products-status').textContent='تم حذف المنتج. الطلبات السابقة محفوظة.';void loadAdminProducts({force:true});}
+    onSaved(product){adminProducts.set(product.id,product);renderAdminProducts();productEtag='';void loadAdminProducts();},
+    onDeleted(product){adminProducts.delete(product.id);renderAdminProducts();productEtag='';$('products-status').textContent='تم حذف المنتج. الطلبات السابقة محفوظة.';void loadAdminProducts();}
 });
 $('product-search').addEventListener('input',renderAdminProducts);
 $('add-product').addEventListener('click',()=>{if(authenticated)adminProductEditor.open();});

@@ -1,20 +1,14 @@
-import { execFile as execFileCallback } from "node:child_process";
 import { access, cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
-import { promisify } from "node:util";
 import { dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import sharp from "sharp";
+import { resolveWorkerOrigin } from "./worker-origin.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
-const workerOrigin = (process.env.MAK_WORKER_ORIGIN || "").trim().replace(/\/$/, "");
-if (workerOrigin) {
-    try {
-        const url = new URL(workerOrigin);
-        if (url.protocol !== "https:" || url.origin !== workerOrigin || url.username || url.password) throw new Error();
-    } catch {
-        throw new Error("MAK_WORKER_ORIGIN must be an HTTPS origin without a path.");
-    }
-}
+const workerOrigin = resolveWorkerOrigin(process.env.MAK_WORKER_ORIGIN, {
+    required: process.env.MAK_REQUIRE_WORKER_ORIGIN === "true"
+});
 const catalogSeed = JSON.parse(await readFile(join(root, "data/catalog.json"), "utf8"));
 const ids = new Set();
 const catalogImageNames = new Set();
@@ -52,9 +46,6 @@ for (const product of catalogSeed.products) {
         if (!safeRemoteImage) throw new Error(`Invalid image for product ${product.id}`);
     }
 }
-const schemaSource = (await readFile(join(root, "db/schema.ts"), "utf8")).replace("export const", "const");
-const execFile = promisify(execFileCallback);
-
 const featuredImageAssets = [
     { name: "hero.jpg", width: 1400, quality: 74 },
     { name: "about.jpg", width: 1200, quality: 72 },
@@ -95,23 +86,11 @@ const optimizeImage = async ({ name, width, quality, original = false }) => {
 
     if (original) { await cp(source, target); return; }
 
-    try {
-        await execFile("sips", [
-            "--resampleWidth",
-            String(width),
-            "--setProperty",
-            "format",
-            "jpeg",
-            "--setProperty",
-            "formatOptions",
-            String(quality),
-            source,
-            "--out",
-            target
-        ]);
-    } catch {
-        await cp(source, target);
-    }
+    await sharp(source, { failOn: "error" })
+        .rotate()
+        .resize({ width, withoutEnlargement: true })
+        .jpeg({ quality, mozjpeg: true })
+        .toFile(target);
 };
 
 await Promise.all([
@@ -126,7 +105,7 @@ await Promise.all([
     ...imageAssets.map(optimizeImage)
 ]);
 
-const cacheRevision = "20261029-catalog-images-v1";
+const cacheRevision = "20261031-cross-platform-images-v2";
 for (const pageName of ["index.html", "products.html", "product.html", "pricing.html"]) {
     const pagePath = join(dist, pageName);
     const pageHtml = await readFile(pagePath, "utf8");
@@ -162,6 +141,7 @@ if (repositoryName) {
 
         const pageSource = source.toString("utf8")
             .replace(/(["'`])\/(?!\/)([^"'`]*)\1/g, (_, quote, path) => path.startsWith("api/") ? `${quote}/${path}${quote}` : `${quote}${pagesBase}/${path}${quote}`)
+            .replace(/(\burl=)\/products\b/gi, `$1${pagesBase}/products.html`)
             .replaceAll(`${pagesBase}/products"`, `${pagesBase}/products.html"`)
             .replaceAll(`${pagesBase}/products'`, `${pagesBase}/products.html'`)
             .replaceAll(`${pagesBase}/products\``, `${pagesBase}/products.html\``)
@@ -184,6 +164,10 @@ if (repositoryName) {
 
     const pagesOrigin = `https://${process.env.GITHUB_REPOSITORY.split("/")[0]}.github.io`;
     const pagesUrl = `${pagesOrigin}${pagesBase}`;
+    await writeFile(
+        join(pages, "robots.txt"),
+        `User-agent: *\nAllow: /\nSitemap: ${pagesUrl}/sitemap.xml\n`
+    );
     const sitemapUrls = [
         `${pagesUrl}/`,
         `${pagesUrl}/products.html`,
@@ -228,7 +212,7 @@ const adminSource = await readFile(join(root,"scripts/orders-worker.js"),"utf8")
 const backupSource = await readFile(join(root,"scripts/backups-worker.js"),"utf8");
 const template = await readFile(join(root, "scripts/worker-template.js"), "utf8");
 const catalogSource = await readFile(join(root,"scripts/catalog-worker.js"),"utf8");
-const worker = `const assets = ${JSON.stringify(assets)};\nconst catalogSeed = ${JSON.stringify(catalogSeed)};\n${schemaSource}\n${adminSource}\n${backupSource}\n${catalogSource}\n${template}`;
+const worker = `const assets = ${JSON.stringify(assets)};\nconst catalogSeed = ${JSON.stringify(catalogSeed)};\n${adminSource}\n${backupSource}\n${catalogSource}\n${template}`;
 await mkdir(join(dist, ".openai", "drizzle"), { recursive: true });
 await cp(join(root, ".openai/hosting.json"), join(dist, ".openai/hosting.json"));
 await cp(join(root, ".openai/drizzle"), join(dist, ".openai/drizzle"), { recursive: true });
